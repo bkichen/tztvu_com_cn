@@ -1,0 +1,40 @@
+a{ text-decoration:none; color:#676767;}
+a:hover{ color:#cc0000; }
+img{ border:none;}
+ul,li{ list-style:none; padding:0; margin:0;}
+body{ margin:0; padding:0; background: url(http://xk.scrtvu.net/style/images/layoutBg.jpg) 0 0 repeat-x; font-size:14px; color:#636162;}
+#wrapper{width:100%; height:auto; overflow:hidden;}
+
+#wrapper #banner{ background:#2882B7 url(http://xk.scrtvu.net/style/images/banner.jpg) top left no-repeat; height:80px; }
+
+#wrapper #link{ height: auto; margin-top:80px; width: 100%; overflow:hidden;}
+#link #link_box{
+	background: #EEEEEE;
+	border: 1px solid #CAD5D7;
+	height:auto;
+	margin: 0 auto;
+	padding:30px 0;
+	width: 700px;
+	overflow:hidden;
+}
+#link #link_box ul{}
+#link #link_box ul li{ display: inline; float: left;  height: 75px;  margin: 5px 0 5px 30px;  width: 285px;border: 1px solid #D6D6D6; }
+#link #link_box ul li img{ line-height:100%;}
+
+#wrapper #content{
+	width:700px;
+	margin:0 auto;
+	margin-top:30px;
+}
+#content ul{}
+#content ul li{ height:30px; line-height:30px; padding-left:30px; }
+#content ul li a{font-size:12px;}
+#content ul li a:hover{}
+#content ul li a span{ color:#cc0000;}
+#content ul #board{
+	background-image: url(../img/board.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#wrapper #footer{  width:1000px; margin:0 auto; margin-top:80px;text-align:center; line-height:160%; font-size:12px;}

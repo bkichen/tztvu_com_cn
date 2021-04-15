@@ -1,0 +1,94 @@
+
+/* CSS Document */
+html{ background-color:#990000;}
+body {
+background-image:url(../images/topline.gif);
+background-repeat:repeat-x;
+background-position:top;
+width:100%;
+	font-size:12px;
+	color:#222222; margin:0 auto;
+}
+a:link{
+	color:#333333; 
+	text-decoration:none; 
+}
+a:visited{
+	color:#333333; 
+	text-decoration:none;
+}
+a:hover{
+	color:#cc0000; 
+	text-decoration:underline;
+}
+.bodytable2{	
+	
+	
+}
+.bluetable{ text-align:center;	 
+	border-bottom:#ccc 1px solid;
+	border-top:#ccc 1px solid;
+	border-left:#ccc 1px solid; 
+	border-right:#ccc 1px solid;
+}
+.tableman{ background-color:#ffffff;
+ 	border-bottom:#CCCCCC 1px solid;
+	height:28px;
+}
+.title{
+	color:#046bb5;
+	FONT-FAMILY: "";
+	font-size:14px;
+ 	font-weight:bold;
+	text-align:left 
+}
+.lianjie{ 
+	font-size:12px;
+	line-height:20px
+	}
+.chakan{ 
+	color:FF6E02; 
+	font-size:12px; 
+	line-height:20px
+}
+.xblue{
+	font-size:12px; 
+	color:#04329A; 
+	font-weight:bold; 
+	line-height:20px
+}
+.xhui{
+	font-size:12px; 
+	color:#555555;  
+	line-height:20px
+}
+.sec1 { 
+	background-color:#EEEEEE;
+	cursor: hand;
+	color: #000000;
+	border-right: 1px solid #cccccc; 
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #cccccc
+  }
+.sec2 { 
+	background-color: #ffffff;
+	cursor: hand;
+	color: #000000;
+	border-left: 1px solid #cccccc; 
+	border-top: 1px solid #ffffff; 
+	font-weight: bold; 
+}
+tabel tr td{ line-height:24px;}
+.anli img{ padding:2px; border:1px solid #ccc; width:145px;}
+.copy{ line-height:25px;}
+.commenttitle{ font-weight:bold; color:#ff0000;}
+.commentwt{ font-weight:bold; color:#000000;}
+.commenthf{ line-height:24px; color:#000000;}
+.jianjie{ text-indent:30px; line-height:21px;}
+.lxwm{ line-height:23px; color:#036685;}
+.lxwm a{ line-height:23px; color:#036685;}
+.lxwm a:hover{ line-height:23px; color:#cc0000;}
+.menu1 img{ cursor:pointer;}
+.listtitle{ color:#cc0000; font-size:14px; font-weight:bold; }
+.infotitle{ font-size:18px; font-weight:bold;}
+.infoinfo{ line-height:23px;}

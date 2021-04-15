@@ -1,0 +1,169 @@
+
+
+#mainContent{ margin:0 auto; padding:10px 0px; width:998px; height:auto; }
+
+
+#mainContent #default_mainContent{overflow:hidden; width:100%;}
+#default_mainContent #default_mainContent_T{}
+#default_mainContent #default_mainContent_C{overflow:hidden; width:100%;}
+#default_mainContent #default_mainContent_C #serachBox{margin:30px 0; overflow: hidden; height:40px; padding:10px 0; background:#691bb8;}  
+#default_mainContent #default_mainContent_C #default_lamu{margin:30px 0; overflow: hidden;}
+#default_lamu .default_lamuBox{ overflow: hidden; width: 488px; }
+#default_lamu .default_lamuBox .default_lamuBox_T{ height: 45px; line-height: 45px; color: #fff; font-size: 22px; padding:0  10px; }
+#default_lamu .default_lamuBox .default_lamuBox_T span{ float: right;}
+#default_lamu .default_lamuBox .default_lamuBox_T span a{ color: #fff;}
+#default_lamu .default_lamuBox .default_lamuBox_T span a:hover{ text-decoration:underline;}
+#default_lamu .default_lamuBox .default_lamuBox_T1{ background: #9a1616; }
+#default_lamu .default_lamuBox .default_lamuBox_T2{ background: #fa6800; }
+#default_lamu .default_lamuBox .default_lamuBox_T3{ background: #dc4fad; }
+#default_lamu .default_lamuBox .default_lamuBox_T4{ background: #60a917; }
+#default_lamu .default_lamuBox .default_lamuBox_C{ height: 210px; overflow: hidden; background: #fff; }
+#default_lamu .default_lamuBox .default_lamuBox_C ul{ overflow: hidden; padding: 5px 0;}
+#default_lamu .default_lamuBox .default_lamuBox_C ul li{ overflow-x: hidden; height: 40px; line-height: 40px; padding: 0 10px;}
+#default_lamu .default_lamuBox .default_lamuBox_C ul li:hover{ background: #efefef;}
+#default_lamu .default_lamuBox .default_lamuBox_C ul li span{ float:right; color: #999;}
+
+#default_lamu .default_lamuBox .default_lamuBox_C ul li a { display: block;  color: #333; font-size: 14px;}
+#default_lamu .default_lamuBox .default_lamuBox_C ul li a:hover{ color: #c00;}
+#default_lamu .default_lamuBox .default_lamuBox_B{ }
+#default_mainContent #default_mainContent_B{}
+
+
+#mainContent #lamu_mainContent{overflow:hidden; width:100%;}
+#lamu_mainContent #lamu_mainContent_T{}
+#lamu_mainContent #lamu_mainContent_C{overflow:hidden; width:100%; margin:30px 0; }
+
+#lamu_mainContent_C #lamu_RBox{ float:left; width:270px; height:auto; }
+#lamu_RBox #lamu_RBox_T{}
+#lamu_RBox #lamu_RBox_C{}
+#lamu_RBox_C .lamu_siderBox{}
+#lamu_RBox_C .lamu_siderBox ul{padding:10px 0; overflow: hidden;}
+#lamu_RBox_C .lamu_siderBox ul li{height:65px; line-height:65px; width: 130px; text-align: center; }
+#lamu_RBox_C .lamu_siderBox ul li span{float:right;color:#676767;} 
+#lamu_RBox_C .lamu_siderBox ul li a{ color: #fff; font-size: 20px; display: block; }
+#lamu_RBox_C .lamu_siderBox ul li a:hover{}
+#lamu_RBox_C .lamu_siderBox ul li.lamu_siderBox_link1{ background:#9A1616; }
+#lamu_RBox_C .lamu_siderBox ul li.lamu_siderBox_link2{ background:#F5A930; }
+#lamu_RBox_C .lamu_siderBox ul li.lamu_siderBox_link3{ background:#DC4FAD; }
+#lamu_RBox_C .lamu_siderBox ul li.lamu_siderBox_link4{ background:#00A21C; }
+#lamu_RBox_C .lamu_siderBox ul li.lamu_siderBox_link5{ background:#442358; width: 270px;}
+#lamu_LBox #lamu_RBox_B{}
+
+
+#lamu_mainContent_C #lamu_LBox{ float:right; width:680px; height:auto; overflow: hidden; }
+#lamu_LBox #lamu_LBox_T{}
+#lamu_LBox #lamu_LBox_C{padding:10px 0 0 0;}
+#lamu_LBox_C .lamu_Lnav{height:45x; line-height:45px; background:#fa6800 url(../images/lamu.png) 5px center no-repeat; padding:0 0 0 33px; color: #fff; font-size:18px; font-weight:bold; }
+#lamu_LBox_C .lamu_Lnav a{  font-size:18px; font-weight:bold; color:#fff;}
+#lamu_LBox_C .lamu_Lnav a:hover{ color: #c00;}
+#lamu_LBox_C .lamu_lamuBox{}
+#lamu_LBox_C .lamu_lamuBox .lamu_lamuBox_T{}
+#lamu_LBox_C .lamu_lamuBox .lamu_lamuBox_C{ padding:10px 0 0 0; background: #fff; margin-top: 10px;}
+#lamu_LBox_C .lamu_lamuBox .lamu_lamuBox_C .lamu_lamuBox_title{ height:auto; line-height:180%; font-size:18px; font-weight:bold; text-align:center; padding:0 10px; }
+#lamu_LBox_C .lamu_lamuBox .lamu_lamuBox_C .lamu_lamuBox_author{ color:#676767; font-size:12px; height:25px; 25px; text-align:center;}
+#lamu_LBox_C .lamu_lamuBox .lamu_lamuBox_C .lamu_lamuBox_content{ padding:10px 5px; margin:10px 0 0 0; border-top:1px dashed #ccc; border-bottom:1px dashed #ccc; overflow:hidden; line-height:220%; font-size:14px; color:#464646; }
+#lamu_LBox_C .lamu_lamuBox .lamu_lamuBox_C .lamu_lamuBox_content p{text-indent:2em; font-size: 14px; }
+#lamu_LBox_C .lamu_lamuBox .lamu_lamuBox_C .lamu_lamuBox_content img{}
+#lamu_LBox_C .lamu_lamuBox .lamu_lamuBox_C .lamu_lamuBox_content a{}
+#lamu_LBox_C .lamu_lamuBox .lamu_lamuBox_C .lamu_lamuBox_content a:hover{}
+#lamu_LBox_C .lamu_lamuBox .lamu_lamuBox_C .lamu_lamuBox_other{text-align:center; }
+#lamu_LBox_C .lamu_lamuBox .lamu_lamuBox_B{}
+#lamu_LBox #lamu_LBox_B{}
+
+#lamu_mainContent #lamu_mainContent_B{}
+
+
+#mainContent #list_mainContent{overflow:hidden; width:100%;}
+#list_mainContent #list_mainContent_T{}
+#list_mainContent #list_mainContent_C{overflow:hidden; width:100%; margin:30px 0;}
+#list_mainContent #list_mainContent_C #serachBox{margin:20px 0 30px; overflow: hidden; height:40px; padding:10px 0; background:#fff;}  
+#list_mainContent_C #list_RBox{ float:left; width:270px; height:auto; }
+#list_RBox #list_RBox_T{}
+#list_RBox #list_RBox_C{}
+#list_RBox_C .list_siderBox{}
+#list_RBox_C .list_siderBox ul{padding:10px 0; overflow: hidden;}
+#list_RBox_C .list_siderBox ul li{height:65px; line-height:65px; width: 130px; text-align: center; }
+#list_RBox_C .list_siderBox ul li span{float:right;color:#676767;} 
+#list_RBox_C .list_siderBox ul li a{ color: #fff; font-size: 20px; display: block; }
+#list_RBox_C .list_siderBox ul li a:hover{}
+#list_RBox_C .list_siderBox ul li.list_siderBox_link1{ background:#9A1616; }
+#list_RBox_C .list_siderBox ul li.list_siderBox_link2{ background:#F5A930; }
+#list_RBox_C .list_siderBox ul li.list_siderBox_link3{ background:#DC4FAD; }
+#list_RBox_C .list_siderBox ul li.list_siderBox_link4{ background:#00A21C; }
+#list_RBox_C .list_siderBox ul li.list_siderBox_link5{ background:#442358; width: 270px;}
+#list_LBox #list_RBox_B{}
+
+
+#list_mainContent_C #list_LBox{ float:right; width:680px; height:auto; }
+#list_LBox #list_LBox_T{}
+#list_LBox #list_LBox_C{}
+#list_LBox_C .list_Lnav{ padding:0 ; height:0; line-height:0; display: none;  }
+#list_LBox_C .list_Lnav a{ color:#222;}
+#list_LBox_C .list_Lnav a:hover{ color:#cc0000; text-decoration:none;}
+#list_LBox_C .list_ListBox{}
+#list_LBox_C .list_ListBox .list_ListBox_T{}
+#list_LBox_C .list_ListBox .list_ListBox_C{ padding:10px 0 0 0;}
+#list_LBox_C .list_ListBox .list_ListBox_C .list_ListBox_subNav{ height:45x; line-height:45px; background:#fa6800 url(../images/lamu.png) 5px center no-repeat; padding:0 0 0 33px; color: #fff; font-size:18px; font-weight:bold; }
+#list_LBox_C .list_ListBox .list_ListBox_C .list_ListBox_subNav a{  font-size:18px; font-weight:bold; color:#fff;}
+#list_LBox_C .list_ListBox .list_ListBox_C .list_ListBox_subNav a:hover{ color: #c00;}
+#list_LBox_C .list_ListBox .list_ListBox_C .list_ListBox_newsList{ margin: 10px 0; padding:0 0 0 20px; overflow:hidden;  background: #fff;}
+#list_LBox_C .list_ListBox .list_ListBox_C .list_ListBox_newsList ul{padding:0; background:url(../images/list_li_bg.gif) 0 0 repeat;}
+#list_LBox_C .list_ListBox .list_ListBox_C .list_ListBox_newsList ul li{height:40px; line-height:40px; background:url(../images/dot1.gif) left center no-repeat; padding:0px 5px 0px 10px; overflow:hidden; }
+#list_LBox_C .list_ListBox .list_ListBox_C .list_ListBox_newsList ul li span{float:right;color:#676767;}
+#list_LBox_C .list_ListBox .list_ListBox_C .list_ListBox_newsList ul li a{ font-size: 14px;}
+#list_LBox_C .list_ListBox .list_ListBox_C .list_ListBox_newsList ul li a:hover{text-decoration: underline;}
+#list_LBox_C .list_ListBox .list_ListBox_C .list_ListBox_pageNum{ height:45px; line-height:45px; text-align:center; background: #60a917; color: #fff; }
+#list_LBox_C .list_ListBox .list_ListBox_B{}
+#list_LBox #list_LBox_B{}
+
+#list_mainContent #list_mainContent_B{}
+
+
+#mainContent #info_mainContent{overflow:hidden; width:100%; }
+#info_mainContent #info_mainContent_T{}
+#info_mainContent #info_mainContent_C{overflow:hidden; width:100%;margin:30px 0;}
+#info_mainContent #info_mainContent_C #serachBox{margin:20px 0 30px; overflow: hidden; height:40px; padding:10px 0; background:#fff;}  
+#info_mainContent_C #info_RBox{ float:left; width:270px; height:auto; overflow: hidden;}
+#info_RBox #list_RBox_T{}
+#info_RBox #list_RBox_C{}
+#info_RBox_C .info_siderBox{}
+#info_RBox_C .info_siderBox ul{padding:10px 0;}
+#info_RBox_C .info_siderBox ul li{height:65px; line-height:65px; width: 130px; text-align: center; }
+#info_RBox_C .info_siderBox ul li span{float:right;color:#676767;} 
+#info_RBox_C .info_siderBox ul li a{ color: #fff; font-size: 20px; display: block; }
+#info_RBox_C .info_siderBox ul li a:hover{}
+#info_RBox_C .info_siderBox ul li.info_siderBox_link1{ background:#9A1616; }
+#info_RBox_C .info_siderBox ul li.info_siderBox_link2{ background:#F5A930; }
+#info_RBox_C .info_siderBox ul li.info_siderBox_link3{ background:#DC4FAD; }
+#info_RBox_C .info_siderBox ul li.info_siderBox_link4{ background:#00A21C; }
+#info_RBox_C .info_siderBox ul li.info_siderBox_link5{ background:#442358; width: 270px;}
+#info_LBox #info_RBox_B{}
+
+
+#info_mainContent_C #info_LBox{ float:right; width:680px; height:auto; overflow: hidden; }
+#info_LBox #info_LBox_T{}
+#info_LBox #info_LBox_C{padding:10px 0 0 0;}
+#info_LBox_C .info_Lnav{height:45x; line-height:45px; background:#fa6800 url(../images/lamu.png) 5px center no-repeat; padding:0 0 0 33px; color: #fff; font-size:18px; font-weight:bold; }
+#info_LBox_C .info_Lnav a{  font-size:18px; font-weight:bold; color:#fff;}
+#info_LBox_C .info_Lnav a:hover{ color: #c00;}
+#info_LBox_C .info_InfoBox{}
+#info_LBox_C .info_InfoBox .info_InfoBox_T{}
+#info_LBox_C .info_InfoBox .info_InfoBox_C{ padding:10px 0 0 0; background: #fff; margin-top: 10px;}
+#info_LBox_C .info_InfoBox .info_InfoBox_C .info_InfoBox_title{ height:auto; line-height:180%; font-size:18px; font-weight:bold; text-align:center; padding:0 10px; }
+#info_LBox_C .info_InfoBox .info_InfoBox_C .info_InfoBox_author{ color:#676767; font-size:12px; height:25px; 25px; text-align:center;}
+#info_LBox_C .info_InfoBox .info_InfoBox_C .info_InfoBox_content{ padding:10px 5px; margin:10px 0 0 0; border-top:1px dashed #ccc; border-bottom:1px dashed #ccc; overflow:hidden; line-height:220%; font-size:14px; color:#464646; }
+#info_LBox_C .info_InfoBox .info_InfoBox_C .info_InfoBox_content p{ font-size: 14px;}
+#info_LBox_C .info_InfoBox .info_InfoBox_C .info_InfoBox_content img{}
+#info_LBox_C .info_InfoBox .info_InfoBox_C .info_InfoBox_content a{}
+#info_LBox_C .info_InfoBox .info_InfoBox_C .info_InfoBox_content a:hover{}
+#info_LBox_C .info_InfoBox .info_InfoBox_C .info_InfoBox_other{text-align:center; }
+#info_LBox_C .info_InfoBox .info_InfoBox_B{}
+#info_LBox #info_LBox_B{}
+
+#info_mainContent #info_mainContent_B{}
+
+
+#mainContent #search_mainContent{overflow:hidden; width:100%;}
+#search_mainContent #search_mainContent_T{}
+#search_mainContent #search_mainContent_C{overflow:hidden; width:100%;}
+#search_mainContent #search_mainContent_B{}

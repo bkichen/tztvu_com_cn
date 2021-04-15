@@ -1,0 +1,37 @@
+A {
+	TEXT-DECORATION: none
+}
+
+
+/*
+*/
+A.a03:link {
+	COLOR: #014689
+}
+A.a03:visited {
+	COLOR: #014689
+}
+A.a03:hover {
+	COLOR: #ff6600
+}
+A.a03:active {
+	COLOR: #014689
+}
+/*
+*/
+
+
+TD {
+	FONT-SIZE: 12px; LINE-HEIGHT: 23px; FONT-FAMILY: 宋体; COLOR: #014689
+}
+red_small {font-size: 12px; color: #FF0000;}
+
+
+
+.s_td { background-image:url(../images/ad_bg1.gif); width:98%}
+.lft_td {  background-color:#D4EEC5; width:100%}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+

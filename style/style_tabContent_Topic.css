@@ -1,0 +1,74 @@
+#index_tabContent{text-align:left; width:980px; margin:10px auto; padding:10px; overflow:hidden; box-shadow:0 0 10px #ccc; -webkit-box-shadow:0 0 10px #ccc;-moz-box-shadow:0 0 10px #ccc;filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=5); height:250px; }
+#index_tabContent_menu{ float:left; width:192px; position:absolute; z-index:2; display:inline;_margin-left:-23px;}
+#index_tabContent_menu ul{}
+#index_tabContent_menu li{ height:50px; line-height:50px; text-align:center; }
+#index_tabContent_menu a{color:#333; font-size:12pt; display:block; border-right:5px solid #efefef;}
+#index_tabContent_menu a:hover,#index_tabContent_menu .on a{ color:#ff6600;
+ height:50px;
+ line-height:50px;
+ 
+ border-right:5px solid #ff6600;
+ background:#efefef;
+}
+#index_tabContent_content{
+ z-index: 1;
+ float:right;
+ width:775px;
+ margin-left:24px;
+ border-left:1px solid #ccc;
+ padding:0 0 0 15px;
+ height:250px;
+ overflow:hidden;
+ position:relative;
+ }
+#index_tabContent_content h1{
+ font-size:16px; 
+ font-weight:normal; 
+ margin:0; 
+ padding:0; 
+ margin-bottom:8px}
+#index_tabContent_content ul{
+ list-style:none; 
+ margin:0; 
+ padding:0}
+#index_tabContent_content li{padding:3px}
+#index_tabContent_content p{ line-height:30px; }
+#copy{clear:both}
+
+@media screen and (min-width: 1440px) {
+   	#index_tabContent{text-align:left; width:1180px; margin:10px auto; padding:10px; overflow:hidden; box-shadow:0 0 10px #ccc; -webkit-box-shadow:0 0 10px #ccc;-moz-box-shadow:0 0 10px #ccc;filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=5); height:250px; }
+	#index_tabContent_menu{ float:left; width:192px; position:absolute; z-index:2; display:inline;_margin-left:-23px;}
+	#index_tabContent_menu ul{}
+	#index_tabContent_menu li{ height:50px; line-height:50px; text-align:center; }
+	#index_tabContent_menu a{color:#333; font-size:12pt; display:block; border-right:5px solid #efefef;}
+	#index_tabContent_menu a:hover,#index_tabContent_menu .on a{ color:#ff6600;
+	 height:50px;
+	 line-height:50px;
+
+	 border-right:5px solid #ff6600;
+	 background:#efefef;
+	}
+	#index_tabContent_content{
+	 z-index: 1;
+	 float:right;
+	 width:975px;
+	 margin-left:24px;
+	 border-left:1px solid #ccc;
+	 padding:0 0 0 15px;
+	 height:250px;
+	 overflow:hidden;
+	 position:relative;
+	 }
+	#index_tabContent_content h1{
+	 font-size:16px; 
+	 font-weight:normal; 
+	 margin:0; 
+	 padding:0; 
+	 margin-bottom:8px}
+	#index_tabContent_content ul{
+	 list-style:none; 
+	 margin:0; 
+	 padding:0}
+	#index_tabContent_content li{padding:3px}
+	#index_tabContent_content p{ line-height:30px; }
+}

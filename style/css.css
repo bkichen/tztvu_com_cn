@@ -1,0 +1,29 @@
+
+
+body{ background-color:#9a0000; margin:0 auto;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+.talbe1{ width::980px; background:url(../images/topc.gif); height:31px; margin-top:7px;}
+.tablet{ border-top:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;}
+.tableb{ border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9; height:190px; width:100%;}
+.talbe2{background:url(../images/bannerbg.jpg); height:201px;}
+.talbe3{background:url(../images/menubg.gif); height:35px;}
+.talbe4{width::980px; background-color:#ffffff;}
+.tablepic{background-image:url(../images/puxwbg.gif); height:231px; padding:28px 9px 5px 9px;}
+.talbegzdt2{background-image:url(../images/gzdtbg2.gif); background-repeat:repeat-y; border-bottom:1px solid #cccccc;}
+.listbg{background-image:url(../images/listbg.gif); background-repeat:repeat-y; border-bottom:1px solid #cccccc;}
+.infobg{background-image:url(../images/infobg.gif); background-repeat:repeat-y; border-bottom:1px solid #cccccc;}
+.talbegzdt{background-image:url(../images/gzdtbg.gif); background-repeat:no-repeat;}
+.listtalbegzdt{background-image:url(../images/listgzdtbg.gif); background-repeat:no-repeat;}
+.infotalbegzdt{background-image:url(../images/infogzdtbg.gif); background-repeat:no-repeat;}
+.talbegzdt3{background-image:url(../images/gzdtbg3.gif); background-repeat:no-repeat;}
+.talbetzgg{background-image:url(../images/xxggbg.gif); background-repeat:no-repeat;}
+.talbetzgg2{background-image:url(../images/xxggbg2.gif); background-repeat:no-repeat;}
+.title4{ padding-left:15px; padding-top:5px; color:#990000; font-weight:bold; font-size:14px;}
+
+.title1{ padding-left:40px; padding-top:5px; color:#990000; font-weight:bold; font-size:14px;}
+.title2{ padding-left:33px; height:28px; line-height:33px;color:#ffffff; font-weight:bold; font-size:14px;}
+.title3{ padding-left:25px; color:#990000; font-weight:bold; font-size:14px; height:27px; line-height:27px;}
+.yqlj{ width:964px; background-image:url(../images/yqlsbg.gif); background-repeat:repeat-x; border:1px #d9d9d9 solid; height:69px;}
+
+.wc{ width:980px; text-align:center;}

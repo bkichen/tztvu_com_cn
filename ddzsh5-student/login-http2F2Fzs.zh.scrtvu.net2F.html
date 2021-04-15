@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>登录</title>
+        
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no, email=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+
+
+
+<link rel="stylesheet" href="common/css/weui.min.css">
+<link rel="stylesheet" href="common/css/jquery-weui.css">
+<link rel="stylesheet" href="common/css/index.css">
+    <script type="text/javascript" src="/js/kb.js"></script></head>
+    
+    <body>
+        <div class="login">
+            <div>
+                <div class="login_logo"></div>
+                <div class="login_body">
+                    <form action="/ddzsh5-student/login.do?login=" method="post">
+                        <div class="weui-cells_form login_form">
+                            <div class="weui-cell username_cell">
+                                <div class="weui-cell__bd">
+                                    <input class="weui-input" name="userKey" placeholder="证件号（身份证号码）">
+                                </div>
+                            </div>
+                            <div class="weui-cell password_cell">
+                                <div class="weui-cell__bd">
+                                    <input class="weui-input" type="password" name="password" placeholder="密码（身份证号码后6位）">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="service" value="http://zs.zh.scrtvu.net/ddzsh5-student/index.do;jsessionid=84o1gtz5uxulen2jl3k552e2">
+                        <input type="hidden" name="teachingSiteUUID" value="">
+                        <input type="hidden" name="personUUID" value="">
+                        <input type="hidden" name="batchCode" value="2021031">
+                        <input type="hidden" name="currentBatchCode" value="2021031">
+                        <input type="submit" class="weui-btn weui-btn_primary login_button" value="登录">
+                        <input type="button" class="weui-btn btn_primary_ghost register_button" id="register" value="注册">
+                    </form>
+                </div>
+            </div>
+            
+<div class="weui-footer weui-footer_fixed-bottom" style="position: absolute;">
+    <p class="weui-footer__text">Copyright © 2021 联奕科技有限公司.</p>
+    <p class="weui-footer__text">All Rights Reserved.</p>
+</div>
+        </div>
+        
+<script src="common/js/jquery-2.1.4.js"></script>
+<script src="common/js/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="common/js/jquery-weui.js"></script>
+<script src="common/js/jquery-weui-listview.js"></script>
+<script src="common/js/loader.js"></script>
+
+<script src="common/js/zepto.js"></script>
+        <script type="text/javascript">
+            $(function(){
+            	var winHeight = $(window).height(); 
+            	$(window).resize(function() { 
+            		var thisHeight = $(this).height();
+            		var keyboardHeight = thisHeight - winHeight;
+            		$(".weui-footer").css({ 'bottom': keyboardHeight + 'px' });
+            	});
+                $.djs.call({ctxPath: "/ddzsh5-student", js: "/ui/login/index.js"}, function(){
+                    this.init('');
+                });
+            });
+        </script>
+    </body>
+
+</html>

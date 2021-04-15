@@ -1,0 +1,30 @@
+.treenewsstatistic_listFrame
+{
+    color:black;
+    FONT-FAMILY:宋体;
+    BACKGROUND-COLOR:white;
+    FONT-SIZE:9pt;
+}
+.treenewsstatistic_listTitle
+{
+    FONT-FAMILY:宋体;
+    COLOR:black;
+    TEXT-ALIGN:center;
+    BACKGROUND-COLOR:#BDDBF7;
+    FONT-SIZE:9pt;
+    height:14pt;
+}
+.treenewsstatistic_listContentBright
+{
+    FONT-FAMILY:宋体;
+    COLOR:#000000;
+    BACKGROUND-COLOR:#EFF7FE;
+    FONT-SIZE:9pt;
+}
+.treenewsstatistic_listContentDark
+{
+    FONT-FAMILY:宋体;
+    COLOR:#000000;
+    BACKGROUND-COLOR:#F6F6F6;
+    FONT-SIZE:9pt;
+}

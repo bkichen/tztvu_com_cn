@@ -1,0 +1,18 @@
+sup {
+    position:absolute;
+    margin-top:-45px;
+    margin-left:50px;
+    width:22px;
+    height:18px;
+    background-image:url(images/new30.gif);
+    background-repeat: no-repeat;}
+.tips{border:1px solid #FF7F01; 
+    background:#ffffd9;  
+    padding:5px; 
+    overflow:hidden; 
+    line-height:15px; 
+    font-size:12px;
+     position:absolute; 
+     margin:70px 0 0 -213px; 
+     font-family:"宋体";}
+.tips:hover{color:#f00;}

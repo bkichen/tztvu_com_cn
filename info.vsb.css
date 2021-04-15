@@ -1,0 +1,144 @@
+/* 以下样式不用修改 开始*/
+    /* 默认ul 无需修改 */
+    .nav_menustyle_1_1 ul
+    {
+        list-style-type:none;
+        padding:0px; 
+        margin:0px;
+        z-index:999;}
+    /* 默认li 无需修改 */
+    .nav_menustyle_1_1 li
+    {
+        float:left;
+        text-align:center;
+        position:relative;}
+    .nav_menustyle_1_1 li{
+        color:#fff; /*鼠标移上颜色*/
+        background:#0A356F;}
+    /* 2级以上 li 无需修改 */
+    .nav_menustyle_1_1 ul li ul li
+    {
+        z-index:100;}
+    /* 3级以上默认ul 无需修改 */
+    .nav_menustyle_1_1 ul li ul li ul
+    {
+        left:100%;
+        top:0px;}
+    /* IE6下的table样式 无需修改 */
+    .nav_menustyle_1_1 table 
+    {
+        position:absolute; 
+        left:0px;
+        border-collapse:collapse; 
+        border-spacing:0; 
+        z-index:100;}   
+    .nav_menustyle_1_1 table table
+    {
+        top:0px;}
+    .nav_menustyle_1_1 td 
+    {
+        padding: 0;}   
+    /* 共6级导航子菜单打开关闭控制 无需修改 */
+    .nav_menustyle_1_1 li ul,
+    .nav_menustyle_1_1 li:hover ul li ul,
+    .nav_menustyle_1_1 li:hover ul li:hover ul li ul,
+    .nav_menustyle_1_1 li:hover ul li:hover ul li:hover ul li ul,
+    .nav_menustyle_1_1 li:hover ul li:hover ul li:hover ul li:hover ul li ul
+    {
+        display:none;}
+    .nav_menustyle_1_1 li a:hover ul li ul,
+    .nav_menustyle_1_1 li a:hover ul li a:hover ul li ul,
+    .nav_menustyle_1_1 li a:hover ul li a:hover ul li a:hover ul li ul,
+    .nav_menustyle_1_1 li a:hover ul li a:hover ul li a:hover ul li a:hover ul li ul
+    {
+        visibility:hidden;}
+    .nav_menustyle_1_1 li a:hover ul,
+    .nav_menustyle_1_1 li:hover ul,
+    .nav_menustyle_1_1 li:hover ul li:hover ul,
+    .nav_menustyle_1_1 li:hover ul li:hover ul li:hover ul,
+    .nav_menustyle_1_1 li:hover ul li:hover ul li:hover ul li:hover ul,
+    .nav_menustyle_1_1 li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul    
+    {
+        display:block;
+        position:absolute;}
+    .nav_menustyle_1_1 li a:hover ul li a:hover ul,
+    .nav_menustyle_1_1 li a:hover ul li a:hover ul li a:hover ul,
+    .nav_menustyle_1_1 li a:hover ul li a:hover ul li a:hover ul li a:hover ul,
+    .nav_menustyle_1_1 li a:hover ul li a:hover ul li a:hover ul li a:hover ul li a:hover ul
+    {
+        visibility:visible;}
+    /* 默认a属性 无需修改 */
+    .nav_menustyle_1_1 a
+    {
+        display:block;
+        text-decoration:none;
+        white-space:nowrap;}
+/* 以上样式不用修改 结束*/
+/* 默认链接样式 可以修改默认的 字体、颜色、宽度、高度、背景色、边框等*/
+.nav_menustyle_1_1 a
+{
+    width:100px;         /*菜单宽度*/
+    height:35px;        /*菜单高度*/
+    line-height:35px;   /*字体高度, 可设为菜单高度*/
+    /*font-size:14px;*/     /*字体大小*/
+    color:#fff;         /*字体颜色*/
+    background:#0A356F; /*背景色*/
+    border:none;  /*边框颜色*/
+    border-width:0px;}
+
+@media screen and (min-width: 1440px) {
+    .nav_menustyle_1_1 a
+    {
+        width:120px;         /*菜单宽度*/
+        height:50px;        /*菜单高度*/
+        line-height:50px;   /*字体高度, 可设为菜单高度*/
+        font-size:12pt;     /*字体大小*/
+        color:#fff;         /*字体颜色*/
+        background:#0A356F; /*背景色*/
+        border:none;  /*边框颜色*/
+        border-width:0px;}
+}
+/* 默认hover链接样式 可以设置默认的鼠标移上样式 */
+.nav_menustyle_1_1 a:hover
+{
+    color:#fff; /*鼠标移上颜色*/
+    background:#2687eb;}
+/* IE6兼容性代码，在IE6下起效， 必须根据菜单高宽进行设定 */
+.nav_menustyle_1_1 table 
+{
+    top:36px;}   
+.nav_menustyle_1_1 table table
+{
+    left:101px;} 
+/*当前一级栏目背景着色*/
+.nav_menustyle_1_1 ul li a.isFocus{
+    color:#fff; /*鼠标移上颜色*/
+    background:#2687eb;}
+
+.nav_menustyle_1_1 ul  li.mainMenu:hover a{
+    color:#fff; /*鼠标移上颜色*/
+    background:#2687eb;}
+  
+/* 2级以上链接样式 可以修改2级以上菜单的 字体、颜色、宽度、高度、背景色、边框等*/
+.nav_menustyle_1_1 ul li ul li a
+{
+    color:#fff; /*鼠标移上颜色*/
+    background:#2687eb;}
+/* 2级以上hover链接样式 可以修改2级以上菜单的鼠标移上样式*/
+.nav_menustyle_1_1 ul  li.mainMenu ul.subMenu_secChild li a:hover
+{
+    color:#fff; /*鼠标移上颜色*/
+    background:#0A356F;}
+/* 3级以上链接样式 可以修改3级以上菜单的 字体、颜色、宽度、高度、背景色、边框等*/
+.nav_menustyle_1_1 ul li ul li ul li a
+{}
+/* 3级以上hover链接样式 可以修改3级以上菜单的鼠标移上样式*/
+.nav_menustyle_1_1 ul li ul li ul li a:hover
+{}
+/*二级子菜单在IE8兼容核心下问题处理*/
+.nav_menustyle_1_1 ul.subMenu_secChild li{ _display:block;}
+.nav_menustyle_1_1:hover{background:#2687eb;}
+.nav_menustyle_1_1 ul.subMenu_secChild{width:240px;background:#2687eb;}
+.nav_menustyle_1_1 ul.subMenu_secChild li a{ width:120px; float: left;}
+.splitflagstyle50669{ color: #222222 ;}
+

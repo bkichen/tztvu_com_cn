@@ -1,0 +1,78 @@
+*
+{
+   font-family: "微软雅黑", Tahoma;
+   font-size:10pt;
+}
+
+body
+{
+    margin:0 auto;
+}
+.login
+{
+    height:75px; width:350px; max-height:75px; max-width:350px; padding:5px 5px 2px 0px;
+}
+.line_div
+{
+    height:30px;width:345px; margin-bottom:7px; margin-left:3px; float:left;
+}
+.input_div
+{
+     height:30px; width:162px; padding:0px 0px 0px 0px; margin:0px 0px 0px 0px; float:left;
+
+}
+.checkimg
+{
+    margin-top:0px; cursor:pointer;width:55px; height:25px; line-height:20px;position:absolute;top:42px;left:85px;
+}
+.iconlabel
+{
+      display:block;
+      width:20px;
+      height:24px;
+      float:left;
+       border-bottom:1px solid #ddd;
+       border-top:1px solid #ddd;
+       border-left:1px solid #ddd;
+}
+.input_login
+{
+
+     float:left;
+      width:125px;
+      height:20px;
+      padding:2px 0px 2px 0px;
+      margin:0px 0px;
+       border-bottom:1px solid #ddd;
+       border-top:1px solid #ddd;
+       border-right:1px solid #ddd;
+       border-left:none;
+}
+.input_divcheckcode
+{
+   height:30px; width:155px; padding:0px 0px 0px 0px; margin:0px 0px 0px 0px; float:left;
+
+}
+.input_checkcode
+{
+ 
+     float:left;
+      width:70px;
+      height:20px;
+      padding:2px 0px 2px 0px;
+      margin:0px auto;
+      border:1px solid #ddd;
+}
+
+.input_divbutton
+{
+    height:30px; width:170px; padding:0px 0px 0px 0px; margin:0px 0px 0px 0px; float:left;
+
+}
+.btn
+{
+      width:150px;height:25px;padding: 2px 10px !important;background-color:#0E5EBE;
+      display:inline-block; border:0; color:#fff;vertical-align:middle;
+      cursor:pointer;
+}
+

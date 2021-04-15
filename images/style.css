@@ -1,0 +1,16 @@
+
+
+body{ margin:0 auto; font-size:12px; background:url(bg1.gif); background-repeat:repeat-x;}
+a{ text-decoration:none; color:#cc0000; font:Arial, Helvetica, sans-serif;  font-size:13px;}
+a hover{ text-decoration:none; color:#cc0000;  font:Arial, Helvetica, sans-serif;  font-size:13px;}
+.graytable{ border:1px #cbccce solid;}
+.paddl5{ padding-left:5px;}
+.paddr5{ padding-right:5px;}
+.paddlr15{ padding-left:5px; padding-right:30px;}
+.padd10{ padding:10px;}
+.paddl40{ padding-left:40px;}
+.title1{ font-size:14px; color:#06381d; font-weight:bold;}
+.title2{ font-size:12px; color:#222222; font-weight:bold;}
+.paddl30{ padding-left:30px; text-align:left;}
+.paddr8{ padding-right:8px; text-align:right;}
+.sitegroup( background:url(dtxx.gif);  )

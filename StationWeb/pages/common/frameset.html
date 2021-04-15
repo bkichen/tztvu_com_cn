@@ -1,0 +1,1720 @@
+
+
+
+
+
+
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>教学点平台-中央广播电视大学教学管理系统</title>
+	<link href="../../../SRTVUWeb/css/main.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/js/kb.js"></script></head>
+<script type="text/javascript" src="../../../StuRTVUWeb/javascripts/jquery.js"></script>
+<script src="../../../SRTVUWeb/javascripts/validate.js" language="JavaScript"></script>
+<script type="text/javascript">
+
+            $(document).ready(function() {
+
+    $("#imgObj").hide();
+    $("#change").hide();
+   $("#veryCode").click(function(){
+      $("#imgObj").show();
+      $("#change").show();
+      $("#veryCode").attr("value","");
+   });
+
+});
+function changeImg(){
+    var imgSrc = $("#imgObj");
+    var src = imgSrc.attr("src");
+
+    imgSrc.attr("src",chgUrl(src));
+}
+//时锟斤拷锟\uFFFD
+//为锟斤拷使每锟斤拷锟斤拷锟酵计拷锟揭伙拷拢锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷{锟斤拷妫拷锟斤拷锟斤拷锟揭拷锟斤拷锟绞憋拷锟斤拷
+function chgUrl(url){
+    var timestamp = (new Date()).valueOf();
+    url = url.substring(0,17);
+
+    if((url.indexOf("&")>=0)){
+        url = url + "锟斤拷tamp=" + timestamp;
+    }else{
+        url = url + "?timestamp=" + timestamp;
+    }
+
+
+    return url;
+}
+
+function isRightCode(){
+
+    var code = $("#veryCode").attr("value");
+    code = "c=" + code;
+    $.ajax({
+        type:"POST",
+        url:"resultServlet",
+        data:code,
+        success:callback
+    });
+}
+$("#veryCode").click(function(){
+      $("#imgObj").hide();
+      $("#change").hide();
+      $("#veryCode").attr("value","");
+   });
+function callback(data){
+
+
+    if(data!='right')
+    {
+       alert(data);
+
+    }
+
+    else
+{
+	$("#veryCode").attr("value","请点击");
+        $("#form1").submit();
+}
+}
+        </script>
+<script language="JavaScript">
+function check(temp,t1){
+    var errString=isEmpty("教学点必须选择！\n",temp.value);
+    if(errString!=""){alert(errString);return false;}
+var t=eval("form1.j_username");
+t.value=t1.value+"_"+temp.value;
+//alert("用户名是:"+t.value);
+    return true;
+}
+function checkschool(txtschool,station,t1){
+	if(isNothing(txtschool.value)&&station.value==""){
+		alert("请输入学校代码或选择教学点！\n");
+		return false;
+	}
+	if(isNothing(txtschool.value)&&station.value!=""){
+		var t=eval("form1.j_username");
+		t.value=t1.value+"_"+station.value;
+                var tt=isRightCode();
+                return true;
+	}
+	if(txtschool.value.length!=7){
+		alert("输入学校代码错误，教学点学校代码为7位！\n");
+		return false;
+	}
+	//都不为空，以输入学校代码为准
+	var t2=eval("form1.j_username");
+        t2.value=t1.value+"_"+txtschool.value;
+        var tt=isRightCode();
+}
+</script>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background="/StationWeb/images/login/login_pic_new.jpg">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+   <tr>
+    <td width="100%" height="345"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="37%" height="19"></td>
+    <td width="63%" rowspan="10">
+
+     <form method="post" action="j_security_check" id="form1" name="form1">
+   <table width="100%" border="0" style="font-family: arial, helvetica; font-size: 12px;">
+      <!--显示内容表头-->
+      
+      <tr>
+        <td height="30" align="right" width="40%">用户名:</td>
+        <td align="left"> <input type="text" maxlength="20" name="j_username_temp" size="20">
+	<input type="hidden" name="j_username"></td>
+      </tr>
+       <tr>
+        <td height="30" align="right" width="40%">密  码:</td>
+        <td align="left"> <input type="password" maxlength="20" name="j_password" size="20"></td>
+        </tr>
+       <tr>
+		<td height="30" align="right" width="40%">学校代码:</td>
+		<td align="left"><input type="text" maxlength="7" name="txtschool" size="20"></td>
+       </tr>
+       <tr>
+        <td height="30" align="right" width="40%">教学点:</td>
+        <td align="left">
+             <select name="subschool">
+  <option value="">请选择</option>
+
+  <option value="5100000">
+   5100000 江苏电大直属学院直属部
+  </option>
+
+
+  <option value="5100002">
+   5100002 校内班
+  </option>
+
+
+  <option value="5100003">
+   5100003 崇州教师进修校
+  </option>
+
+
+  <option value="5100004">
+   5100004 江苏电大军民融合邛崃教学点
+  </option>
+
+
+  <option value="5100005">
+   5100005 江苏电大军民融合师古教学点
+  </option>
+
+
+  <option value="5100006">
+   5100006 江苏电大直属学院城铁一分院
+  </option>
+
+
+  <option value="5100007">
+   5100007 江苏电大直属学院城铁二分院
+  </option>
+
+
+  <option value="5100008">
+   5100008 江苏电大直属学院城铁三分院
+  </option>
+
+
+  <option value="5100009">
+   5100009 江苏电大直属学院城铁四分院
+  </option>
+
+
+  <option value="5100010">
+   5100010 天府新区航空旅游职业学院
+  </option>
+
+
+  <option value="5100011">
+   5100011 江苏华新现代职业学院学习中心
+  </option>
+
+
+  <option value="5100012">
+   5100012 江苏广播电视大学教学中心学习中心
+  </option>
+
+
+  <option value="5100046">
+   5100046 龙泉航天校
+  </option>
+
+
+  <option value="5100053">
+   5100053 墨池学院
+  </option>
+
+
+  <option value="5100054">
+   5100054 江苏电大直属学院温江分院
+  </option>
+
+
+  <option value="5100055">
+   5100055 温江教师进修班
+  </option>
+
+
+  <option value="5100056">
+   5100056 郫县教师进修班
+  </option>
+
+
+  <option value="5100057">
+   5100057 江苏电大直属学院新津成人中专校
+  </option>
+
+
+  <option value="5100058">
+   5100058 成都大学都江分部
+  </option>
+
+
+  <option value="5100059">
+   5100059 金堂
+  </option>
+
+
+  <option value="5100060">
+   5100060 青羊
+  </option>
+
+
+  <option value="5100061">
+   5100061 金牛
+  </option>
+
+
+  <option value="5100062">
+   5100062 武侯
+  </option>
+
+
+  <option value="5100063">
+   5100063 成华
+  </option>
+
+
+  <option value="5100064">
+   5100064 都江堰
+  </option>
+
+
+  <option value="5100065">
+   5100065 新都
+  </option>
+
+
+  <option value="5100066">
+   5100066 彭县
+  </option>
+
+
+  <option value="5100067">
+   5100067 江苏电大直属学院犀浦分院
+  </option>
+
+
+  <option value="5100068">
+   5100068 江苏电大直属学院新都分院
+  </option>
+
+
+  <option value="5100069">
+   5100069 江苏电大直属学院省电信分校
+  </option>
+
+
+  <option value="5100070">
+   5100070 江苏电大直属学院成都中医药大学管理系
+  </option>
+
+
+  <option value="5100071">
+   5100071 江苏电大直属学院华西分院
+  </option>
+
+
+  <option value="5100072">
+   5100072 江苏电大直属学院华阳教学点
+  </option>
+
+
+  <option value="5100073">
+   5100073 江苏电大直属学院人才分院
+  </option>
+
+
+  <option value="5100074">
+   5100074 江苏电大直属学院棠湖分校
+  </option>
+
+
+  <option value="5100075">
+   5100075 江苏电大直属学院大邑教学点
+  </option>
+
+
+  <option value="5100076">
+   5100076 江苏电大直属学院郫县行政校
+  </option>
+
+
+  <option value="5100077">
+   5100077 江苏电大直属学院科兴分校
+  </option>
+
+
+  <option value="5100078">
+   5100078 江苏电大直属学院工商管理分校
+  </option>
+
+
+  <option value="5100079">
+   5100079 江苏电大直属学院崇州行政校
+  </option>
+
+
+  <option value="5100080">
+   5100080 江苏电大直属学院龙泉分院
+  </option>
+
+
+  <option value="5100081">
+   5100081 江苏电大直属学院邛来行政校
+  </option>
+
+
+  <option value="5100082">
+   5100082 江苏电大直属学院继续教育中心分院
+  </option>
+
+
+  <option value="5100083">
+   5100083 江苏电大直属学院黄田坝教学点
+  </option>
+
+
+  <option value="5100084">
+   5100084 江苏电大直属学院江苏水利职业技术学院
+  </option>
+
+
+  <option value="5100085">
+   5100085 江苏电大直属学院戴氏英语分院
+  </option>
+
+
+  <option value="5100088">
+   5100088 江苏电大直属学院江苏机电技术学校
+  </option>
+
+
+  <option value="5100091">
+   5100091 成都交通学校
+  </option>
+
+
+  <option value="5100092">
+   5100092 成都市公共交通职业中学
+  </option>
+
+
+  <option value="5100093">
+   5100093 江苏电大直属学院遂宁市行政学院
+  </option>
+
+
+  <option value="5100094">
+   5100094 江苏电大直属学院执讯分院
+  </option>
+
+
+  <option value="5100095">
+   5100095 江苏华欣职业培训学校
+  </option>
+
+
+  <option value="5100096">
+   5100096 江苏电大直属高新学院
+  </option>
+
+
+  <option value="5100098">
+   5100098 江苏电大直属学院蒲江教学点
+  </option>
+
+
+  <option value="5100100">
+   5100100 成都电大工作站
+  </option>
+
+
+  <option value="5100101">
+   5100101 成都电大工作站
+  </option>
+
+
+  <option value="5100200">
+   5100200 省级机关电大直属部
+  </option>
+
+
+  <option value="5100201">
+   5100201 锦江
+  </option>
+
+
+  <option value="5100202">
+   5100202 青羊区
+  </option>
+
+
+  <option value="5100203">
+   5100203 江苏省级机关电大机关党校教学点
+  </option>
+
+
+  <option value="5100204">
+   5100204 江苏省级机关电大城北教学点
+  </option>
+
+
+  <option value="5100205">
+   5100205 江苏省级机关电大高新教学点
+  </option>
+
+
+  <option value="5100206">
+   5100206 江苏省级机关电大工商分院
+  </option>
+
+
+  <option value="5100207">
+   5100207 江苏省级机关电大政治 学院
+  </option>
+
+
+  <option value="5100208">
+   5100208 江苏电大直属青羊学院
+  </option>
+
+
+  <option value="5100209">
+   5100209 江苏电大直属锦江学院
+  </option>
+
+
+  <option value="5100210">
+   5100210 江苏电大直属金牛学院
+  </option>
+
+
+  <option value="5100211">
+   5100211 江苏电大直属成华学院
+  </option>
+
+
+  <option value="5100212">
+   5100212 江苏电大直属武侯学院
+  </option>
+
+
+  <option value="5100300">
+   5100300 江苏电大直属学院城铁分院
+  </option>
+
+
+  <option value="5100400">
+   5100400 德阳广播电视大学直属部
+  </option>
+
+
+  <option value="5100403">
+   5100403 德阳电大什邡工作站
+  </option>
+
+
+  <option value="5100404">
+   5100404 德阳广播电视大学广汉工作站
+  </option>
+
+
+  <option value="5100405">
+   5100405 德阳广播电视大学绵竹工作站
+  </option>
+
+
+  <option value="5100406">
+   5100406 德阳广播电视大学中江分校
+  </option>
+
+
+  <option value="5100407">
+   5100407 德阳广播电视大学罗江工作站
+  </option>
+
+
+  <option value="5100408">
+   5100408 德阳广播电视大学旌阳工作站
+  </option>
+
+
+  <option value="5100500">
+   5100500 绵阳广播电视大学直属部
+  </option>
+
+
+  <option value="5100503">
+   5100503 绵阳广播电视大学江油分校
+  </option>
+
+
+  <option value="5100506">
+   5100506 绵阳广播电视大学平武
+  </option>
+
+
+  <option value="5100507">
+   5100507 北川
+  </option>
+
+
+  <option value="5100508">
+   5100508 绵阳广播电视大学三台分校
+  </option>
+
+
+  <option value="5100509">
+   5100509 绵阳广播电视大学盐亭工作站
+  </option>
+
+
+  <option value="5100510">
+   5100510 安县
+  </option>
+
+
+  <option value="5100511">
+   5100511 绵阳广播电视大学长虹工作站
+  </option>
+
+
+  <option value="5100512">
+   5100512 绵阳经济贸易中等专业学校
+  </option>
+
+
+  <option value="5100513">
+   5100513 绵阳电大梓潼直属分校
+  </option>
+
+
+  <option value="5100514">
+   5100514 绵阳广播电视大学安县职业中专学校
+  </option>
+
+
+  <option value="5100515">
+   5100515 绵阳电大直属平武分校
+  </option>
+
+
+  <option value="5100516">
+   5100516 绵阳广播电视大学直属北川分校
+  </option>
+
+
+  <option value="5100600">
+   5100600 广元广播电视大学直属部
+  </option>
+
+
+  <option value="5100601">
+   5100601 广元分校工作站
+  </option>
+
+
+  <option value="5100604">
+   5100604 广元广播电视大学剑阁分校
+  </option>
+
+
+  <option value="5100605">
+   5100605 广元广播电视大学旺苍工作站
+  </option>
+
+
+  <option value="5100607">
+   5100607 广元广播电视大学苍溪分校
+  </option>
+
+
+  <option value="5100608">
+   5100608 广元广播电视大学水电五局电大站（已停止招生）
+  </option>
+
+
+  <option value="5100609">
+   5100609 广元广播电视大学８２１厂分校
+  </option>
+
+
+  <option value="5100610">
+   5100610 １１６
+  </option>
+
+
+  <option value="5100611">
+   5100611 广元广播电视大学青川工作站
+  </option>
+
+
+  <option value="5100612">
+   5100612 旺苍县教师进修学校
+  </option>
+
+
+  <option value="5100700">
+   5100700 遂宁广播电视大学直属部
+  </option>
+
+
+  <option value="5100701">
+   5100701 遂宁电大直属部校内班
+  </option>
+
+
+  <option value="5100702">
+   5100702 遂宁广播电视大学蓬溪教师进修校
+  </option>
+
+
+  <option value="5100703">
+   5100703 遂宁广播电视大学蓬溪工作站
+  </option>
+
+
+  <option value="5100704">
+   5100704 遂宁广播电视大学大英分校
+  </option>
+
+
+  <option value="5100705">
+   5100705 遂宁广播电视大学射洪分校
+  </option>
+
+
+  <option value="5100706">
+   5100706 遂宁广播电视大学安居教科所
+  </option>
+
+
+  <option value="5100801">
+   5100801 雅安广播电视大学直属部
+  </option>
+
+
+  <option value="5100804">
+   5100804 雅安广播电视大学汉源教师进修校
+  </option>
+
+
+  <option value="5100822">
+   5100822 雅安广播电视大学名山教师进修校
+  </option>
+
+
+  <option value="5100823">
+   5100823 雅安广播电视大学荥经教师进修校
+  </option>
+
+
+  <option value="5100824">
+   5100824 雅安广播电视大学芦山教师进修校
+  </option>
+
+
+  <option value="5100825">
+   5100825 雅安广播电视大学天全教师进修校
+  </option>
+
+
+  <option value="5100827">
+   5100827 江苏省石棉县职业高级中学
+  </option>
+
+
+  <option value="5100828">
+   5100828 宝兴县教师进修学校学习中心
+  </option>
+
+
+  <option value="5100900">
+   5100900 乐山广播电视大学直属部
+  </option>
+
+
+  <option value="5100902">
+   5100902 乐山广播电视大学五通桥分校
+  </option>
+
+
+  <option value="5100903">
+   5100903 乐山广播电视大学沙湾工作站
+  </option>
+
+
+  <option value="5100907">
+   5100907 乐山广播电视大学井研分校
+  </option>
+
+
+  <option value="5100908">
+   5100908 乐山广播电视大学夹江分校
+  </option>
+
+
+  <option value="5100909">
+   5100909 乐山广播电视大犍为分校
+  </option>
+
+
+  <option value="5100910">
+   5100910 沐川电大
+  </option>
+
+
+  <option value="5100912">
+   5100912 乐山广播电视大峨嵋山分校
+  </option>
+
+
+  <option value="5100913">
+   5100913 峨边工作站
+  </option>
+
+
+  <option value="5100914">
+   5100914 马边工作站
+  </option>
+
+
+  <option value="5100915">
+   5100915 乐山广播电视大学川盐化分校
+  </option>
+
+
+  <option value="5100916">
+   5100916 814厂
+  </option>
+
+
+  <option value="5100917">
+   5100917 乐山电大沐川分校
+  </option>
+
+
+  <option value="5100918">
+   5100918 乐山电大金口河分校
+  </option>
+
+
+  <option value="5101004">
+   5101004 内江广播电视大学威远分校
+  </option>
+
+
+  <option value="5101005">
+   5101005 内江广播电视大学直属部
+  </option>
+
+
+  <option value="5101006">
+   5101006 市中区
+  </option>
+
+
+  <option value="5101007">
+   5101007 内江广播电视大学隆昌分校
+  </option>
+
+
+  <option value="5101009">
+   5101009 内江广播电视大学资中工作站
+  </option>
+
+
+  <option value="5101010">
+   5101010 资阳（旧）
+  </option>
+
+
+  <option value="5101011">
+   5101011 简阳（旧）
+  </option>
+
+
+  <option value="5101012">
+   5101012 安岳（旧）
+  </option>
+
+
+  <option value="5101013">
+   5101013 乐至县（旧）
+  </option>
+
+
+  <option value="5101100">
+   5101100 自贡广播电视大学直属部
+  </option>
+
+
+  <option value="5101105">
+   5101105 自贡广播电视大学荣县分校
+  </option>
+
+
+  <option value="5101106">
+   5101106 自贡广播电视大学富顺分校
+  </option>
+
+
+  <option value="5101200">
+   5101200 宜宾广播电视大学直属部
+  </option>
+
+
+  <option value="5101201">
+   5101201 宜宾广播电视大学宜宾县工作站
+  </option>
+
+
+  <option value="5101202">
+   5101202 宜宾广播电视大学南溪工作站
+  </option>
+
+
+  <option value="5101203">
+   5101203 宜宾广播电视大学珙县工作站
+  </option>
+
+
+  <option value="5101204">
+   5101204 宜宾广播电视大学江安工作站
+  </option>
+
+
+  <option value="5101205">
+   5101205 宜宾广播电视大学长宁工作站
+  </option>
+
+
+  <option value="5101207">
+   5101207 宜宾广播电视大学筠连工作站
+  </option>
+
+
+  <option value="5101210">
+   5101210 宜宾广播电视大学屏山工作站
+  </option>
+
+
+  <option value="5101211">
+   5101211 宜宾广播电视大学高县工作站
+  </option>
+
+
+  <option value="5101212">
+   5101212 南岸
+  </option>
+
+
+  <option value="5101213">
+   5101213 宜宾广播电视大学兴文工作站
+  </option>
+
+
+  <option value="5101214">
+   5101214 宜宾县电大工作站
+  </option>
+
+
+  <option value="5101215">
+   5101215 江苏芙蓉集团实业有限责任公司
+  </option>
+
+
+  <option value="5101300">
+   5101300 泸州广播电视大学直属部
+  </option>
+
+
+  <option value="5101304">
+   5101304 泸州广播电视大学泸县工作站
+  </option>
+
+
+  <option value="5101305">
+   5101305 泸州广播电视大学古蔺工作站
+  </option>
+
+
+  <option value="5101306">
+   5101306 泸州广播电视大学叙永工作站
+  </option>
+
+
+  <option value="5101307">
+   5101307 合江
+  </option>
+
+
+  <option value="5101308">
+   5101308 泸天化
+  </option>
+
+
+  <option value="5101309">
+   5101309 泸州广播电视大学龙马潭工作站
+  </option>
+
+
+  <option value="5101310">
+   5101310 泸州广播电视大学纳溪工作站
+  </option>
+
+
+  <option value="5101311">
+   5101311 泸州广播电视大学泸州市司法局教学点
+  </option>
+
+
+  <option value="5101312">
+   5101312 泸州市合江少岷职业高中
+  </option>
+
+
+  <option value="5101313">
+   5101313 江苏省泸县建筑职业中专学校学习中心
+  </option>
+
+
+  <option value="5101400">
+   5101400 南充广播电视大学直属部
+  </option>
+
+
+  <option value="5101401">
+   5101401 南充广播电视大学高坪工作站
+  </option>
+
+
+  <option value="5101402">
+   5101402 南充广播电视大学蓬安工作站
+  </option>
+
+
+  <option value="5101403">
+   5101403 南充广播电视大学营山分校
+  </option>
+
+
+  <option value="5101404">
+   5101404 南充广播电视大学阆中师范学校
+  </option>
+
+
+  <option value="5101405">
+   5101405 南充广播电视大学南部工作站
+  </option>
+
+
+  <option value="5101406">
+   5101406 南充广播电视大学西充工作站
+  </option>
+
+
+  <option value="5101407">
+   5101407 南充电大仪陇工作站
+  </option>
+
+
+  <option value="5101500">
+   5101500 达州广播电视大学直属部
+  </option>
+
+
+  <option value="5101504">
+   5101504 达州广播电视大学渠县工作站
+  </option>
+
+
+  <option value="5101505">
+   5101505 达州广播电视大学开江工作站
+  </option>
+
+
+  <option value="5101506">
+   5101506 达州广播电视大学大竹工作站
+  </option>
+
+
+  <option value="5101507">
+   5101507 达州广播电视大学万源工作站
+  </option>
+
+
+  <option value="5101508">
+   5101508 达州广播电视大学宣汉分校
+  </option>
+
+
+  <option value="5101509">
+   5101509 达州广播电视大学达县电大分校
+  </option>
+
+
+  <option value="5101510">
+   5101510 江苏达竹煤电（集团）有限责任公司学习中心
+  </option>
+
+
+  <option value="5101601">
+   5101601 万县市广播电大工作站
+  </option>
+
+
+  <option value="5101900">
+   5101900 阿坝广播电视大学直属部
+  </option>
+
+
+  <option value="5101903">
+   5101903 阿坝广播电视大学茂县工作站
+  </option>
+
+
+  <option value="5101904">
+   5101904 阿坝广播电视大学松潘工作站
+  </option>
+
+
+  <option value="5101905">
+   5101905 阿坝广播电视大学九寨沟工作站
+  </option>
+
+
+  <option value="5101909">
+   5101909 阿坝广播电视大学马尔康工作站
+  </option>
+
+
+  <option value="5101910">
+   5101910 阿坝广播电视大学黑水工作站
+  </option>
+
+
+  <option value="5101911">
+   5101911 阿坝广播电视大学金川工作站
+  </option>
+
+
+  <option value="5101912">
+   5101912 阿坝广播电视大学小金工作站
+  </option>
+
+
+  <option value="5101913">
+   5101913 汶川
+  </option>
+
+
+  <option value="5101914">
+   5101914 马师校
+  </option>
+
+
+  <option value="5101915">
+   5101915 阿坝广播电视大学红原工作站
+  </option>
+
+
+  <option value="5101916">
+   5101916 阿坝广播电视大学若尔盖工作站
+  </option>
+
+
+  <option value="5101917">
+   5101917 阿坝广播电视大学阿坝县工作站
+  </option>
+
+
+  <option value="5101918">
+   5101918 阿坝广播电视大学壤塘工作站
+  </option>
+
+
+  <option value="5101919">
+   5101919 阿坝州中等职业技术学院
+  </option>
+
+
+  <option value="5101920">
+   5101920 理县教育局
+  </option>
+
+
+  <option value="5101921">
+   5101921 松潘县电大工作站
+  </option>
+
+
+  <option value="5101922">
+   5101922 理县电大学习中心
+  </option>
+
+
+  <option value="5102000">
+   5102000 康定
+  </option>
+
+
+  <option value="5102001">
+   5102001 甘孜广播电视大学甘孜民族干部管理学校
+  </option>
+
+
+  <option value="5102002">
+   5102002 巴塘
+  </option>
+
+
+  <option value="5102003">
+   5102003 得荣
+  </option>
+
+
+  <option value="5102004">
+   5102004 姑咱
+  </option>
+
+
+  <option value="5102005">
+   5102005 甘孜广播电视大学直属部
+  </option>
+
+
+  <option value="5102007">
+   5102007 甘孜广播电视大学甘孜卫生学校
+  </option>
+
+
+  <option value="5102008">
+   5102008 州财校
+  </option>
+
+
+  <option value="5102009">
+   5102009 康定师范校
+  </option>
+
+
+  <option value="5102010">
+   5102010 色达电大站
+  </option>
+
+
+  <option value="5102011">
+   5102011 乡城电大站
+  </option>
+
+
+  <option value="5102012">
+   5102012 雅江电大站
+  </option>
+
+
+  <option value="5102013">
+   5102013 甘孜广播电视大学炉霍工作站
+  </option>
+
+
+  <option value="5102014">
+   5102014 甘孜州行政学院
+  </option>
+
+
+  <option value="5102015">
+   5102015 甘孜广播电视大学甘孜县教学点
+  </option>
+
+
+  <option value="5102016">
+   5102016 甘孜广播电视大学理塘教学点
+  </option>
+
+
+  <option value="5102017">
+   5102017 甘孜电大道孚县工作站
+  </option>
+
+
+  <option value="5102018">
+   5102018 甘孜电大乡城县工作站
+  </option>
+
+
+  <option value="5102100">
+   5102100 凉山广播电视大学直属部
+  </option>
+
+
+  <option value="5102105">
+   5102105 会理县工作站
+  </option>
+
+
+  <option value="5102107">
+   5102107 凉山广播电视大学宁南工作站
+  </option>
+
+
+  <option value="5102111">
+   5102111 凉山广播电视大学昭觉工作站
+  </option>
+
+
+  <option value="5102114">
+   5102114 凉山广播电视大学越西工作站
+  </option>
+
+
+  <option value="5102115">
+   5102115 凉山广播电视大学甘洛工作站
+  </option>
+
+
+  <option value="5102116">
+   5102116 凉山广播电视大学美姑工作站
+  </option>
+
+
+  <option value="5102117">
+   5102117 凉山广播电视大学西昌教师进修学校
+  </option>
+
+
+  <option value="5102118">
+   5102118 冕宁
+  </option>
+
+
+  <option value="5102119">
+   5102119 凉山广播电视大学雷波工作站
+  </option>
+
+
+  <option value="5102120">
+   5102120 凉山广播电视大学盐源工作站
+  </option>
+
+
+  <option value="5102121">
+   5102121 会东
+  </option>
+
+
+  <option value="5102122">
+   5102122 德昌县委党校
+  </option>
+
+
+  <option value="5102123">
+   5102123 越西县教师进修学校
+  </option>
+
+
+  <option value="5102124">
+   5102124 金阳县教师进修校
+  </option>
+
+
+  <option value="5102125">
+   5102125 普格县教师进修校
+  </option>
+
+
+  <option value="5102126">
+   5102126 喜德县教师进修校
+  </option>
+
+
+  <option value="5102127">
+   5102127 雷波教师进修学校
+  </option>
+
+
+  <option value="5102128">
+   5102128 冕宁县教师培训中心
+  </option>
+
+
+  <option value="5102129">
+   5102129 西昌市天泽职业技能培训学校学习中心
+  </option>
+
+
+  <option value="5102130">
+   5102130 中共布拖县委党校学习中心
+  </option>
+
+
+  <option value="5102200">
+   5102200 攀枝花广播电视大学直属部
+  </option>
+
+
+  <option value="5102204">
+   5102204 攀枝花广播电视大学米易工作站
+  </option>
+
+
+  <option value="5102205">
+   5102205 攀枝花广播电视大学盐边工作站
+  </option>
+
+
+  <option value="5102206">
+   5102206 东区
+  </option>
+
+
+  <option value="5102207">
+   5102207 西区
+  </option>
+
+
+  <option value="5102208">
+   5102208 攀枝花广播电视大学仁和分校
+  </option>
+
+
+  <option value="5102209">
+   5102209 江苏广播电视大学盐源分校
+  </option>
+
+
+  <option value="5102210">
+   5102210 江苏广播电视大学木里分校
+  </option>
+
+
+  <option value="5102600">
+   5102600 巴中广播电视大学直属部
+  </option>
+
+
+  <option value="5102601">
+   5102601 巴中广播电视大学平昌分校
+  </option>
+
+
+  <option value="5102603">
+   5102603 巴中广播电视大学通江工作站
+  </option>
+
+
+  <option value="5102604">
+   5102604 巴中广播电视大学南江工作站
+  </option>
+
+
+  <option value="5102605">
+   5102605 巴中市恩阳区教师进修学校
+  </option>
+
+
+  <option value="5102700">
+   5102700 广安广播电视大学直属部
+  </option>
+
+
+  <option value="5102701">
+   5102701 广安区电大站
+  </option>
+
+
+  <option value="5102702">
+   5102702 华蓥市
+  </option>
+
+
+  <option value="5102703">
+   5102703 广安广播电视大学岳池工作站
+  </option>
+
+
+  <option value="5102704">
+   5102704 广安广播电视大学武胜教师进修校
+  </option>
+
+
+  <option value="5102705">
+   5102705 广安广播电视大学邻水分校
+  </option>
+
+
+  <option value="5102800">
+   5102800 建设厅广播电视大学泸州市规划建设局职工培
+  </option>
+
+
+  <option value="5102801">
+   5102801 蓬溪县
+  </option>
+
+
+  <option value="5102802">
+   5102802 青羊区
+  </option>
+
+
+  <option value="5102803">
+   5102803 市中区
+  </option>
+
+
+  <option value="5102804">
+   5102804 建设厅广播电视大学直属部
+  </option>
+
+
+  <option value="5102805">
+   5102805 建设厅广播电视大学达州建设局职工培训中心
+  </option>
+
+
+  <option value="5102806">
+   5102806 建设厅广播电视大学宜宾市建设局教育培训中
+  </option>
+
+
+  <option value="5102807">
+   5102807 建设厅广播电视大学资阳市建业职工培训中心
+  </option>
+
+
+  <option value="5102808">
+   5102808 建设厅广播电视大学广安市建筑技术培训中心
+  </option>
+
+
+  <option value="5102809">
+   5102809 建设厅广播电视大学内江建设局培训中心
+  </option>
+
+
+  <option value="5102810">
+   5102810 建设厅广播电视大学华西集团培训中心
+  </option>
+
+
+  <option value="5102811">
+   5102811 建设厅广播电视大学德阳建设培训学校
+  </option>
+
+
+  <option value="5102812">
+   5102812 建设厅广播电视大学江苏省工业设备安装技工学校
+  </option>
+
+
+  <option value="5102813">
+   5102813 建设厅广播电视大学南充市建设人才培训中心
+  </option>
+
+
+  <option value="5102814">
+   5102814 建设厅广播电视大学成都市城建科技培训中心
+  </option>
+
+
+  <option value="5102815">
+   5102815 江苏电大直属学院彭州教学点
+  </option>
+
+
+  <option value="5102816">
+   5102816 金堂县建筑业协会
+  </option>
+
+
+  <option value="5102817">
+   5102817 眉山市规划建设局培训中心
+  </option>
+
+
+  <option value="5102818">
+   5102818 建设厅广播电视大学乐山市市中区正心明德教育培
+  </option>
+
+
+  <option value="5102819">
+   5102819 建设厅广播电视大学自贡直属教学点学习中心
+  </option>
+
+
+  <option value="5102900">
+   5102900 眉山广播电视大学直属部
+  </option>
+
+
+  <option value="5102901">
+   5102901 眉山
+  </option>
+
+
+  <option value="5102904">
+   5102904 眉山广播电视大学仁寿分校
+  </option>
+
+
+  <option value="5102905">
+   5102905 眉山广播电视大学丹棱分校
+  </option>
+
+
+  <option value="5102906">
+   5102906 眉山广播电视大学彭山分校
+  </option>
+
+
+  <option value="5102911">
+   5102911 眉山广播电视大学青神分校
+  </option>
+
+
+  <option value="5102912">
+   5102912 眉山广播电视大学洪雅教师进修校
+  </option>
+
+
+  <option value="5102913">
+   5102913 眉山广播电视大学眉山车辆厂电大分校
+  </option>
+
+
+  <option value="5102914">
+   5102914 眉山广播电视大学眉山东坡区教师进修校
+  </option>
+
+
+  <option value="5103000">
+   5103000 资阳广播电视大学直属部
+  </option>
+
+
+  <option value="5103001">
+   5103001 资阳广播电视大学简阳分校
+  </option>
+
+
+  <option value="5103002">
+   5103002 资阳广播电视大学安岳工作站
+  </option>
+
+
+  <option value="5103009">
+   5103009 资阳广播电视大学乐至工作站
+  </option>
+
+
+  <option value="5105800">
+   5105800 教学中心
+  </option>
+
+
+  <option value="5106000">
+   5106000 攀枝花教学点
+  </option>
+
+
+  <option value="5106001">
+   5106001 达州
+  </option>
+
+
+  <option value="5106002">
+   5106002 雅安
+  </option>
+
+
+  <option value="5106003">
+   5106003 金堂县
+  </option>
+
+
+  <option value="5109001">
+   5109001 冶金职大
+  </option>
+
+
+  <option value="5109200">
+   5109200 崇庆县
+  </option>
+
+
+  <option value="5109201">
+   5109201 永川县
+  </option>
+
+
+  <option value="5109202">
+   5109202 垫江县
+  </option>
+
+
+  <option value="5109203">
+   5109203 芦山县
+  </option>
+
+
+  <option value="5109204">
+   5109204 省邮电
+  </option>
+
+
+  <option value="5109301">
+   5109301 中医药大学
+  </option>
+
+
+  <option value="5109302">
+   5109302 邮政电大
+  </option>
+
+
+  <option value="5109303">
+   5109303 电信电大
+  </option>
+
+
+  <option value="5109400">
+   5109400 墨池分校直属部
+  </option>
+
+
+  <option value="5109500">
+   5109500 江苏电大直属部直属部
+  </option>
+
+
+  <option value="5109600">
+   5109600 都江堰分校直属部
+  </option>
+
+
+
+
+</select>
+
+</td>
+</tr>
+
+<tr>
+       <td height="30" align="right" width="40%">验证码:</td>
+       <td align="left">
+        <input id="veryCode" name="veryCode" type="text" value="请点击">
+        <img id="imgObj" alt="" src="../../verifyCodeServlet.jpg">
+        <a href="#" onclick="changeImg()" id="change">换一张</a>
+       </td>
+       </tr>
+		<tr>
+			<td colspan="2" align="center">
+				<!--<input type="submit" class="NormalSubmit" value="确定" id=submit1 name=submit1 onclick="isRightCode()"-->
+<input type="button" class="NormalSubmit" value="确定" onclick="return checkschool(txtschool,subschool,j_username_temp);">
+<input type="reset" class="NormalSubmit" value="取消" id="reset1" name="reset1">
+
+</td>
+		</tr>
+     </table>
+</form>
+
+
+
+  </td>
+  </tr>
+</table>
+</body>
+</html>

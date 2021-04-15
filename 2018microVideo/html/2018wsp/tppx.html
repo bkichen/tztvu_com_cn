@@ -1,0 +1,982 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>投票排行-2018“镜显正能量 放飞电大梦”微视频大赛-江苏广播电视大学投票管理系统</title>
+<link href="../../images/style.css" rel="stylesheet" type="text/css">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<script type="text/javascript" src="../../ks_inc/jquery.js"></script>
+<script type="text/javascript" src="../../ks_inc/common.js"></script>
+
+<script language="JavaScript" type="text/JavaScript">
+//改变图片大小
+//function resizepic(thispic)
+//{ 
+//if(thispic.width>750) thispic.width=750; 
+//}
+$(document).ready(function(){
+	$('.imagelist').find('img').each(function(){
+	  if (this.width>750) this.width=600;
+	});
+});
+
+</script>
+<style>
+.demand_r_music{}
+.demand_r_music ul{}
+.demand_r_music ul li{ width:40px;}
+.demand_r_music ul li a{ padding:0 3px; }
+.demand_r_music ul li a:hover{ padding:0 3px;}
+</style>
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body>
+<div id="wrap">
+	<div id="lamu_top">
+    	<!--头部start-->
+<div id="top">
+  <div id="topbox"> 
+	<div id="login"><!--<a onclick="setHomepage('http://'+location.hostname+(location.port!=''?':':'')+location.port);" href="#">设为首页</a>--></div> 
+	<div class="top">
+          <ul>   
+            <li class="wap">
+	<!--弹窗式登录代码--->
+	 <script type="text/javascript">
+	 function ShowPopLogin(){ ShowLogin(); }
+	jQuery(document).ready(function(){
+		  jQuery.getScript("/2018microVideo/user/userlogin.asp?action=checklogin&s=1",function(){
+		    jQuery("#showuserlogin").html(user.loginstr);
+		  });
+	  })
+	 </script>
+	 <span id="showuserlogin">加载中...</span>
+	 <!--登录结束--->
+	
+            <!--<li><a href="#" onclick="javascript:AddFavorite('http://'+location.hostname+(location.port!=''?':':'')+location.port,'2018“镜显正能量 放飞电大梦”微视频大赛-江苏广播电视大学学生活动平台',document.title);">加入收藏</a></li>-->	  
+          </li></ul>
+	  </div> 
+	</div>
+</div>
+
+<!--
+<div id="hearer">
+       <div class="hear_left">
+	     <div class="logo"><a href="/" title="2018“镜显正能量 放飞电大梦”微视频大赛-江苏广播电视大学学生活动平台"><img src="/images/logo.png" border="0" align="absmiddle" alt="logo" /></a></div>
+       </div>
+	     <div class="head_right">
+            <script>
+			$(document).ready(function(){
+			   $("#searchtitle").find("a").click(function(){
+			      $("#searchtitle").find("a").removeAttr("style");
+				  $(this).attr("style","color:#000000;font-weight:bold;");
+				  $("#m").val($(this).attr("m"));
+			   });
+			});
+            function checksearch(){
+             if ($("#key").val()==''|| $("#key").val()=='搜索您感兴趣的内容关键字'){
+                 KesionJS.Alert('请输入搜索关键字!',"$('#key').focus()");
+                return false;
+              }
+			  if ($("#key").val().length<2){
+                 KesionJS.Alert('搜索关键字不能少于两个字!',"$('#key').focus()");
+				 return false;
+			  }
+			  var m=parseInt($("#m").val());
+			  if (m==-2){
+			   location.href='/2018microVideo/club/query.asp?stype=1&key='+$("#key").val()+'&boardid=0';
+			   return false;
+			  }
+              return true;
+            }
+            </script>
+           <form name="searchform" action="/2018microVideo/plus/search/index.asp" method="post">
+         <div id="search"><input name="key" id="key"  type="text"   value="搜索您感兴趣的内容关键字" class="search1" onfocus="if (value 
+=='搜索您感兴趣的内容关键字')
+{value =''}" onblur="if (value ==''){value='搜索您感兴趣的内容关键字'}"/>
+            <input type="hidden" name="m" id="m" value="0"/>
+		    <input name="Input" type="submit" onclick="return(checksearch())" class="search2" value="搜索"/>
+           </form>
+         </div>
+         </div>
+         <div class="head_right1">
+		 <span class="tell">
+           <a href="/2018microVideo/3g/" target="_blank" class="tel">手机版</a>
+           <i class="weichat">
+		   			扫一扫
+		 		<span><img src="/2018microVideo/images/weixin.jpg" /></span>
+		   </i>
+		  </span>
+         <div class="clearfloat"></div>
+       	</div>
+</div>
+-->		   
+<div class="nav">
+	<div class="menu">
+		<ul>
+                    <div class="dashed dashed_home">
+<li><p class="MainMenu"><b>
+<a href="../../index.html" title="网站首页">网站首页</a>
+</b>
+</p>
+<p class="SubMenu">                                  
+<a href="cslb.html" title="结果公示">参赛作品</a>
+</p>
+<p class="SubMenu">                                  
+<a href="" title="投票排行">投票排行</a>
+</p>
+<!--
+<p class="SubMenu">                                  
+<a href="/2018microVideo/html/xwtz/wjtz/4.html" title="结果公示">结果公示</a>
+</p>
+<p class="SubMenu">                                  
+<a href="/2018microVideo/html/xwtz/wjtz/5.html" title="评委简介">评委简介</a>
+</p>
+<p class="SubMenu">                                  
+<a href="/?list-1683.html" title="参赛排行">参赛排行</a>
+</p>
+-->
+</li>
+</div>
+
+<div class="dashed">
+			<li>
+				<p class="MainMenu">
+					<b>
+					<a href="javascript:;" title="新闻通知">
+新闻通知</a>
+					</b>
+				</p>
+				<p class="SubMenu">
+                                  
+<a href="javascript:;" title="新闻动态">新闻动态</a>
+
+<a href="javascript:;" title="文件通知">文件通知</a>
+
+			        </p>
+			</li>
+		   </div>	
+
+
+<div class="dashed">
+			<li>
+				<p class="MainMenu">
+					<b>
+					<a href="javascript:;" title="微视频比赛">
+微视频比赛</a>
+					</b>
+				</p>
+				<p class="SubMenu">
+                                  
+<a href="javascript:;" title="南充电大">南充电大</a>
+
+<a href="javascript:;" title="乐山电大">乐山电大</a>
+
+<a href="javascript:;" title="眉山电大">眉山电大</a>
+
+<a href="javascript:;" title="绵阳电大">绵阳电大</a>
+
+<a href="javascript:;" title="宜宾电大">宜宾电大</a>
+
+<a href="javascript:;" title="攀枝花电大">攀枝花电大</a>
+
+<a href="javascript:;" title="泸州电大">泸州电大</a>
+
+<a href="javascript:;" title="内江电大">内江电大</a>
+
+<a href="javascript:;" title="德阳电大">德阳电大</a>
+
+<a href="javascript:;" title="阿坝电大">阿坝电大</a>
+
+<a href="javascript:;" title="自贡电大">自贡电大</a>
+
+<a href="javascript:;" title="资阳电大">资阳电大</a>
+
+<a href="javascript:;" title="广元电大">广元电大</a>
+
+<a href="javascript:;" title="直属学院">直属学院</a>
+
+<a href="javascript:;" title="广安电大">广安电大</a>
+
+<a href="javascript:;" title="雅安电大">雅安电大</a>
+
+<a href="javascript:;" title="达州电大">达州电大</a>
+
+<a href="javascript:;" title="巴中电大">巴中电大</a>
+
+			        </p>
+			</li>
+		   </div>	
+
+		   
+		</ul>
+	</div>	
+</div>
+
+<!--头部end-->
+    </div>
+
+<div class="blank10"></div>
+<div class="banner"></div>
+<div class="blank10"></div>
+<div class="demand_box">
+
+	<div class="demand_l">
+		投票排行
+		<span class="orange"></span>
+
+	</div>
+	<div class="demand_r demand_r_music">
+		<ul>
+		
+		</ul>
+	</div>
+</div>
+
+<div id="wrap1">
+   
+    <div class="navigation">您当前位置：<a href="../../index.html">2018“镜显正能量 放飞电大梦”微视频大赛-江苏广播电视大学学生活动平台</a> >> <a href="">投票排行</a> >> 频道首页</div>
+  
+    <div class="music2016_content">        
+        <div class="music2016_content_Item">      
+            <ul>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>1</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+1306</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>68号</b>：我爱乐至
+（资阳电大乐至分校，
+李  帅）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>2</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+1191</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>03号</b>：衍纸
+（直属学院城铁分院，
+卢道宇）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>3</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+1087</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>05号</b>：2018春新生活动纪实
+（直属学院城铁分院，
+彭洪）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>4</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+875</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>12号</b>：美丽的杜老师
+（绵阳电大直属部，
+申小蓉）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>5</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+740</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>21号</b>：威远电大，引领我成长
+（内江电大威远分校，
+钟贞金）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>6</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+682</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>14号</b>：村支书的大学
+（广元电大直属部，
+许志、张婷婷、王志斌）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>7</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+621</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>22号</b>：知识的宝库-内江电大
+（内江电大直属部，
+刘期英）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>8</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+563</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>67号</b>：关爱老人进农村
+（资阳电大乐至分校，
+蒋运淑）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>9</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+502</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>31号</b>：周末电大MV
+（宜宾电大直属部，
+张晶团队）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>10</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+493</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>13号</b>：何书记上学记
+（广元电大直属部，
+黄建华）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>11</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+357</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>59号</b>：小萝卜头的故事
+（巴中电大通江工作站，
+张  敏）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>12</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+348</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>15号</b>：鄢伊萱的成长记
+（广元电大剑阁分校，
+鄢伊萱）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>13</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+344</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>26号</b>：校园党建红
+（自贡电大富顺分校，
+伍  勇）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>14</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+293</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>45号</b>：我是社区联络员
+（泸州电大直属部，
+刘  林）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>15</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+291</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>01号</b>：大山里的汽车梦
+（直属学院万通汽车分院，
+达则取体）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>16</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+271</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>25号</b>：自编工间操，最益伏案人
+（自贡电大富顺分校，
+罗  芳）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>17</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+195</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>50号</b>：青春不散场
+（南充电大直属部，
+罗  敏）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>18</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+186</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>54号</b>：我的梦
+（达州电大宣汉分校，
+谢顺德）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>19</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+159</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>42号</b>：加油电大我为你骄傲
+（泸州电大直属部，
+刘国贤）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>20</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+152</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>07号</b>：艺术演绎人生-时代之春
+（直属学院工商分院，
+符艳）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>21</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+143</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>55号</b>：我光荣我是一名幼儿教师
+（达州电大直属部，
+吕兴友）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>22</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+138</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>20号</b>：下一站内江电大
+（内江电大直属部，
+杨芦军）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>23</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+136</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>11号</b>：我的电大生活
+（绵阳电大职教部，
+谭超）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>24</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+121</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>06号</b>：提升学历，升华自我-学习19大
+（直属学院工商分院，
+补 悦、杨 璇）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>25</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+115</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>02号</b>：电大成就我的梦
+（直属学院工商分院，
+杨洪）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>26</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+109</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>08号</b>：生命在于运动-秋季运动会
+（直属学院工商分院，
+康德才）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>27</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+99</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>18号</b>：家和万事兴
+（乐山电大沙湾分校，
+何娜）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>28</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+99</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>43号</b>：我的学校
+（泸州电大直属部，
+张亚霜）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>29</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+85</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>17号</b>：乐山广播电视大学沙湾分校宣传片
+（乐山电大沙湾分校，
+杜鹃）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>30</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+85</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>19号</b>：E路畅游
+（乐山电大沙湾分校，
+张立峰）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>31</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+83</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>04号</b>：我在万通生活的一天
+（直属学院万通汽车分院，
+代梦洁）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>32</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+77</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>16号</b>：你好！
+（雅安电大芦山教师进修校，
+陆丽红、高睿、姜霞、黄妃）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>33</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+73</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>64号</b>：我与电大的故事
+（眉山电大直属部，
+李  琴）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>34</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+71</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>65号</b>：我为何而来
+（眉山电大直属部，
+陈虹宇）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>35</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+62</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>66号</b>：选择电大，筑梦远航
+（眉山电大直属部，
+唐  燕）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>36</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+47</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>28号</b>：家风
+（自贡电大直属部，
+李晓东）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>37</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+42</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>47号</b>：知识改变命运，电大助你成功
+（南充电大直属部，
+黄寅桓）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>38</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+41</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>48号</b>：初心
+（南充电大直属部，
+蒲虹岑）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>39</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+40</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>33号</b>：我的电大学习之旅
+（宜宾电大直属部，
+李灵团队）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>40</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+32</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>38号</b>：朋友一起来学习
+（宜宾电大直属部，
+刘培培）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>41</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+27</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>24号</b>：成长学习的道路从现在开始
+（内江电大直属部，
+黄  英）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>42</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+26</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>27号</b>：梦想
+（自贡电大直属部，
+李棚英）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>43</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+24</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>49号</b>：创新
+（南充电大直属部，
+王誉霖）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>44</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+23</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>39号</b>：士兵，再突击
+（泸州电大直属部，
+童世红）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>45</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+23</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>53号</b>：青春
+（南充电大直属部，
+杨黎明）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>46</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+22</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>32号</b>：人生无处不课堂  求知永远在路上
+（宜宾电大宜宾县工作站，
+卢进）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>47</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+20</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>52号</b>：仪陇印象
+（南充电大直属部，
+李皓宇）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>48</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+19</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>23号</b>：放飞电大梦
+（内江电大资中分校，
+李俊成）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>49</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+19</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>51号</b>：嘉陵特警风采
+（南充电大直属部，
+李  强）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>50</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+16</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>40号</b>：一封感谢信
+（泸州电大直属部，
+曾爱莉）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>51</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+14</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>36号</b>：没有围墙的大学，有理想的人生
+（宜宾电大直属部，
+陈泽平）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>52</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+14</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>37号</b>：热爱生命
+（宜宾电大江安工作站，
+刘  丽、李启航）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>53</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+13</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>35号</b>：青春的足迹
+（宜宾电大直属部，
+唐继平）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>54</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+13</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>71号</b>：新学期、新起点、新发展
+（资阳电大直属部，
+秦建华）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>55</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+12</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>46号</b>：非遗文化进课堂
+（泸州电大直属部，
+曾  桢）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>56</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+12</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>72号</b>：扶贫路赞歌
+（资阳电大直属部，
+秦建华）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>57</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+11</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>70号</b>：奋进的资阳电大
+（资阳电大直属部，
+赵梦蝶）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>58</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+10</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>34号</b>：放飞梦想
+（宜宾电大直属部，
+廖启华）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>59</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+10</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>44号</b>：梦想开始的地方
+（泸州电大直属部，
+刘  丽）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>60</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+10</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>69号</b>：学以致用
+（资阳电大直属部，
+刘纪钰 ）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>61</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+9</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>30号</b>：同学，我想对你说
+（自贡电大直属部，
+周梦雅）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>62</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+9</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>41号</b>：我的大师兄
+（泸州电大直属部，
+童慈媛）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>63</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+7</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>09号</b>：好朋友
+（德阳电大直属部，
+王茜）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>64</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+7</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>29号</b>：烛光里的妈妈
+（自贡电大直属部，
+叶思敏）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>65</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+7</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>61号</b>：眷恋
+（广安电大，
+何  文）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>66</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+5</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>10号</b>：放飞生活
+（德阳电大直属部，
+向忠翠）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>67</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+5</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>63号</b>：电大夫妻
+（广安电大，
+熊向东、莫娟）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>68</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+4</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>58号</b>：求知于电大，筑梦于未来
+（攀枝花电大直属部，
+韩  荣）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>69</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+4</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>60号</b>：永不言弃
+（广安电大，
+刘雨薇）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>70</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+3</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>56号</b>：读书的时光，它改变了一切
+（攀枝花电大直属部，
+林  杰）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>71</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+3</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>62号</b>：筑梦电大
+（广安电大，
+刘雨薇、何  文）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<li style="height:49px; width:100%; line-height:49px; float:left; border-bottom:1px dashed #ccc"><span style="width:20px; display:inline-block; 
+overflow:hidden; font-weight:normal; margin-right:10px;"><b>72</b></span>
+<span style="width:100px; display:inline-block; overflow:hidden; font-weight:normal; margin-right:10px;"><b>最终得票</b>：
+2</span><span style="width:480px; display:inline-block; overflow:hidden; font-weight:normal; margin-
+right:10px;"><b>57号</b>："十三五规划示范镇——攀枝花 仁和区大田镇"
+（攀枝花电大直属部，
+付永梅）</span>
+<span style="width:50px; display:inline-block; overflow:hidden; font-weight:normal; display：none;"><a target="_blank" title="点击浏览" href="javascript:;">浏览</a></span>
+</li>
+
+<ul>
+        </ul></ul></div>  
+
+    </div> 
+
+</div>
+
+    <div id="footer"> 
+    <div class="foot">
+<p></p>
+<strong>2018“镜显正能量 放飞电大梦”微视频大赛-江苏广播电视大学学生活动平台</strong>
+</div> 
+<div id="copyright">江苏广播电视大学 版权所有<br>
+主办单位：招生与系统建设处　技术支持：信息技术中心·林</div>
+    </div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+input[type="text"] { border: 1px solid #D4D4D4; }
+
+.common_txtbox_wrap input { border: 0; }
+
+select { border: 1px solid #D4D4D4; }
+
+textarea[disabled] { border: solid 1px #ccc; }
+
+.common_txtbox_dis .common_txtbox_wrap:hover { border: solid 1px #D4D4D4; }
+
+.common_txtbox_wrap { border: 1px solid #D4D4D4; }
+.common_txtbox_wrap:hover { border: 1px solid #1F85EC; }
+
+.common_txtbox_wrap_dis:hover { border: 1px solid #D4D4D4; }
+
+.common_button { background: #ffffff; color: #666666; border: 1px solid #D4D4D4; }
+.common_button:hover { background-color: #ffffff; color: #666666; border: solid 1px #1F85EC; }
+
+.common_button_emphasize { background: #1F85EC; color: #ffffff; border: 1px solid #1F85EC; }
+.common_button_emphasize:hover { background-color: #009def; color: #ffffff; border: solid 1px #009def; }
+
+.common_button_gray { background: #999999; color: #ffffff; border: solid 1px #999999; }
+.common_button_gray:hover { background: #666666; color: #ffffff; border: solid 1px #999999; }
+
+input.common_button[disabled=disabled], .common_button_disable { background: #E3E3E3; color: #999999; border: 1px solid #E3E3E3; }
+input.common_button[disabled=disabled]:hover, .common_button_disable:hover { background: #E3E3E3; color: #999999; border: 1px solid #E3E3E3; }
+
+.ztree li a { color: #111111; }
+.ztree li a:hover { text-decoration: underline; background-color: #e7f2fd; color: #111111; }
+.ztree li a.curSelectedNode { background-color: #1F85EC; border: 1px solid #1F85EC; color: #ffffff; }
+.ztree li a.curSelectedNode_Edit { background-color: #1F85EC; border: 1px solid #1F85EC; color: #ffffff; }
+.ztree li a.tmpTargetNode_inner { padding-top: 0; background-color: #1F85EC; border: 1px solid #1F85EC; color: #ffffff; }
+
+.flexigrid div.bDiv td { border-bottom: 1px solid #EDEDED; }
+.flexigrid div.bDiv td div { color: #111111; }
+.flexigrid div.bDiv tr:hover td { background: #f5f5f5; }
+.flexigrid div.bDiv tr:hover td div { color: #111111; }
+.flexigrid div.bDiv tr.trSelected:hover td { background: #e7f2fd; border-right: 1px solid #e7f2fd; }
+.flexigrid div.hDiv { background: #b4ddf9; }
+.flexigrid div.hDiv th { border-right: 1px solid #A6B4D2; color: #111111; }
+.flexigrid div.hDiv th.thOver { background: #7ac4f4; }
+.flexigrid div.hDiv th.thMove { background: #7ac4f4; }
+.flexigrid div.hDiv th.thMove div { background: #7ac4f4 !important; }
+.flexigrid div.nBtn { background: #b4ddf9; border-right: 1px solid transparent; }
+.flexigrid tr.trSelected td { background: #e7f2fd; border-right: 1px solid #e7f2fd; }
+.flexigrid tr.trSelected td div { color: #111111; }
+.flexigrid tr.trSelected:hover td { background: #e7f2fd; border-right-color: #e7f2fd; }
+
+.dataTable div.bDiv td { border-right: 1px solid #EDEDED; }
+.dataTable div.bDiv tr:hover td { border-right: 1px solid #e7f2fd; }
+
+.common_over_page { color: #666666; background: #ffffff; }
+.common_over_page .common_over_page_txtbox { border: solid 1px #D4D4D4; }
+.common_over_page .common_over_page_select { border: solid 1px #D4D4D4; }
+.common_over_page a.common_over_page_btn { background: #ffffff; border: 1px solid #D4D4D4; }
+.common_over_page a.common_over_page_btn:hover { background: #1F85EC; border: 1px solid #1F85EC; }
+.common_over_page a.common_over_page_go { height: 30px; line-height: 30px; border-radius: 6px; padding: 0 10px; background: #ffffff; border: 1px solid #D4D4D4; }
+.common_over_page a.common_over_page_go:hover { background: #1F85EC; border: 1px solid #1F85EC; color: #ffffff; }
+
+.common_search_condition { border: 1px solid #D4D4D4; background-color: #fff; }
+.common_search_condition:hover { border: 1px solid #1F85EC; }
+
+.common_drop_list_content { border: 1px solid #009def; }
+.common_drop_list_content a { color: #000; }
+.common_drop_list_content a:hover { color: #ffffff; background: #1F85EC; }
+.common_drop_list_content a.common_drop_a_select { color: #ffffff; background: #1F85EC; }
+
+.common_tabs { background: #ffffff; border-bottom: solid 1px #7DC1FD; }
+.common_tabs a { color: #333333; }
+.common_tabs .disable { background: #f0f0f0; color: #a3a3a3; }
+.common_tabs .current a { color: #1F85EC; border-bottom: 3px solid #1F85EC; }
+
+.moreTabsList { border: solid 1px #7DC1FD; background: #ffffff; }
+
+.moreTabsList li:hover, .moreTabsList li.current { background-color: #42b3e5; }
+
+.moreTabsList li:hover a, .moreTabsList li.current a { color: #ffffff; border-bottom: none; height: 25px; }
+
+.common_tabs_big { background: none; border-bottom: none; }
+.common_tabs_big a { color: #666666; border-right: 1px solid #e3e3e3; background: #fcfcfc; }
+.common_tabs_big .current a { color: #fff; background: #5191d1; border-bottom: 0; }
+
+.out_toolbar_box { background: #f0f0f0; }
+
+.common_toolbar_box { background: #f0f0f0; }
+
+.toolbar_l a { background-color: #ffffff; border: 1px solid #D4D4D4; color: #666666; }
+.toolbar_l a:hover { background-color: #ffffff; border: 1px solid #1F85EC; color: #666666; }
+.toolbar_l a.common_menu_dis { color: #a3a3a3; border: 1px solid #D4D4D4; }
+.toolbar_l a.common_menu_dis:hover { border: 1px solid #D4D4D4; }
+
+.common_order_menu { border: 1px solid #009def; }
+
+.order_menuitem { color: #666666; }
+.order_menuitem:hover { background: #1F85EC; color: #ffffff; }
+
+.dialog_bg { background: #fafafa; }
+
+.dialog_main_head { border-top: 5px solid #1F85EC; background: #fafafa; }
+
+.dialog_title { background: #fafafa; color: #999999; }
+
+.dialog_main_content_html { background: #fafafa; }
+
+.layui-layer-title { border-top: 5px solid #1F85EC; background: #fafafa; color: #999999; }
+
+.layui-layer .layui-layer-btn { background: #4d4d4d; }
+
+.dialog_main_footer { background: #4d4d4d; }

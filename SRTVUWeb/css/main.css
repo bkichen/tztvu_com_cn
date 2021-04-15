@@ -1,0 +1,174 @@
+/*Welcome开头的样式仅控制默认欢迎页面 无需修改及调用*/
+.WelcomeTitle {
+	font-family: Tahoma, 宋体;
+	font-size: 10pt;
+	color: #333333;
+}
+.WelcomeData {
+	font-family: Tahoma, 宋体;
+	font-size: 9pt;
+	color: #333333;
+}
+.PromptTitle {
+	font-family: Tahoma, 宋体;
+	font-size: 10pt;
+	color: #333333;
+}
+.PathData {
+	font-family: Tahoma, 宋体;
+	font-size: 9pt;
+	color: #333333;
+}
+/*
+ *Datagrid开头的样式控制所有的DataGrid控件
+ *在你的DataGrid属性中加入cssClass=xxx即可
+ */
+.DatagridTable{
+	FONT-SIZE: 9pt;
+	BORDER-RIGHT: #333333 1px solid;
+	BORDER-TOP: #333333 1px solid;
+	BORDER-LEFT: #333333 1px solid;
+	BORDER-BOTTOM: #333333 1px solid;
+	FONT-FAMILY: Tahoma, 宋体;
+	BORDER-COLLAPSE: collapse;
+}
+
+/*
+ *以DataInput开头的样式控制数据输入页面的Table表格
+ *在你的数据输入页面的Table属性中添加Class="xxx"即可
+ *
+ *同时DataInputTable样式也是常规的Table控制格式
+ *你可以利用其控制其他Table，另其显示以默认的格式显示
+ *注意此table的border必须不为0
+ */
+.DataInputTable{
+	FONT-SIZE: 9pt;
+	BORDER-RIGHT: #333333 1px solid;
+	BORDER-TOP: #333333 1px solid;
+	BORDER-LEFT: #333333 1px solid;
+	BORDER-BOTTOM: #333333 1px solid;
+	FONT-FAMILY: Tahoma, 宋体;
+	BORDER-COLLAPSE: collapse;
+	TEXT-DECORATION: none
+}
+
+/*
+ *TableTitle样式控制页面中的大标题
+ *需要把标题放入table或者label中
+ *需要手工添加class="xxx"和cssClass="xxx"
+ */
+.TableTitle{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12pt;
+	FONT-FAMILY: Tahoma, 宋体;
+	TEXT-ALIGN: center;
+}
+/*
+ *TableField样式控制table的第一行字段
+ *需要在table第一行<tr class="TableField">
+ */
+.TableField{
+	background: #D0DDD5;
+	FONT-WEIGHT: bold;
+	FONT-FAMILY: Tahoma, 宋体;
+	TEXT-ALIGN: center;
+}
+/*
+ *InputTitle样式控制数据输入页面的Table表格中输入项的名称所在的td
+ *需要在所在的td中手工添加class="xxx"
+ *
+ *同样可以用于控制需要灰色底色的td
+ *以与其他td区别
+ */
+.InputTitle{
+	BACKGROUND-COLOR: #efefef;
+	FONT-SIZE: 9pt;
+	FONT-FAMILY: Tahoma, 宋体;
+}
+
+/*
+ *TextInput样式控制页面中的web控件TextBox，text型的Input，textarea
+ *以及其他的数据输入控件
+ *需要手工添加class="xxx"和cssClass="xxx"
+ */
+.TextInput{
+	border: 1px solid;
+	font-family: Tahoma, 宋体;
+	font-size: 12px;
+}
+
+/*
+ *NoBorderTable样式控制页面中没有Border的Table
+ *如果你需要在页面中加入一些简单的文字
+ *请利用table或者Label控制位置
+ *然后用此控制样式
+ *需要手工添加class="xxx"或者cssClass="xxx"即可
+ */
+.NoBorderTable{
+	FONT-SIZE: 9pt;
+	FONT-FAMILY: Tahoma, 宋体;
+	TEXT-DECORATION: none
+}
+
+/*
+ *NormalSubmit样式控制页面中的按钮
+ *submit型的Input，web控件Button, html控件Button等都可以用其控制
+ *需要手工添加class="xxx"或者cssClass="xxx"即可
+ */
+.NormalSubmit{
+	background: #D0DDD5;
+	border: 1px solid;
+	font-family: Tahoma, 宋体;
+	font-size: 9pt;
+	text-align: center;
+	height: 20px;
+	vertical-align: super;
+}
+
+/*
+ *select样式控制页面中select元素
+ *链接此样式表文件的页面会自动控制其中的select元素
+ *无须手工添加
+ */
+select{
+	BORDER-TOP-WIDTH: 1px;
+	BORDER-LEFT-WIDTH: 1px;
+	BORDER-BOTTOM-WIDTH: 1px;
+	BORDER-RIGHT-WIDTH: 1px;
+	font-size: 9pt;
+	font-family: Tahoma, 宋体;
+}
+
+/*
+ *RadioCheckBox样式控制页面中web控件单选和复选框
+ *html控件不需要
+ *需要手工添加cssClass="xxx"
+ */
+.RadioCheckBox{
+	font-family: Tahoma, 宋体;
+	font-size: 9pt;
+}
+
+/*
+ *以a开头的样式控制页面中的超级链接格式
+ *链接此样式表文件的页面会自动控制其中的超级链接
+ *无须手工添加
+ */
+a {
+	font-family: Tahoma, 宋体;
+	font-size: 9pt;
+	font-weight: normal;
+	text-decoration: underline;
+}
+a:link {
+	color: #333333;
+}
+a:visited {
+	color: #000000;
+}
+a:active {
+	color: #3366CC;
+}
+a:hover {
+	color: #3366CC;
+}

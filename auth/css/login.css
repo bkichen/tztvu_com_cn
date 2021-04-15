@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "微软雅黑";
+    text-align: center;
+}
+.header {
+    height: 90px;
+    background:#f0f3fa;
+}
+.header_logo {
+    margin: 0 auto;
+    width: 1000px;
+    height: 90px;
+    background: url("../images/logo.png") no-repeat left center;
+
+}
+.logo1 {
+    color: #1d80dd;
+    font-size: 36px;
+    height:90px;
+    background: url("../images/logo1.png") no-repeat 70px center;
+
+}
+.content {
+    background: #1d80dd;
+    height: 550px;
+}
+#theme {
+    width: 1000px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.formbox {
+    padding-left: 35px;
+    float: right;
+    color: #1D5F9E;
+    font-weight: bold;
+    font-size: 11px;
+    background: url("../images/login.jpg") no-repeat left center;
+    width: 373px;
+    height: 442px;
+    position: absolute;
+    top:0;
+    right:-30px;
+    text-align: left;
+}
+.footer {
+    text-align: left;
+    font-size: 12px;
+    color: #333;
+    background:#f0f3fa;
+}
+.footer_con {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align:center;
+}
+#username {
+    border:1px solid #ccc;
+    height: 34px;
+    line-height:34px;
+    padding: 0 10px;
+    color:#999;
+    margin: 0;
+    overflow: visible;
+    width: 100%;
+    box-sizing:border-box;
+}
+#password {
+    border:1px solid #ccc;
+    height: 34px;
+    line-height:34px;
+    padding: 0 10px;
+    color:#999;
+    margin: 0;
+    overflow: visible;
+    width: 100%;
+    box-sizing:border-box;
+}
+.tie{
+    margin:80 0 30 0;
+    color:#ccc;
+    font-size:14px;
+}
+#form1{
+    margin-top:35px;
+}
+.blue{
+    color:#2d90e4;
+    text-decoration: none;
+}
+ .loginconf {
+    color: #ccc;
+    line-height: 14px;
+    margin-bottom: 25px;
+     margin-left: 2px;
+}
+.loginconf::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+#forgetpwd{
+    color:#65b325;
+    font-size:12px;
+    text-decoration: none;
+}
+#sysm{
+    color:#ccc;
+    font-size:12px;
+    text-decoration: none;
+    margin-left:180px;
+}
+#accautologin{
+    font-size:12px;
+    color:#999;
+}
+.text{
+    position: relative;
+    height: 55px;
+    width:80%;
+}
+.w-button {
+    background: #2d90e4;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 298px;
+}
+.w-button:hover{
+    background: #1475c8;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 298px;
+}
+#accautologin {
+    vertical-align:middle;
+    margin-top:-2px;
+    margin-bottom:1px;
+}

@@ -1,0 +1,13 @@
+.topNewsBt{height:26px; line-height:26px; text-align:left;}
+.topNewsBt a{font-family: 黑体; letter-spacing: 2px;font-size: 16px; color:#c00;}
+.topNewsBt a:hover{text-decoration:underline;}
+.topNewsZy{height:54px; line-height:18px; overflow:hidden; color:#676767; border-bottom:1px dashed #ccc; padding-bottom:5px; margin-bottom:5px;}
+.topNewsZy a{}
+.topNewsZy a:hover{}
+.topNewsZy a span{color:#f00;}
+.topNewsTime{display:inline-block; width:45px;height:54px; margin-right:10px; overflow:hidden; float:left;background: url(images/time.png) left center no-repeat;}
+.topNewsTime .topNewsTime_sub1{color:#ffff00; height:24px; line-height:24px; display:block; text-align:center; padding-top:4px;}
+.topNewsTime .topNewsTime_sub2{color:#676767; height:30px; line-height:20px; display:block; text-align:center;}
+.topNewsInfo{display:inline-block; width:375px;height:54px; overflow:hidden:;}
+.titlestyle42285{ line-height: 220%; color: #ffffff; font-size: 9pt; font-weight: bold ;}
+

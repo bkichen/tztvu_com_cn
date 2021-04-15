@@ -1,0 +1,107 @@
+/**************************************************************************************************** 
+模板说明：
+*****************************************************************************************************
+前台显示时，文章正文会放在id为“vsb_content_1010”的div中，为了保证您定义的样式正常显示并不影响其他页面标签的显示效果，请您在定义时使用ID选择符 
+您可以为任何标签定义样式，但是必须在样式名称前添加“#vsb_content_1010”标记，否则您定义的样式可能无效。
+
+例如：
+#vsb_content_1010 H2 
+{
+    font-size: 14px
+;}
+定义了H2的样式，其中#后面的“vsb_content_1010”为ID选择符，您定义的样式名称必须以“vsb_content_1010”为选择符,"_1010"不能删掉！
+
+******************************************************************************************************/
+
+
+/*定义正文中的H2样式*/
+#vsb_content_1010 H2 {
+    font-size: 12pt;
+}
+
+/*在正文中定义一个 名为icon的class */
+#vsb_content_1010 .icon {
+    border-right-width: 0px; margin: 3px 0px 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px;
+}
+
+/*定义正文中的IMG样式*/
+#vsb_content_1010 IMG {
+    border: #ccc 1px solid; padding: 8px; text-align: center; margin: 0 auo;  text-indent: 0;
+}
+
+/*定义正文中的段落样式*/
+#vsb_content_1010 P {
+    line-height: 200%; text-indent: 2em; font-size: 12pt; font-family: Tahoma, "宋体", "微软雅黑" ,Arial, Verdana, sans-serif, Roman; margin:12px 0;
+}
+
+#vsb_content_1010 .vsbcontent_img{
+	text-align: center; background: #fff;
+}
+
+/*定义正文中的段落中的IMG样式*/
+#vsb_content_1010 P IMG {
+    margin-left: -2em;
+}
+
+/*定义正文中的span样式*/
+#vsb_content_1010 span {
+    /*line-height: 40px; text-indent: 2em; font-size: 20px;*/
+}
+
+/*定义正文中的链接样式*/
+#vsb_content_1010 A {
+    color: #cc0000; text-decoration: underline;
+}
+#vsb_content_1010 A:visited {
+    color: #676767; text-decoration: underline;
+}
+#vsb_content_1010 A:hover {
+    color: #ba2636;
+}
+
+/*定义正文中的表格样式*/
+
+#vsb_content_1010 TABLE{ border-collapse:collapse;border:1px solid #000 
+} 
+#vsb_content_1010 TABLE TD{ border:1px solid #000; 
+} 
+#vsb_content_1010 TABLE TD P {
+    text-indent: 0px; margin: 0px; font-size: 12pt; text-align:center;
+}
+#vsb_content_1010 TABLE TH P {
+    text-indent: 0px; margin: 0px; font-size: 1px; text-align:center;
+}
+#vsb_content_1010 TABLE TD IMG {
+    border: none; text-align: center;  text-indent: 0;
+}
+
+
+/*新增   正文第一个<P>的样式，可用与通知格式，如第一段不缩进，其他缩进*/
+#vsb_content_1010 .vsbcontent_start {
+    /*LINE-HEIGHT: 180%; text-indent: 0em; font-size: 14pt;font-weight:bold*/
+}
+/*新增   正文最后一个<P>的样式，可用与通知格式，如最后一行居右*/
+#vsb_content_1010 .vsbcontent_end {
+    /*INE-HEIGHT: 180%; text-indent: 0em; font-size: 14pt;text-align:right;*/
+}
+
+
+
+/*以下三个样式为正文定义了显示时的大、中、小样式*/
+#vsb_content_1010.newscontent_l p {
+    font-size: 16px;
+}        
+#vsb_content_1010.newscontent_m p {
+    font-size: 14px;
+} 
+#vsb_content_1010.newscontent_s p {
+    font-size: 12px;
+} 
+
+/*
+如果您的正文中可能还包括其他标签，您可按照以下方式增加对应的代码
+#vsb_content$ {newsformat} <html标签>
+{
+    样式内容
+} 
+*/

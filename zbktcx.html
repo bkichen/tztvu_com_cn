@@ -1,0 +1,1527 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"><title>
+	直播课堂查询
+</title><link href="ipkjcx/StyleSheet.css" rel="stylesheet" type="text/css">
+         <style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/ymbg.png);
+}
+
+.dqzb_show {
+	font-size: 16px;
+	color: #ff0000;
+	font-weight: bold;
+}
+.grey_show {color: #CCCCCC}
+
+             .style1
+             {
+                 width: 100%;
+             }
+-->
+</style>
+<script type="text/javascript">
+    url = window.location.search; /* 获取属性（“?”后面的分段） */
+    //alert(url);
+    if(/AppleWebKit.*mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){
+        if(window.location.href.indexOf("?mobile")<0){
+            try{
+                if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                    window.location.href = "zbktcx_m.aspx" + url;
+                }else if(/iPad/i.test(navigator.userAgent)){
+                window.location.href = "zbktcx_m.aspx" + url;
+                }else{
+                window.location.href = "zbktcx_m.aspx" + url;
+                }
+            }catch(e){}
+        }
+    }
+</script>
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script><script type="text/javascript" src="/js/kb.js"></script></head>
+
+
+
+<body>
+    <form name="form1" method="post" action="zbktcx.aspx" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="087DD161">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWDQLDzPlEAobUt78OAsDb96YJAoznisYGAu2X5rwNAu2XmrwNAu2XjrwNAu2XgrwNAu2XlrwNAu2XirwNAu2XvrwNAu2XsrwNAoOd1owM+0feWF0fnQhqhNzSa3JeOV1icbs=">
+</div>
+    
+    <!--LOGO 及搜索-->
+    <table width="1024" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+
+  <tr>
+    <td><img src="images/spacer.gif" width="208" height="1" border="0" alt=""></td>
+    <td><img src="images/spacer.gif" width="816" height="1" border="0" alt=""></td>
+    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+   <tr>
+   <td colspan="2"><table width="100%" border="0">
+     <tr>
+       <td width="488"><img src="images/logo-new.jpg" width="488" height="89"></td>
+       
+       <td align="right">
+       <!--sousuo--> 
+              <select name="search_way" id="search_way">
+	<option selected="selected" value="选择搜索方式">选择搜索方式</option>
+	<option value="课程名称">课程名称</option>
+	<option value="主讲教师">主讲教师</option>
+	<option value="月份">月份</option>
+</select>
+        
+       <input name="t_kcmc" type="text" id="t_kcmc" style="width:105px;">
+       <input type="submit" name="Button1" value="搜索" id="Button1">
+       
+       </td>
+     </tr>
+   </table></td>
+   <td><img src="images/spacer.gif" width="1" height="89" border="0" alt=""></td>
+  </tr>
+</table>
+
+<!--大横幅图片-->
+<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+
+  <tr>
+    <td><img src="images/spacer.gif" width="208" height="1" border="0" alt=""></td>
+    <td><img src="images/spacer.gif" width="816" height="1" border="0" alt=""></td>
+    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img name="zbsy_r2_c1" src="images/zbsy_r2_c1.jpg" width="1024" height="263" border="0" alt=""></td>
+    <td><img src="images/spacer.gif" width="1" height="263" border="0" alt=""></td>
+  </tr>
+</table>
+
+
+<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+
+  <tr>
+    <td><img src="images/spacer.gif" width="208" height="1" border="0" alt=""></td>
+    <td><img src="images/spacer.gif" width="816" height="1" border="0" alt=""></td>
+    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <!--菜单-->
+    
+    <div align="center"><br>
+   
+
+       <a href="javascript:;"><img src="images/b_kcxx.png" width="151" height="64" border="0"></a>
+    <br>
+    <br>
+   
+
+       <a href="javascript:;"><img src="images/b_bqzb.png" width="151" height="64" border="0"></a>
+    <br>
+    
+    <br>
+    <a href="javascript:;"><img src="images/b_byzb.png" width="151" height="64"></a> <br>
+    <br>
+    <a href="javascript:;"><img src="images/b_bzzb.png" width="151" height="64">  </a>  <br>
+    <br>
+    
+       <a href="javascript:;"><img src="images/b_wqhg.png" width="151" height="64" border="0"></a>
+    <br>
+    <br>
+    
+    <a href="javascript:;"><img src="images/b_JCKT.png" width="151" height="64">  </a>  <br>
+    <br>
+    
+</div>
+
+</td>
+    <td align="center" valign="top">
+    <!--直播列表在这里显示（往下）-->
+    
+    <table width="95%" height="52" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="52"><span class="dqzb_show">当前搜索：2021春季学期直播表</span>
+        
+        </td>
+      </tr>
+    </table>
+    
+              <div>
+	<table cellspacing="0" cellpadding="4" rules="all" border="2" id="gv_jxhdlist" style="color:#333333;border-color:#337FB2;border-width:2px;border-style:solid;font-size:Small;height:32%;width:90%;border-collapse:collapse;">
+		<tr class="BODY" align="center" valign="middle" style="color:White;background-color:#337FB2;font-size:12px;">
+			<th scope="col">  <div align="left" class="red_small">&nbsp;&nbsp;日期</div></th><th scope="col">  <div align="left" class="red_small">&nbsp;&nbsp;直播时间</div></th><th scope="col">  <div align="left" class="red_small">&nbsp;&nbsp;课程名称</div></th><th scope="col">  <div align="left" class="red_small">&nbsp;&nbsp;主讲人</div></th><th scope="col">  <div align="left" class="red_small">&nbsp;&nbsp;状态</div></th>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    04-15/星期四
+                      <font color="red"><br>（今日直播） </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 临床医学概论 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 李湘华   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <span class='grey_show'>未直播</span>
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    04-15/星期四
+                      <font color="red"><br>（今日直播） </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 环境保护法 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 史艳红   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <span class='grey_show'>未直播</span>
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    04-15/星期四
+                      <font color="red"><br>（今日直播） </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 学前儿童卫生与保健 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 张莉   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <span class='grey_show'>未直播</span>
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    04-15/星期四
+                      <font color="red"><br>（今日直播） </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 数据结构 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 赵永虹   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <span class='grey_show'>未直播</span>
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    04-15/星期四
+                      <font color="red"><br>（今日直播） </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 农村创新创业理论与实践 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 芶维   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <span class='grey_show'>未直播</span>
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    04-15/星期四
+                      <font color="red"><br>（今日直播） </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 中国古代文学（B）（1） </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 侯艳   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <span class='grey_show'>未直播</span>
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    04-15/星期四
+                      <font color="red"><br>（今日直播） </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 学前儿童艺术教育（音乐） </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 杨明倩   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <span class='grey_show'>未直播</span>
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    04-15/星期四
+                      <font color="red"><br>（今日直播） </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 企业物流管理 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 周祥   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <span class='grey_show'>未直播</span>
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    04-15/星期四
+                      <font color="red"><br>（今日直播） </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 学位英语 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 郭燕   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <span class='grey_show'>未直播</span>
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    04-15/星期四
+                      <font color="red"><br>（今日直播） </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 思想道德修养与法律基础 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 刘晓霞   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <span class='grey_show'>未直播</span>
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    04-15/星期四
+                      <font color="red"><br>（今日直播） </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 农村创业专题与案例 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 赵永田   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <span class='grey_show'>未直播</span>
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    04-15/星期四
+                      <font color="red"><br>（今日直播） </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 房地产估价 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 何雅妮   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <span class='grey_show'>未直播</span>
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-22/星期一
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 学位英语 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 张敏子   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-25/星期四
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 学位英语 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 张敏子   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-29/星期一
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 跨文化交际 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 黄华   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-29/星期一
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 电子商务概论（农） </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 黄洵   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-29/星期一
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 房地产经营与管理 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 孙华   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-29/星期一
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 传染病护理学 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 李湘华   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-29/星期一
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 汽车专业资讯检索 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 孙华   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-29/星期一
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 学位英语 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 许柏琳   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-29/星期一
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 个人理财 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 田伟   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-30/星期二
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 人文英语4（开学第一课） </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 黄华   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-30/星期二
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 仲裁法 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 韩雪   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-30/星期二
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 项目管理 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 李惠青   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-30/星期二
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 计算机微机组装与维护 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 赵永虹   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-30/星期二
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 老年用药基本知识 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 戴建峰   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-30/星期二
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 美学专题 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 吴玲玲   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-30/星期二
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 燃气规范与法规 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 黄靖雅   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-30/星期二
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 资产评估 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 李玉波   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-30/星期二
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 经济数学基础12 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> "吴润民
+龙嘉"   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-30/星期二
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 婚姻与家人关系 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 杨戴萍   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-31/星期三
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 酒店人力资源管理 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 黄洵   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-31/星期三
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 离散数学 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 纪娟   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-31/星期三
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 中国现当代文学名著导读（1） </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 余娉   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-31/星期三
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 学前儿童家庭与社区教育 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 龙嘉   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-31/星期三
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 区域经济学 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 张磊   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-31/星期三
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 美学专题 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 陈丽玉   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    03-31/星期三
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 乡村振兴专题 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 冯士琳   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    03-31/星期三
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 家庭教育咨询与辅导 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 龙嘉   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    04-01/星期四
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 学前儿童卫生与保健 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 陈娟娟   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    04-01/星期四
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 生药学 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 戴建峰   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    04-01/星期四
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 行政法与行政诉讼法 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 余璟   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    04-01/星期四
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    13:00-   13:40
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 数据结构 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 赵永虹   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    04-01/星期四
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 美学专题 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 陈丽玉   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    04-01/星期四
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 学前儿童艺术教育（音乐） </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 杨明倩   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    04-01/星期四
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 动物生理基础 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 余春莲   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    04-01/星期四
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    18:30-   19:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 企业物流管理 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 周祥   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    04-01/星期四
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 临床医学概论 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 李湘华   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:White;font-size:Small;">
+			<td>                
+                  
+                    04-01/星期四
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 学位英语 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 许柏琳   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#003399;background-color:#E8F4FF;font-size:Small;">
+			<td>                
+                  
+                    04-01/星期四
+                      <font color="red"> </font>
+                      
+                      
+                            
+         
+         
+               
+                   </td><td>                
+                  
+                    19:30-   20:10
+               
+                   </td><td>                   
+                      <div align="left"><a href="javascript:;" target="_blank"> 房地产估价 </a>  </div>                        
+                     </td><td>                   
+                      <div align="left"> 何雅妮   </div>                        
+                     </td><td>                
+                        
+                        
+                                                      <a target="_blank" href='javascript:;'>回放</a> 
+         
+                
+                   </td>
+		</tr><tr align="center" style="color:#330099;background-color:#FFFFCC;">
+			<td colspan="5"><table border="0">
+				<tr>
+					<td><span>1</span></td><td><a href="javascript:__doPostBack('gv_jxhdlist','Page$2')" style="color:#330099;">2</a></td><td><a href="javascript:__doPostBack('gv_jxhdlist','Page$3')" style="color:#330099;">3</a></td><td><a href="javascript:__doPostBack('gv_jxhdlist','Page$4')" style="color:#330099;">4</a></td><td><a href="javascript:__doPostBack('gv_jxhdlist','Page$5')" style="color:#330099;">5</a></td><td><a href="javascript:__doPostBack('gv_jxhdlist','Page$6')" style="color:#330099;">6</a></td><td><a href="javascript:__doPostBack('gv_jxhdlist','Page$7')" style="color:#330099;">7</a></td><td><a href="javascript:__doPostBack('gv_jxhdlist','Page$8')" style="color:#330099;">8</a></td><td><a href="javascript:__doPostBack('gv_jxhdlist','Page$9')" style="color:#330099;">9</a></td><td><a href="javascript:__doPostBack('gv_jxhdlist','Page$10')" style="color:#330099;">10</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table>
+</div>
+        <br>
+    
+          <!--直播列表在这里显示（往上）-->
+        
+        </td>
+    <td><img src="images/spacer.gif" width="1" height="400" border="0" alt=""></td>
+  </tr>
+</table>
+
+  <!--页脚显示（往下）-->
+<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+
+  <tr>
+    <td><img src="images/spacer.gif" width="208" height="1" border="0" alt=""></td>
+    <td><img src="images/spacer.gif" width="816" height="1" border="0" alt=""></td>
+    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#0099FF"><div align="center"> </div></td>
+    <td><img src="images/spacer.gif" width="1" height="5" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="center"> Copyright @ 2020 江苏开放大学（原江苏广播电视大学） </div></td>
+    <td><img src="images/spacer.gif" width="1" height="51" border="0" alt=""></td>
+  </tr>
+</table>
+
+
+    
+   
+    </form>
+</body>
+</html>

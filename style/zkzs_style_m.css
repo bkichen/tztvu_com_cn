@@ -1,0 +1,85 @@
+
+/* CSS Document */
+/*
+ * 说明：
+ * 标注为慎删的属性暂时认定可以删除
+ */
+*{ font-family:"微软雅黑", Tahoma; }
+a{ text-decoration:none; color:#676767;}
+a:hover{ color:#c00;}
+img{ border:none;}
+p,ul,li,input,dl,dt,dd{ list-style:none; padding:0; margin:0;}
+h1, h2, h3, h4, h5, h6{ list-style:none; padding:0; margin:0; font-weight: normal; }
+.fl{ float:left;}
+.fr{ float:right;}
+.tl{ text-align:left}
+.tc{ text-align:center;}
+.tr{ text-align:right;}
+.mt10{ margin-bottom:10px;}
+.mb20{ margin-bottom: 20px;}
+.mb0{ margin-bottom:0;}
+.ml20{ margin-left: 20px;}
+html,body {height: 100%;}
+html{font-size: 62.5%;}
+p,dt,dd{font-size: 1.6em;}
+body,ul,li,a,p,div {/*慎删*/padding: 0px;	margin: 0px;}
+#wrap {	overflow: hidden;width: 100%; }
+
+#header{ overflow: hidden; height: auto; padding: 0; }
+#header #logoBox{ width:100%; margin: 0}
+#header #logoBox #logo{ height: 50px; width: 100%; margin: 0 auto; background: url(../images/zsjz/zsjz_logo.jpg) top center no-repeat; background-size:100% auto; overflow: hidden; }
+#header #bannerBox{ height: 120px; background:url(../images/zsjz/zsjz_banner.jpg) top center no-repeat; background-size:100% auto; }
+#header #menuBox{ width:100%; background: #a80b0a; border-bottom: 10px solid #fff;}
+#header #menu{overflow: hidden; width: 1200px; border-top:1px solid #c00;  margin: 0 auto; background: #a80b0a; position:relative; display: none; height: 0;}
+
+
+#indexContent{ overflow: hidden; width: 98%; margin: 0 auto;  padding:0; }
+
+#indexContent #index_row1{ width: 100%; margin: 0 auto; overflow: hidden; }
+#index_row1 #index_row1_T{}
+#index_row1 #index_row1_C{ overflow: hidden; }
+#index_row1_C .index_row1_ConentBox{ margin-bottom: 20px; overflow: hidden; }
+#index_row1_C .index_row1_ConentBox .index_row1_ConentBox_T{ }
+#index_row1_C .index_row1_ConentBox .index_row1_ConentBox_T h1{ color: #fff; background:#0e5ebe ; height: 40px; line-height: 40px; padding-left: 10px; }
+#index_row1_C .index_row1_ConentBox .index_row1_ConentBox_C{ padding: 0;}
+#index_row1_C .index_row1_ConentBox .index_row1_ConentBox_C h2{ color:#0e5ebe; font-weight: bold; line-height: 28px; border-bottom: 2px solid #0e5ebe; margin-top: 10px;  }
+#index_row1_C .index_row1_ConentBox .index_row1_ConentBox_C p{ line-height: 220%; text-indent: 2rem; }
+#index_row1_C .index_row1_ConentBox .index_row1_ConentBox_C p span{ font-weight: bold; color: #cc0000; }
+#index_row1_C .index_row1_ConentBox .index_row1_ConentBox_B{}
+
+#index_row1 #index_row1_B{}
+
+#indexContent #index_row2{ width: 100%; margin: 0 auto; margin-top: 30px; overflow: hidden; }
+#index_row2 #index_row2_T{}
+#index_row2 #index_row2_C{ overflow: hidden;}
+#index_row2_C .index_row2_ConentBox{ width: 100%; overflow: hidden; height: auto; }
+#index_row2_C .index_row2_ConentBox .index_row2_ConentBox_T{}
+#index_row2_C .index_row2_ConentBox .index_row2_ConentBox_T h1{  color: #fff; background:#0e5ebe ; height: 40px; line-height: 40px; padding-left: 10px;}
+#index_row2_C .index_row2_ConentBox .index_row2_ConentBox_C{ padding: 10px 20px 20px 0; overflow: hidden; }
+#index_row2_C .index_row2_ConentBox .index_row2_ConentBox_C p{ line-height: 220%; text-indent: 2rem; }
+#index_row2_C .index_row2_ConentBox .index_row2_ConentBox_C p span{ font-weight: bold; color: #cc0000; }
+#index_row2_C .index_row2_ConentBox .index_row2_ConentBox_B{}
+#index_row2 #index_row2_B{}
+
+#indexContent #index_row3{ width: 100%; margin: 0 auto; margin-top: 30px; overflow: hidden; }
+#index_row3 #index_row3_T{}
+#index_row3 #index_row3_C{ overflow: hidden;}
+#index_row3_C .index_row3_ConentBox{}
+#index_row3_C .index_row3_ConentBox .index_row3_ConentBox_T{background: #efefef; overflow: hidden; }
+#index_row3_C .index_row3_ConentBox .index_row3_ConentBox_T h1{ text-align: center; padding: 20px 10px; background: #0e5ebe; color: #fff;}
+#index_row3_C .index_row3_ConentBox .index_row3_ConentBox_C{ overflow: hidden; }
+#index_row3_C .index_row3_ConentBox .index_row3_ConentBox_C dl{ width: 100%; overflow: hidden; background: url(../images/zsjz/zsjz_bmd_bg.png) 0 0 repeat;}
+#index_row3_C .index_row3_ConentBox .index_row3_ConentBox_C dl dt{ font-weight: bold; height: 40px; line-height: 40px;  overflow: hidden;}
+#index_row3_C .index_row3_ConentBox .index_row3_ConentBox_C dl dt.bt{ text-align: center;  font-weight: bold; float: left; }
+#index_row3_C .index_row3_ConentBox .index_row3_ConentBox_C dl dt:hover{ cursor:pointer; background: #0e5ebe; color: #fff;}
+#index_row3_C .index_row3_ConentBox .index_row3_ConentBox_C dl dd{ height: 40px; line-height: 40px;  overflow: hidden;}
+#index_row3_C .index_row3_ConentBox .index_row3_ConentBox_C dl dd.bt{ text-align: center;   font-weight: bold; float: left;}
+#index_row3_C .index_row3_ConentBox .index_row3_ConentBox_C dl dd:hover{ cursor:pointer; background: #0e5ebe; color: #fff;}
+#index_row3_C .index_row3_ConentBox .index_row3_ConentBox_B{}
+#index_row3 #index_row3_B{}
+
+#footer{width: 100%; height: auto; padding: 15px 0 0; bottom: 0; background: #0e5ebe; }
+#footer .footerBox{ overflow: hidden; width: 1200px; margin: 0 auto; /*background: url(../images/zsjz/footer_5.png) right bottom no-repeat;*/}
+#footer .footerBox .footer_L{ width:70%;  text-align: left;}
+#footer .footerBox .footer_L .copyright{ line-height: 25px; color: #ffffff; }
+#footer .footerBox .footer_R{ width:30% }

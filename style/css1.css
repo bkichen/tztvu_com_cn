@@ -1,0 +1,325 @@
+body {
+ margin-top: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px;
+ margin-right: 0px;
+ text-align: center;
+ background-image: url(http://szjgxy.scrtvu.net/images/bodybj.jpg);
+ background-repeat: repeat-x;
+}
+a{text-decoration: none;
+}
+table{
+ font-size: 13px;
+ color: #002F5E;
+ text-decoration: none;
+ line-height: 180%;
+ font-weight: normal;
+}
+.black{
+ font-size: 13px;
+ color: #153159;
+ text-decoration: none;
+ line-height: 180%;
+}
+.white{
+ font-size: 13px;
+ font-weight: bold;
+ color: #FFFFFF;
+ line-height: 180%;
+ text-decoration: none;
+}
+.white1{
+ font-size: 16px;
+ color: #FFFFFF;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 2px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.green{
+ font-size: 13px;
+ color: #2E5A36;
+ text-decoration: none;
+ line-height: 180%;
+}
+.red{
+ font-size: 12px;
+ color: #CC0001;
+ line-height: 22px;
+ text-decoration: none;
+ letter-spacing: 2px;
+}
+.yellow{
+ font-size: 12px;
+ color: #CC0001;
+ line-height: 22px;
+ text-decoration: none;
+}
+.gray{
+ font-size: 13px;
+ color: #768592;
+ text-decoration: none;
+ letter-spacing: 1px;
+}
+.title{
+ font-size: 16px;
+ color: #002F5E;
+ text-decoration: none;
+ font-weight: bolder;
+ text-indent: 16px;
+ background-image: url(../images/btbj.jpg);
+}
+.title-bt{
+ font-size: 13px;
+ color: #FFFFFF;
+ text-decoration: none;
+ font-weight: bold;
+ text-indent: 36px;
+ background-image: url(../images/bttp.jpg);
+ background-repeat: no-repeat;
+ vertical-align: bottom;
+ top: 8px;
+ clip: rect(8px,auto,auto,auto);
+}
+.wz{
+ font-size: 12px;
+ color: #2F4E62;
+ text-decoration: none;
+ line-height: 180%;
+ background-image: url(../images/wzbj1.jpg);
+ text-indent: 12px;
+ letter-spacing: 2px;
+}
+
+.page-container {
+ margin: auto;
+ line-height: 38px;
+ width: 980px;
+ background-image: url(../images/dh.jpg);
+}
+
+.test li{
+ width:100px;
+ line-height:32px;
+ font-size: 14px;
+ text-decoration: none;
+ color: #132C54;
+ background-image: url(http://szjgxy.scrtvu.net/images/dhbj.jpg);
+ font-weight: bold;
+ float: left;
+}
+.test a{display:block;text-align:center;}
+.test a:link{
+ color:#FFFFFF;
+ text-decoration:none;
+ background-image: url(http://szjgxy.scrtvu.net/images/dhbj.jpg);
+ text-align: center;
+}
+.test a:visited{
+ color:#FFFFFF;
+ text-decoration:none;
+ background-image: url(http://szjgxy.scrtvu.net/images/dhbj.jpg);
+}
+.test a:hover{
+ color:#33FFFF;
+ text-decoration:none;
+ background-image: url(http://szjgxy.scrtvu.net/images/dhbj2.jpg);}
+.test a:active{
+ color:#33FFFF;
+ text-decoration:none;
+ background-image: url(http://szjgxy.scrtvu.net/images/dhbj2.jpg);
+} 
+
+#bottom2 {
+ float: none;
+ width: 980px;
+ outline: none;
+ height: 22px;
+ text-align: center;
+ vertical-align: middle;
+ margin-top: 8px;
+}
+#bottom3 {
+ float: none;
+ width: 980px;
+ outline: none;
+ filter: Alpha(Opacity=90);
+ background-color: #D8E0F1;
+ height: 1px;
+ top: 8px;
+ vertical-align: middle;
+ letter-spacing: 1px;
+ line-height: 22px;
+ margin-top: 1px;
+}
+.line {
+ text-decoration: none;
+ border: 1px solid #E7E7E7;
+ }
+ .line2 {
+ text-decoration: none;
+ border-bottom-width: 0px;
+ border-top-style: dotted;
+ border-right-style: dotted;
+ border-bottom-style: dotted;
+ border-left-style: dotted;
+ border-top-color: #CCCCCC;
+ border-right-color: #CCCCCC;
+ border-bottom-color: #CCCCCC;
+ border-left-color: #CCCCCC;
+ border-right-width: 0px;
+ border-left-width: 0px;
+ vertical-align: middle;
+ border-top-width: 1px;
+ margin: 10px;
+ }
+.blacka:link {
+ font-size: 12px;
+ color: #3A3A3A;
+ text-decoration: none;
+ line-height: 190%;
+ text-align: left;
+}
+.blacka:visited {
+ font-size: 12px;
+ color: #3A3A3A;
+ text-decoration: none;
+ line-height: 190%;
+ text-align: left;
+}
+.blacka:hover {
+ font-size: 12px;
+ color: #FF9900;
+ text-decoration: underline;
+ line-height: 190%;
+ text-align: left;
+}
+.blacka:active {
+ font-size: 12px;
+ color: #FF9900;
+ text-decoration: none;
+ line-height: 190%;
+ text-align: left;
+}
+
+.black14a:link {
+ font-size: 14px;
+ color: #002F5E;
+ text-decoration: underline;
+ line-height: 190%;
+ text-align: left;
+}
+.black14a:visited {
+ font-size: 14px;
+ color: #002F5E;
+ text-decoration: underline;
+ line-height: 190%;
+ text-align: left;
+}
+.black14a:hover {
+ font-size: 14px;
+ color: #E85C00;
+ text-decoration: underline;
+ line-height: 190%;
+ text-align: left;
+}
+.black14a:active {
+ font-size: 14px;
+ color: #2F4E62;
+ text-decoration: none;
+ line-height: 190%;
+ text-align: left;
+}
+.whitea:link {
+ font-size: 12px;
+ color: #FFFFFF;
+ text-decoration: none;
+ line-height: 180%;
+}
+.whitea:visited {
+ font-size: 12px;
+ color: #FFFFFF;
+ text-decoration: none;
+ line-height: 180%;
+}
+.whitea:hover {
+ font-size: 12px;
+ color: #FFFFFF;
+ text-decoration: underline;
+ line-height: 180%;
+}
+.whitea:active {
+ font-size: 12px;
+ color: #FFFFE1;
+ text-decoration: none;
+}
+.yellowa:link {
+ font-size: 12px;
+ color: #FF6600;
+ text-decoration: none;
+ line-height: 180%;
+ text-align: left;
+}
+.yellowa:visited {
+ font-size: 12px;
+ color:#FF6600;
+ text-decoration: none;
+ line-height: 180%;
+ text-align: left;
+}
+.yellowa:hover {
+ font-size: 12px;
+ color: #FF9900;
+ text-decoration: underline;
+ line-height: 180%;
+ text-align: left;
+}
+.yellowa:active {
+ font-size: 12px;
+ color:#FF9900;
+ text-decoration: none;
+ line-height: 180%;
+ text-align: left;
+}
+.left ul{
+ list-style-type:none;
+ font-size: 13px;
+ line-height: 28px;
+ text-decoration: none;
+ float: left;
+ margin: 0px;
+ padding: 0px;
+ width: 32px;
+}
+.left ul a{
+ display:block;
+ padding:1px;
+ text-align:left;
+ text-decoration:none;
+ width:214px;
+ margin:1px;
+ text-indent: 23px;
+}
+.left ul a:link{
+ color: #002B55;
+ background-color: #CADAF0;
+ background-image: url(../images/left1.jpg);
+}
+.left ul a:visited{
+ color: #002B55;
+ background-color: #CADAF0;
+ background-image: url(../images/left1.jpg);
+}
+.left ul a:hover{
+ color:#FFFFFF;
+ background-color: #C8D7E3;
+ background-image: url(../images/left2.jpg);
+ font-weight: bold;
+}
+.left ul a:active{
+ background-color: #C8D7E3;
+ color: #FFFFFF;
+ background-image: url(../images/left2.jpg);
+ font-weight: bold;
+}

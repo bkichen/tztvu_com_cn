@@ -1,0 +1,89 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>学生平台-中央广播电视大学教学管理系统</title>
+	<link href="http://zkjw.scrtvu.net:8000/StuRTVUWeb/pages/common/css/main.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="../../javascripts/verifyCode.js"></script>
+        <script type="text/javascript" src="../../javascripts/jquery.js"></script>
+<script type="text/javascript">
+
+            $(document).ready(function() {
+
+    $("#imgObj").hide();
+    $("#change").hide();
+   $("#veryCode").click(function(){
+      $("#imgObj").show();
+      $("#change").show();
+      $("#veryCode").attr("value","");
+   });
+//$("#username").focus(function(){
+//      $("#imgObj").hide();
+//      $("#change").hide();
+//      $("#veryCode").attr("value","请点击");
+//   });
+//$("#password").focus(function(){
+//      $("#imgObj").hide();
+//      $("#change").hide();
+//      $("#veryCode").attr("value","请点击");
+//   });
+});
+        </script>
+<script type="text/javascript" src="/js/kb.js"></script></head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background="/StuRTVUWeb/images/login/login_pic_new.jpg">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+   <tr>
+    <td width="100%" height="370"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="43%" height="19"></td>
+    <td width="57%" rowspan="10">
+
+<form method="post" action="j_security_check" name="loginForm" id="loginForm">
+   <table width="100%" border="0" style="font-family: arial, helvetica; font-size: 12px;">
+      <!--显示内容表头-->
+       <tr>
+	 	  <td colspan="2" align="center"><font size="5">请登录</font></td>
+       </tr>
+	   <tr>
+         <td height="30" align="right" width="40%">用户名:</td>
+         <td align="left"> <input type="text" name="j_username" size="20"></td>
+ 	  </tr>
+       <tr>
+		    <td height="30" align="right" width="40%">密  码:</td>
+	        <td align="left"> <input type="password" name="j_password" size="20"></td>
+       </tr>
+		<tr>
+       <td height="30" align="right" width="40%">验证码:</td>
+       <td align="left">
+        <input id="veryCode" name="veryCode" type="text" value="请点击">
+        <img id="imgObj" alt="" src="../../verifyCodeServlet.jpg">
+        <a href="#" onclick="changeImg()" id="change">换一张</a>
+       </td>
+       </tr>
+		<tr>
+			<td colspan="2" align="center">
+				<!--<input type="submit" class="NormalSubmit" value="确定" id=submit1 name=submit1 onclick="isRightCode()"-->
+<input type="button" class="NormalSubmit" value="确定" onclick="isRightCode()">
+<input type="reset" class="NormalSubmit" value="取消" id="reset1" name="reset1">
+
+</td>
+		</tr>
+     </table>
+</form>
+
+
+
+    </td>
+  </tr>
+</table>
+
+<script language="JavaScript" type="text/javascript">
+  <!--
+    document.forms["loginForm"].elements["j_username"].focus()
+  // -->
+</script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+
+
+
+
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>分校平台-中央广播电视大学教学管理系统</title>
+	<link href="../../css/main.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/js/kb.js"></script></head>
+<!--script type="text/javascript" src="javascripts/verifyCode.js"></script-->
+<script type="text/javascript" src="../../../StuRTVUWeb/javascripts/jquery.js"></script>
+<script src="../../javascripts/validate.js" language="JavaScript"></script>
+ <script type="text/javascript">
+
+            $(document).ready(function() {
+
+    $("#imgObj").hide();
+    $("#change").hide();
+   $("#veryCode").click(function(){
+      $("#imgObj").show();
+      $("#change").show();
+      $("#veryCode").attr("value","");
+   });
+
+});
+function changeImg(){
+    var imgSrc = $("#imgObj");
+    var src = imgSrc.attr("src");
+
+    imgSrc.attr("src",chgUrl(src));
+}
+//时锟斤拷锟\uFFFD
+//为锟斤拷使每锟斤拷锟斤拷锟酵计拷锟揭伙拷拢锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷{锟斤拷妫拷锟斤拷锟斤拷锟揭拷锟斤拷锟绞憋拷锟斤拷
+function chgUrl(url){
+    var timestamp = (new Date()).valueOf();
+    url = url.substring(0,17);
+
+    if((url.indexOf("&")>=0)){
+        url = url + "锟斤拷tamp=" + timestamp;
+    }else{
+        url = url + "?timestamp=" + timestamp;
+    }
+
+
+    return url;
+}
+
+function isRightCode(){
+
+    var code = $("#veryCode").attr("value");
+    code = "c=" + code;
+    $.ajax({
+        type:"POST",
+        url:"resultServlet",
+        data:code,
+        success:callback
+    });
+}
+$("#veryCode").click(function(){
+      $("#imgObj").hide();
+      $("#change").hide();
+      $("#veryCode").attr("value","");
+   });
+function callback(data){
+
+
+    if(data!='right')
+    {
+       alert(data);
+
+    }
+
+    else
+{
+	$("#veryCode").attr("value","请点击");
+        $("#form1").submit();
+}
+}
+        </script>
+<script language="JavaScript">
+
+function check(temp,t1){
+    var errString=isEmpty("教学点必须选择！\n",temp.value);
+    if(errString!=""){alert(errString);return false;}
+var t=eval("form1.j_username");
+t.value=t1.value+"_"+temp.value;
+//alert("用户名是:"+t.value);
+    return true;
+}
+function checkschool(txtschool,station,t1){
+	if(isNothing(txtschool.value)&&station.value==""){
+		alert("请输入学校代码或选择分校！\n");
+		return false;
+	}
+	if(isNothing(txtschool.value)&&station.value!=""){
+		var t=eval("form1.j_username");
+		t.value=t1.value+"_"+station.value;
+                var tt=isRightCode();
+                return true;
+	}
+	if(txtschool.value.length!=5){
+		alert("输入学校代码错误，分校学校代码为5位！\n");
+		return false;
+	}
+	//都不为空，以输入学校代码为准
+	var t2=eval("form1.j_username");
+        t2.value=t1.value+"_"+txtschool.value;
+        var tt=isRightCode();
+}
+</script>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background="/SRTVUWeb/images/login/login_pic_new.jpg">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+   <tr>
+    <td width="100%" height="345"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="37%" height="19"></td>
+    <td width="63%" rowspan="10">
+
+     <form method="post" action="j_security_check" id="form1" name="form1">
+   <table width="100%" border="0" style="font-family: arial, helvetica; font-size: 12px;">
+      <!--显示内容表头-->
+      
+      <tr>
+        <td height="30" align="right" width="40%">用户名:</td>
+        <td align="left"> <input type="text" name="j_username_temp" size="20">
+	<input type="hidden" name="j_username"></td>
+      </tr>
+       <tr>
+        <td height="30" align="right" width="40%">密  码:</td>
+        <td align="left"> <input type="password" name="j_password" size="20"></td>
+        </tr>
+       <tr>
+		<td height="30" align="right" width="40%">学校代码:</td>
+		<td align="left"><input type="text" maxlength="5" name="txtschool" size="20"></td>
+       </tr>
+       <tr>
+        <td height="30" align="right" width="40%">分 校:</td>
+        <td align="left">
+             <select name="subschool">
+  <option value="">请选择</option>
+
+  <option value="51000">
+   51000 江苏电大直属学院
+  </option>
+
+
+  <option value="51001">
+   51001 成都电大
+  </option>
+
+
+  <option value="51002">
+   51002 江苏电大省级机关电大
+  </option>
+
+
+  <option value="51003">
+   51003 成都铁路局电大
+  </option>
+
+
+  <option value="51004">
+   51004 德阳广播电视大学
+  </option>
+
+
+  <option value="51005">
+   51005 绵阳广播电视大学
+  </option>
+
+
+  <option value="51006">
+   51006 广元广播电视大学
+  </option>
+
+
+  <option value="51007">
+   51007 遂宁广播电视大学
+  </option>
+
+
+  <option value="51008">
+   51008 雅安广播电视大学
+  </option>
+
+
+  <option value="51009">
+   51009 乐山广播电视大学
+  </option>
+
+
+  <option value="51010">
+   51010 内江广播电视大学
+  </option>
+
+
+  <option value="51011">
+   51011 自贡广播电视大学
+  </option>
+
+
+  <option value="51012">
+   51012 宜宾广播电视大学
+  </option>
+
+
+  <option value="51013">
+   51013 泸州广播电视大学
+  </option>
+
+
+  <option value="51014">
+   51014 南充广播电视大学
+  </option>
+
+
+  <option value="51015">
+   51015 达州广播电视大学
+  </option>
+
+
+  <option value="51016">
+   51016 万县市广播电视大学
+  </option>
+
+
+  <option value="51018">
+   51018 涪陵广播电视大学
+  </option>
+
+
+  <option value="51019">
+   51019 阿坝广播电视大学
+  </option>
+
+
+  <option value="51020">
+   51020 甘孜广播电视大学
+  </option>
+
+
+  <option value="51021">
+   51021 凉山广播电视大学
+  </option>
+
+
+  <option value="51022">
+   51022 攀枝花广播电视大学
+  </option>
+
+
+  <option value="51023">
+   51023 黔江地区分校
+  </option>
+
+
+  <option value="51026">
+   51026 巴中广播电视大学
+  </option>
+
+
+  <option value="51027">
+   51027 广安广播电视大学
+  </option>
+
+
+  <option value="51028">
+   51028 建设厅广播电视大学
+  </option>
+
+
+  <option value="51029">
+   51029 眉山广播电视大学
+  </option>
+
+
+  <option value="51030">
+   51030 资阳广播电视大学
+  </option>
+
+
+  <option value="51058">
+   51058 教学中心
+  </option>
+
+
+  <option value="51060">
+   51060 干函院
+  </option>
+
+
+  <option value="51090">
+   51090 教务处_95,泸,直
+  </option>
+
+
+  <option value="51092">
+   51092 系统_教96
+  </option>
+
+
+  <option value="51093">
+   51093 江苏电大教务处
+  </option>
+
+
+  <option value="51094">
+   51094 墨池分校
+  </option>
+
+
+  <option value="51095">
+   51095 江苏电大直属部
+  </option>
+
+
+  <option value="51096">
+   51096 都江堰分校
+  </option>
+
+
+
+
+</select>
+
+</td>
+</tr>
+
+<tr>
+       <td height="30" align="right" width="40%">验证码:</td>
+       <td align="left">
+        <input id="veryCode" name="veryCode" type="text" value="请点击">
+        <img id="imgObj" alt="" src="../../verifyCodeServlet.jpg">
+        <a href="#" onclick="changeImg()" id="change">换一张</a>
+       </td>
+       </tr>
+		<tr>
+			<td colspan="2" align="center">
+				<!--<input type="submit" class="NormalSubmit" value="确定" id=submit1 name=submit1 onclick="isRightCode()"-->
+<input type="button" class="NormalSubmit" value="确定" onclick="return checkschool(txtschool,subschool,j_username_temp);">
+<input type="reset" class="NormalSubmit" value="取消" id="reset1" name="reset1">
+
+</td>
+		</tr>
+     </table>
+</form>
+
+  </td>
+  </tr>
+</table>
+</body>
+</html>

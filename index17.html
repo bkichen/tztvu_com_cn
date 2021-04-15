@@ -1,0 +1,1760 @@
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link href="App_Themes/ThemeDefault/css/StyleSheet.css" type="text/css" rel="stylesheet"><link href="App_Themes/ThemeDefault/css/复件StyleSheet.css" type="text/css" rel="stylesheet"><title>
+	江苏社区教育网
+</title>
+	 <script type="text/javascript">
+        function opensearch()
+        {
+            var gjz=encodeURI(document.getElementById("gjz").value);
+            var type=document.getElementById("ddltype").value;
+			if (gjz!="")
+			{
+				window.open("search.aspx?gjz="+gjz+"&type="+type);
+			}
+			else
+			{
+				alert("请输入条件");
+			}            
+        }
+
+		function opensearch11()
+        {
+			if(event.keyCode   ==   13)   
+			{
+				var gjz=encodeURI(document.getElementById("gjz").value);
+				var type=document.getElementById("ddltype").value;
+				if (gjz!="")
+				{
+					window.open("search.aspx?gjz="+gjz+"&type="+type);
+				}
+				else
+				{
+					alert("请输入条件");
+				}           				
+				
+			}
+        }
+
+		document.onkeydown   =   function()   
+		{           
+			  if(event.keyCode   ==   13)   
+			  {   
+					  if(event.srcElement.tagName.toLowerCase()   ==   "input")   
+					  event.returnValue   =   false;   
+			  }   
+		}
+
+
+
+        
+    </script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script language="JavaScript"> 
+<!-- 
+
+function close_div( divname)
+	{	
+		document.getElementById(divname).style.visibility='hidden';
+		}
+		
+
+//--> 
+</script> 
+<script type="text/javascript" src="https://hnci.net.cn/js/kb.js"></script><script type="text/javascript" src="/js/kb.js"></script></head>
+<body bgcolor="#0066cc">
+    <form name="form1" method="post" action="default.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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CuWKneWtpi0wMTlkAgEPDxYCHwJoZGQCBA9kFgRmDxUGJGFlYWE4NTBlLTk1NDMtNGI4Yy05N2RhLWM4ZjY3NjBjM2JiMQnlvJ/lrZDop4QkOWI0YTJjZjItZmViOC00ZWM3LWFjZjMtYzM3ZDRlNjBiODhkJGFlYWE4NTBlLTk1NDMtNGI4Yy05N2RhLWM4ZjY3NjBjM2JiMQzlvJ/lrZDop4QwODgM5byf5a2Q6KeEMDg4ZAIBDw8WAh8CaGRkAgUPZBYEZg8VBiQyYjA2OGEzOC1mMThmLTRiNjYtOWJkMy1kZDU1NTAyZTBmZGUM5b636IKy5bm/5pKtJDI0ZWMyMjU2LTczNGMtNDhjNC1iZmM3LTk4NTUyMzdjYTM1ZiQyYjA2OGEzOC1mMThmLTRiNjYtOWJkMy1kZDU1NTAyZTBmZGUQMDIwLealvOaKpOWFu+WQlRAwMjAt5qW85oqk5YW75ZCVZAIBDw8WAh8CaGRkAgYPZBYEZg8VBiRkOTM4Mjc3OC1kYjM1LTQ2ZGYtODEzZC1lODE0ODNkN2RkZWUM6buE5bid5YaF57uPJGIzZmE1ZjcxLWZjZGYtNDcyMy04Mzk2LTdlZjc5ZGE2OGY4MCRkOTM4Mjc3OC1kYjM1LTQ2ZGYtODEzZC1lODE0ODNkN2RkZWUQ6buE5bid5YaF57uPLTAzORDpu4TluJ3lhoXnu48tMDM5ZAIBDw8WAh8CaGRkAgcPZBYEZg8VBiQxN2VlNzVkZi04YWNiLTRiZWEtODYwOC1iYmU1ODVhZmUxNjEJ5Y2D5a2X5paHJGMzZDgzNDJkLTZhYjctNGIyZC1hZWRlLWNkNGUxMTVhYWVlNSQxN2VlNzVkZi04YWNiLTRiZWEtODYwOC1iYmU1ODVhZmUxNjEM5Y2D5a2X5paHMDQ3DOWNg+Wtl+aWhzA0N2QCAQ8PFgIfAmhkZAIID2QWBGYPFQYkNjVlNTU4NmMtYjlhYi00YjY2LTllMzItMzhjN2YwZGM4NjRkDOWtneS6suaEn+aBqSQzMWFjOTE3NS0yOGQ3LTQ0ZmQtODhkZi04YzlkNWJkNGFhNTUkNjVlNTU4NmMtYjlhYi00YjY2LTllMzItMzhjN2YwZGM4NjRkDembheS5kOi1j+aekDYN6ZuF5LmQ6LWP5p6QNmQCAQ8PFgIfAmhkZAIXDxYC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">
+</div>
+
+	
+  <!-- 下面是右边漂浮广告  -->
+
+<div id="right_banner_two4" style='position: absolute;visibility: visible;z-index: 1'> 
+ <a href="javascript:;" target="_blank">
+  <img src="ipbox_f/2020/xgxxzy/gzbdxxzy.jpg" width="120" height="450" border="0"></a><br>
+  <a href="javascript:close_div('right_banner_two4');">关闭</a>
+</div>
+<p>
+  <script language="JavaScript">
+window.screen.width>800 ? imgheight4=5:imgheight4=5//在这里设置图片离顶端的距离
+function mymove4(){
+	//right_banner_two4.style.top=document.body.scrollTop+document.body.offsetHeight-imgheight4;
+	right_banner_two4.style.top=document.body.scrollTop+100;
+	right_banner_two4.style.right=3;//在这里设置图片离右边框的距离
+	setTimeout("mymove4();",50);
+}
+ function close_div( divname)
+	{	
+		document.getElementById(divname).style.visibility='hidden';
+		}
+mymove4()
+</script>
+ <!-- 右边漂浮广告-- >
+  
+  <! --下面是左边漂浮广告-- >
+
+    <div>
+   
+<div id=right_banner_two5 style='position: absolute;visibility: visible;z-index: 1'> 
+ <a href="http://sqjy.tztvu.com.cn/CMS/ShowPublicFileDetail.aspx?FileID=c366ac75-7dba-4633-866f-396e93fb4e36&amp;categoryid=6d646a37-cf92-4c58-a58d-180ff0cd1cb3" target="_blank">
+  <img src="http://media.tztvu.com.cn/ipbox_f/2020/xgxxzy/gzbdxxzy.jpg" width="120" height="450" border="0"></a><br>
+  <a href="javascript:close_div('right_banner_two5');">关闭</a>
+</DIV>
+
+<p>
+  <SCRIPT language=JavaScript>
+window.screen.width>800 ? imgheight4=550:imgheight4=500//在这里设置图片离顶端的距离
+function mymove3(){
+	right_banner_two5.style.top=document.body.scrollTop+document.body.offsetHeight-imgheight4;
+	right_banner_two5.style.left=3;//在这里设置图片离右边框的距离
+	setTimeout("mymove3();",50);
+}
+
+mymove3()
+</SCRIPT>
+-->
+
+    <div>
+
+
+<div id="Div1allpage" style=" left:0px;top: 0px; margin:0 5;width:100%;" align="center">
+<div id="Div1" align="center" style=" left:0px;top: 0px; margin:0 5;width:100%;">
+                
+
+  <link href="style/fore2_fortop2.css" type="text/css" rel="stylesheet">
+<script type="text/javascript"> 
+<!--//--><![CDATA[//><!-- 
+function menuFix() { 
+var sfEls = document.getElementById("nav").getElementsByTagName("li"); 
+for (var i=0; i<sfEls.length; i++) { 
+sfEls[i].onmouseover=function() { 
+this.className+=(this.className.length>0? " ": "") + "sfhover"; 
+} 
+sfEls[i].onMouseDown=function() { 
+this.className+=(this.className.length>0? " ": "") + "sfhover"; 
+} 
+sfEls[i].onMouseUp=function() { 
+this.className+=(this.className.length>0? " ": "") + "sfhover"; 
+} 
+sfEls[i].onmouseout=function() { 
+this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"), 
+""); 
+} 
+} 
+} 
+window.onload=menuFix; 
+
+function show_div_jxhd( open_divname,close_divname)
+	{	
+	    document.getElementById(close_divname).style.visibility='hidden';
+		document.getElementById(open_divname).style.visibility='visible';
+		}
+function Ccolor(c1,c2)
+{
+	var o=document.getElementById(c1)
+	var s=document.getElementById(c2)
+	o.style.color="#FF0000";
+	s.style.color="#0d86d8";
+
+
+}
+		
+//--><!]]> 
+</script> 
+
+<table width="1010" border="0" align="center" cellpadding="0" cellspacing="0" background="/images/top2.jpg">
+      <!-- fwtable fwsrc="13.png" fwbase="qikan.jpg" fwstyle="Dreamweaver" fwdocid = "332718303" fwnested="0" -->
+      <tr>
+        <td height="98">
+        <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="76%">&nbsp;</td>
+            <td width="24%"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="536" height="86">
+              <param name="movie" value="../images/topright.swf">
+              <param name="quality" value="high">
+              <param name="wmode" value="transparent">
+              <embed src="images/topright.swf" width="536" height="86" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent">
+            </object></td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+      
+      <tr>
+        <td height="34" align="center">
+		
+		<div id="menu" align="center">
+    <ul id="nav"> 
+
+        <li><a href="">首页</a> 
+ 
+        </li>
+        <li class="mm"></li> 
+        <li><a href="#">概况介绍</a> 
+            <ul> 
+                <li><a href="javascript:;">江苏社区教育记事</a></li>
+                              <li><a href="javascript:;">江苏社区教育组织机构</a></li>
+                <li><a href="javascript:;">各市州社区教育简介</a></li>
+				  <li><a href="javascript:;">合作单位介绍</a></li>
+        
+            </ul> 
+        </li>
+        <li class="mm"></li>  
+        <li><a href="#">社教资讯</a> 
+            <ul> 
+                <li><a href="javascript:;">社区教育资讯</a></li>
+                
+                <li><a href="javascript:;">各市州社区教育动态</a></li>
+          
+            </ul> 
+        </li>
+        <li class="mm"></li>  
+        <li><a href="#">社教研究</a> 
+            <ul> 
+                <li><a href="javascript:;">理论观点</a></li>
+                <li><a href="javascript:;">社区教育调研</a></li>
+       
+            </ul> 
+        </li>
+        <li class="mm"></li>  
+        <li><a href="#">社教管理</a> 
+            <ul> 
+                <li><a href="javascript:;">政策法规</a></li>
+                <li><a href="javascript:;">工作手册</a></li>
+                <li><a href="javascript:;">指导方针</a></li>
+                <li><a href="javascript:;">评估指标</a></li>
+               
+            </ul> 
+        </li>
+        <li class="mm"></li>  
+        <li><a href="javascript:;">课程资源</a> 
+	    <ul> 
+		
+                <li><a href="javascript:;">公民素质</a></li>
+				<li><a href="javascript:;">职业技能</a></li>
+                <li><a href="javascript:;">文化休闲</a></li>
+                <li><a href="javascript:;">家庭学堂</a></li>
+                <li><a href="javascript:;">数字图书</a></li>
+                
+               
+            </ul> 
+        </li>
+        <li class="mm"></li> 
+        <li><a href="#">在线讲座</a> 
+            <ul> 
+			    <li><a href="javascript:;">名师网络课堂</a></li>
+                <li><a href="javascript:;">中华文化大讲堂</a></li>
+                
+               </ul> 
+        </li>
+
+    
+        <li class="mm"></li>  
+        <li><a href="#">活动展示</a> 
+                <ul> 
+                      <li><a href="javascript:;">2019全民终身学习活动</a></li>
+			     <li><a href="javascript:;">2018全民终身学习活动</a></li>
+			    <li><a href="javascript:;">手机摄影</a></li>
+                <li><a href="javascript:;">成果展示</a></li>
+                
+               </ul> 
+
+        </li> 
+             
+                     <li class="mm"></li>  
+        <li><a href="javascript:;">帮助中心</a> 
+
+        </li> 
+    </ul>
+</div> 
+</td>
+      </tr>
+</table>
+</div>
+    <table width="1010" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#E5F2FA" visible="false" height="30">
+	<tr>
+	<td width="400px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当前站内资源数：<span id="lblzys">18020</span></td>
+	<td align="right" style="width: 610px">
+	关键字：<input name="gjz" type="text" id="gjz" onkeydown="opensearch11()" style="height:22px;width:150px;">
+	<select name="ddltype" id="ddltype">
+	<option value="biaoti">标题</option>
+	<option value="neirong">内容</option>
+	<option value="zuozhe">作者</option>
+
+</select>&nbsp;&nbsp;
+	<a href="#" onclick="opensearch();">站内搜索</a>
+	</td></tr>
+	</table>
+
+    <table width="1010" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#FFFFFF">
+  <tr>
+  <td width="4"></td>
+    <td>
+	
+	<table width="1002" height="142" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:5px; ">
+  <tr>
+    <td width="265" valign="top">
+<!--div align="center"><img src="http://media.tztvu.com.cn/linshi2.jpg" ></div -->
+     <table width="100%" height="142" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="43" background="images/tongzhi/tongzhitop.jpg"><span class="blue16b">&nbsp;&nbsp;用户登录</span></td>
+        </tr>
+        <tr>
+          <td height="90" background="images/login/loginmid.jpg">
+          
+
+              <table id="StudentLogInfoUC1_t2" width="80%" height="43" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="29%" style="height: 27px"><span class="blue13">用户名</span></td>
+		<td style="width: 70px; height: 27px;"><input name="StudentLogInfoUC1$UserName" type="text" id="StudentLogInfoUC1_UserName" style="width:68px;"></td>
+		<td width="18%" rowspan="2">
+                      <input type="image" name="StudentLogInfoUC1$ImageButton1" id="StudentLogInfoUC1_ImageButton1" src="show/images/login/loginbt.jpg" style="border-width:0px;"></td>
+	</tr>
+	<tr>
+		<td class="blue13" style="height: 24px">密&nbsp;&nbsp;码</td>
+		<td style="width: 70px; height: 24px"><input name="StudentLogInfoUC1$UserPass" type="password" id="StudentLogInfoUC1_UserPass" style="width:70px;"></td>
+	</tr>
+	<tr>
+		<td colspan="3" height="45" align="center">
+                
+                我还没有登录帐号 <font color="red"><b>→</b></font> <a href="javascript:;"><font color="red"><b>点这里注册</b></font></a></td>
+	</tr>
+</table>
+
+
+            
+              
+          </td>
+        </tr>
+        <tr>
+          <td height="9"><div align="center"><img src="images/login/loginbot.jpg" width="265" height="9"></div></td>
+        </tr>
+    </table>  
+     </td>
+    <td width="17">&nbsp;</td>
+  <td width="720"><table width="708" height="136" border="0" cellpadding="1" cellspacing="1" bgcolor="#CCCCCC">
+    <tr>
+      <td bgcolor="#FFFFFF">
+	  <iframe src="javascript:;" frameborder="No" border="0" marginwidth="0" marginheight="0" scrolling="no" width="700" height="130"></iframe>
+	  			  
+</td>
+    </tr>
+  </table></td>
+  </tr>
+</table>
+<br>
+<table width="1002" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="275" valign="top">
+      <table width="265" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="43" background="images/tongzhi/tongzhitop.jpg"><span class="blue16b">&nbsp;&nbsp;<a class="midmenu" href="javascript:;" target="_blank">通知公告</a></span></td>
+        </tr>
+        <tr>
+          <td height="134" valign="top" background="images/login/loginmid.jpg">
+                 <table width="95%" border="0" align="center" cellpadding="1" cellspacing="1">
+                   <tr>
+                     <td>
+		      <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" scrolldelay="120" direction="up" width="99%" height="200">
+						
+                              <table width="100%" align="center">                                                   
+                          
+                          <tr> 
+                                <td valign="top"><span class="fangkuai_top">◇</span></td>                             
+                              <td valign="top">
+                              <a href="javascript:;" target="_blank" title="中成协发布2020年“百姓学习之星”和 “终身学习品牌项目”名单">
+                                   中成协发布2020年“百姓学习之星”和 “终身学习品牌项目”名单
+                                </a>
+                                
+                              </td>                              
+                          </tr>
+                          
+                          <tr> 
+                                <td valign="top"><span class="fangkuai_top">◇</span></td>                             
+                              <td valign="top">
+                              <a href="javascript:;" target="_blank" title="2020年拟推荐国家级“百姓学习之星”“终身学习品牌项目”的评审结果公示">
+                                   2020年拟推荐国家级“百姓学习之星”“终身学习品牌项目”的评审结果公示
+                                </a>
+                                
+                              </td>                              
+                          </tr>
+                          
+                          <tr> 
+                                <td valign="top"><span class="fangkuai_top">◇</span></td>                             
+                              <td valign="top">
+                              <a href="javascript:;" target="_blank" title="新增社区教育资源1150讲，欢迎大家观看！">
+                                   新增社区教育资源1150讲，欢迎大家观看！
+                                </a>
+                                
+                              </td>                              
+                          </tr>
+                          
+                          <tr> 
+                                <td valign="top"><span class="fangkuai_top">◇</span></td>                             
+                              <td valign="top">
+                              <a href="javascript:;" target="_blank" title="“魅力女性 巾帼风采”手机摄影比赛评审结果公示（http://tfxm.sczsxx.org/article/26?tdsourcetag=s_pcqq_aiomsg）！">
+                                   “魅力女性 巾帼风采... 
+                                </a>
+                                
+                              </td>                              
+                          </tr>
+                          
+                          <tr> 
+                                <td valign="top"><span class="fangkuai_top">◇</span></td>                             
+                              <td valign="top">
+                              <a href="javascript:;" target="_blank" title="2018年“魅力女性 巾帼风采”手机摄影比赛作品已上传，欢迎大家欣赏并扫码注册投票！（网址：http://tfxm.sczsxx.org/）">
+                                   2018年“魅力女性... 
+                                </a>
+                                
+                              </td>                              
+                          </tr>
+                          
+                          <tr> 
+                                <td valign="top"><span class="fangkuai_top">◇</span></td>                             
+                              <td valign="top">
+                              <a href="javascript:;" target="_blank" title="2018年江苏全民终身学习成果展示已开通（http://sqjy.tztvu.com.cn/2018zsxxz.aspx?tdsourcetag=s_pcqq_aiomsg），请大家关注浏览！">
+                                   2018年江苏全民... 
+                                </a>
+                                
+                              </td>                              
+                          </tr>
+                          
+                          <tr> 
+                                <td valign="top"><span class="fangkuai_top">◇</span></td>                             
+                              <td valign="top">
+                              <a href="javascript:;" target="_blank" title="《江苏广播电视大学关于“社区教育特色项目”结项验收的通知》已经下发，请大家按通知要求做好迎检工作！">
+                                   《江苏广播电视大学关于“社区教育特色项目”结项验收的通知》已经下发，请大家按通知要求做好迎检工作！
+                                </a>
+                                
+                              </td>                              
+                          </tr>
+                          
+                          <tr> 
+                                <td valign="top"><span class="fangkuai_top">◇</span></td>                             
+                              <td valign="top">
+                              <a href="javascript:;" target="_blank" title="《关于征集2017年度社区教育自建资源项目的通知》已经下发，欢迎各校、社区居民积极申报！">
+                                   《关于征集2017年度社区教育自建资源项目的通知》已经下发，欢迎各校、社区居民积极申报！
+                                </a>
+                                
+                              </td>                              
+                          </tr>
+                          
+                              </table>
+                          
+                   
+			  </marquee>
+			</td>
+          </tr>
+        </table>		  </td>
+    </tr>
+    
+        <tr>
+          <td height="9"><div align="center"><img src="images/login/loginbot.jpg" width="265" height="9"></div></td>
+        </tr>
+         <tr>
+          <td height="6"></td>
+        </tr>
+    </table>   
+     </td>
+    <td width="727" valign="top">
+    <table width="708" height="218" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr valign="top">
+        <td height="218" bgcolor="#FFFFFF">
+          <table width="350" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="41" background="images/sjzx/sjzx_top.jpg">&nbsp;&nbsp;<a class="midmenu" href="javascript:;"> 各市州社区教育动态</a></td>
+            </tr>
+            <tr>
+              <td height="205" valign="top" background="images/sjzx/sjzx_mid.jpg"><table width="340" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="18">&nbsp;</td>
+                  <td width="322" align="left" valign="top" class="TDrb3">
+                
+                              <table width="100%" align="center">                                                   
+                          
+                          <tr> 
+                                <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                              <a href="javascript:;" target="_blank" title="“致泸合作·乐学堂”公益课程开班">
+                                   “致泸合作·乐学堂”公益课程开... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2021-04-14</font>
+                              </td>
+                              <td width="25">                              
+                                   <img id="Repeater1_ctl01_new" src="images/newimg.gif" style="border-width:0px;">
+                              </td>
+                              
+                          </tr>
+                          
+                          <tr> 
+                                <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                              <a href="javascript:;" target="_blank" title="眉山电大洪雅分校开展“行走的书院”教育实践活动">
+                                   眉山电大洪雅分校开展“行走的书... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2021-04-14</font>
+                              </td>
+                              <td width="25">                              
+                                   <img id="Repeater1_ctl02_new" src="images/newimg.gif" style="border-width:0px;">
+                              </td>
+                              
+                          </tr>
+                          
+                          <tr> 
+                                <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                              <a href="javascript:;" target="_blank" title="内江市2021年社区教育工作会召开">
+                                   内江市2021年社区教育工作会... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2021-04-13</font>
+                              </td>
+                              <td width="25">                              
+                                   <img id="Repeater1_ctl03_new" src="images/newimg.gif" style="border-width:0px;">
+                              </td>
+                              
+                          </tr>
+                          
+                          <tr> 
+                                <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                              <a href="javascript:;" target="_blank" title="玩转智能手机 夕阳更加灿烂——公园路社区“驿马当先”学习型团队开展老年智能手机学习第二期活动">
+                                   玩转智能手机 夕阳更加灿烂——... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2021-04-12</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                              
+                          </tr>
+                          
+                          <tr> 
+                                <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                              <a href="javascript:;" target="_blank" title="传承红色基因 社区教育先行——广元市社区大学开展党史学习教育暨革命烈士祭奠活动">
+                                   传承红色基因 社区教育先行——... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2021-04-09</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                              
+                          </tr>
+                          
+                          <tr> 
+                                <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                              <a href="javascript:;" target="_blank" title="房石镇召开2021年社区教育工作推进会">
+                                   房石镇召开2021年社区教育工... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2021-04-08</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                              
+                          </tr>
+                          
+                          <tr> 
+                                <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                              <a href="javascript:;" target="_blank" title="青羊区社区教育与青少年服务中心苍溪社区学院开展结对合作交流">
+                                   青羊区社区教育与青少年服务中心... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2021-04-07</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                              
+                          </tr>
+                          
+                          <tr> 
+                                <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                              <a href="javascript:;" target="_blank" title="内江社区大学“乡村振兴课堂”开课了">
+                                   内江社区大学“乡村振兴课堂”开... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2021-04-07</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                              
+                          </tr>
+                          
+                              </table>
+                          
+                   <div align="right"><a href="javascript:;"> 更多>>>></a></div> 
+              </td>
+            </tr>
+          </table></td>
+      </tr>
+            <tr>
+              <td height="9"><img src="images/sjzx/sjzx_bt.jpg" width="350" height="9"></td>
+            </tr>
+      </table>        </td>
+        <td width="8" bgcolor="#FFFFFF"></td>
+        <td bgcolor="#FFFFFF"><table width="350" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td background="images/sjzx/sjzx_top.jpg" class="blue16b" style="height: 41px">&nbsp;&nbsp;
+            <a class="midmenu" href="javascript:;" onmouseover="show_div_jxhd('gnzx','snzx'); Ccolor('gn','sn');" id="gn">社区教育资讯</a>
+          
+            </td>
+          </tr>
+          <tr>
+            <td height="205" valign="top" background="images/sjzx/sjzx_mid.jpg"><table width="340" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="18">&nbsp;</td>
+                <td width="322" align="left" valign="top" class="TDrb3">
+               <div id="gnzx" style="visibility:visible;position:absolute ">
+              
+                              <table width="100%" align="center">                                                   
+                          
+                          <tr>  
+                            <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                                  <a href="javascript:;" target="_blank" title="重庆广播电视大学副校长刘昌雄一行来校调研交流">
+                                   重庆广播电视大学副校长刘昌雄一... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8"><font color="#0d86d8">2021-03-26</font></font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>  
+                            <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                                  <a href="javascript:;" target="_blank" title="“聚焦智慧学习，助力“双战双赢”  2020年江苏暨成都市全民终身学习活动周隆重开幕">
+                                   “聚焦智慧学习，助力“双战双赢... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8"><font color="#0d86d8">2020-12-14</font></font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>  
+                            <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                                  <a href="javascript:;" target="_blank" title="江苏各地启动“全民终身学习活动周”活动（三）">
+                                   江苏各地启动“全民终身学习活动... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8"><font color="#0d86d8">2020-12-01</font></font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>  
+                            <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                                  <a href="javascript:;" target="_blank" title="江苏各地启动“全民终身学习活动周”配套活动（二）">
+                                   江苏各地启动“全民终身学习活动... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8"><font color="#0d86d8">2020-11-20</font></font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>  
+                            <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                                  <a href="javascript:;" target="_blank" title="江苏各地启动“全民终身学习活动周”配套活动">
+                                   江苏各地启动“全民终身学习活动... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8"><font color="#0d86d8">2020-11-17</font></font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>  
+                            <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                                  <a href="javascript:;" target="_blank" title="2020年全民终身学习活动周总开幕式在复旦大学举行">
+                                   2020年全民终身学习活动周总... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8"><font color="#0d86d8">2020-11-02</font></font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>  
+                            <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                                  <a href="javascript:;" target="_blank" title="以乐学的方式 弘扬敬老的传统 江苏社区教育服务指导中心积极组织观看国开“乐学敬老”联合行动启动仪式">
+                                   以乐学的方式 弘扬敬老的传统 ... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8"><font color="#0d86d8">2020-10-27</font></font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>  
+                            <td><span class="fangkuai_top">◇</span></td>                             
+                              <td>
+                                  <a href="javascript:;" target="_blank" title="首届“成渝地区双城经济圈学习型城市建设高峰对话”会议简报">
+                                   首届“成渝地区双城经济圈学习型... 
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8"><font color="#0d86d8">2020-10-19</font></font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                              </table>
+                          
+              <div align="right"><a href="javascript:;"> 更多>>>></a></div> 
+              </div>
+              
+             
+                
+            </td>
+          </tr>
+      </table></td>
+    </tr>
+          <tr>
+            <td style="height: 9px"><img src="images/sjzx/sjzx_bt.jpg" width="350" height="9"></td>
+          </tr>
+      </table></td></tr>
+    </table></td>
+  </tr>
+</table>
+<br>
+<table width="1002" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td background="/images/mid_img3.jpg" width="990" height="81">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="990" height="60">
+        <param name="movie" value="/images/midfls.swf">
+        <param name="quality" value="high">
+        <param name="wmode" value="transparent">
+        <embed src="images/midfls.swf" width="990" height="60" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent">
+    </object>
+     </td>
+  </tr>
+</table>
+<br>
+<table width="1002" height="160" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="275">
+
+
+    
+        <table width="264" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="images/lft_bot/lftbt_top.jpg" width="264" height="103" border="0" usemap="#Map1"></td>
+          </tr>
+        </table>
+        <table width="264" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td valign="top" background="images/lft_bot/left_bt_mid.jpg"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="18">&nbsp;</td>
+                <td width="322" valign="top" class="TDrb4" align="left">
+					
+                              <table width="95%">                                                   
+                          
+                          <tr>            
+                          <td width="18"><span class="fangkuai">※</span></td>                  
+                              <td align="left">
+							      <a href="javascript:;" target="_blank" title="会计与管理常见问题 第12集">
+                                   会计与管理常见问题 第12... 
+                                </a>
+                              </td>
+                         
+                              <td width="25">                              
+                                   
+                              </td>
+
+                          </tr>
+                          
+                          <tr>            
+                          <td width="18"><span class="fangkuai">※</span></td>                  
+                              <td align="left">
+							      <a href="javascript:;" target="_blank" title="《新生有机化学》：第1集">
+                                   《新生有机化学》：第1集
+                                </a>
+                              </td>
+                         
+                              <td width="25">                              
+                                   
+                              </td>
+
+                          </tr>
+                          
+                          <tr>            
+                          <td width="18"><span class="fangkuai">※</span></td>                  
+                              <td align="left">
+							      <a href="javascript:;" target="_blank" title="《近代社会理论的基础》： 第1集">
+                                   《近代社会理论的基础》： ... 
+                                </a>
+                              </td>
+                         
+                              <td width="25">                              
+                                   
+                              </td>
+
+                          </tr>
+                          
+                          <tr>            
+                          <td width="18"><span class="fangkuai">※</span></td>                  
+                              <td align="left">
+							      <a href="javascript:;" target="_blank" title="《英国近代史》： 第1集">
+                                   《英国近代史》： 第1集
+                                </a>
+                              </td>
+                         
+                              <td width="25">                              
+                                   
+                              </td>
+
+                          </tr>
+                          
+                          <tr>            
+                          <td width="18"><span class="fangkuai">※</span></td>                  
+                              <td align="left">
+							      <a href="javascript:;" target="_blank" title="《资本主义的成功、危机和改革》： 第1集">
+                                   《资本主义的成功、危机和改... 
+                                </a>
+                              </td>
+                         
+                              <td width="25">                              
+                                   
+                              </td>
+
+                          </tr>
+                          
+                          <tr>            
+                          <td width="18"><span class="fangkuai">※</span></td>                  
+                              <td align="left">
+							      <a href="javascript:;" target="_blank" title="《心理学导论》： 第1集">
+                                   《心理学导论》： 第1集
+                                </a>
+                              </td>
+                         
+                              <td width="25">                              
+                                   
+                              </td>
+
+                          </tr>
+                          
+                          <tr>            
+                          <td width="18"><span class="fangkuai">※</span></td>                  
+                              <td align="left">
+							      <a href="javascript:;" target="_blank" title="《幸福课》：  第1集">
+                                   《幸福课》：  第1集
+                                </a>
+                              </td>
+                         
+                              <td width="25">                              
+                                   
+                              </td>
+
+                          </tr>
+                          
+                          <tr>            
+                          <td width="18"><span class="fangkuai">※</span></td>                  
+                              <td align="left">
+							      <a href="javascript:;" target="_blank" title="《公正》：  第1集">
+                                   《公正》：  第1集
+                                </a>
+                              </td>
+                         
+                              <td width="25">                              
+                                   
+                              </td>
+
+                          </tr>
+                          
+                              </table>
+                          
+                <div align="right"><a href="javascript:;"> 更多>>>></a>&nbsp;&nbsp;&nbsp;&nbsp;</div>  
+              </td></tr>
+            </table></td>
+          </tr>
+        </table>
+        <table width="264" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="30"><img src="images/lft_bot/lftbt_top2.jpg" width="264" height="107" border="0" usemap="#Map"></td>
+          </tr>
+        </table>
+        <table width="264" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td valign="top" background="images/lft_bot/left_bt_mid.jpg"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="18">&nbsp;</td>
+                <td width="322" valign="top" class="TDrb4" align="left">
+                
+                              <table width="95%">                                                   
+                          
+                          <tr>            
+                          <td><span class="fangkuai">※</span></td>                  
+                              <td>
+                              <a href="javascript:;">文化养生</a>
+							      <a href="javascript:;" target="_blank" title="让身体更健康009">
+                                   让身体更健康009
+                                </a>
+                              </td>
+                        
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>            
+                          <td><span class="fangkuai">※</span></td>                  
+                              <td>
+                              <a href="javascript:;">福文化</a>
+							      <a href="javascript:;" target="_blank" title="中国福文化 013">
+                                   中国福文化 013
+                                </a>
+                              </td>
+                        
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>            
+                          <td><span class="fangkuai">※</span></td>                  
+                              <td>
+                              <a href="javascript:;">劝学</a>
+							      <a href="javascript:;" target="_blank" title="劝学-019">
+                                   劝学-019
+                                </a>
+                              </td>
+                        
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>            
+                          <td><span class="fangkuai">※</span></td>                  
+                              <td>
+                              <a href="javascript:;">弟子规</a>
+							      <a href="javascript:;" target="_blank" title="弟子规088">
+                                   弟子规088
+                                </a>
+                              </td>
+                        
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>            
+                          <td><span class="fangkuai">※</span></td>                  
+                              <td>
+                              <a href="javascript:;">德育广播</a>
+							      <a href="javascript:;" target="_blank" title="020-楼护养吕">
+                                   020-楼护养吕
+                                </a>
+                              </td>
+                        
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>            
+                          <td><span class="fangkuai">※</span></td>                  
+                              <td>
+                              <a href="javascript:;">黄帝内经</a>
+							      <a href="javascript:;" target="_blank" title="黄帝内经-039">
+                                   黄帝内经-039
+                                </a>
+                              </td>
+                        
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>            
+                          <td><span class="fangkuai">※</span></td>                  
+                              <td>
+                              <a href="javascript:;">千字文</a>
+							      <a href="javascript:;" target="_blank" title="千字文047">
+                                   千字文047
+                                </a>
+                              </td>
+                        
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>            
+                          <td><span class="fangkuai">※</span></td>                  
+                              <td>
+                              <a href="javascript:;">孝亲感恩</a>
+							      <a href="javascript:;" target="_blank" title="雅乐赏析6">
+                                   雅乐赏析6
+                                </a>
+                              </td>
+                        
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                              </table>
+                          
+                <div align="right"><a href="javascript:;"> 更多>>>></a>&nbsp;&nbsp;&nbsp;&nbsp;</div> 
+              </td>
+            </tr>
+          </table></td>
+      </tr>
+      </table>
+        <table width="264" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="10"><img src="images/lft_bot/left_bt_bot.jpg" width="264" height="10"></td>
+     
+     
+     
+          </tr>
+        </table>
+        
+           
+        
+        
+   </td>
+    <td width="727"><table width="708" height="650" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#CCCCCC">
+      <tr>
+        <td height="136" valign="top" bgcolor="#FFFFFF"><table width="708" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td valign="top"><br>            
+
+<table width="340" height="110" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td width="131"><img src="images/r_b/gmsz.jpg" width="131" height="110"></td>
+                      <td width="209" valign="top" class="TDrb"><span class="tdrb_title">公民素质</span>
+                       <div id="p3" style="width:100%;">
+	
+                    <a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">爱国主义 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">道德修养 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">法律常识 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">科普知识 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">礼仪规范 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">干部学堂 </a>
+</div>
+                      </td>
+                    </tr>
+                  </table>
+                  <div align="center"><img src="images/r_b/h_dot.jpg" width="340" height="11"> 
+                    <table width="340" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="18">&nbsp;</td>
+                        <td width="322" valign="top" class="TDrb4" align="left">
+                        
+                              <table width="100%" align="center">                                                   
+                          
+                          <tr>        
+                          <td><span class="fangkuai_top">◇</span></td>                      
+                              <td>
+							  <a href="javascript:;"> [ 科普知识 ] </a>
+
+                                  <a href="javascript:;" target="_blank" title="31—洋流的运移">
+                                   31—洋流的运移
+					
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>        
+                          <td><span class="fangkuai_top">◇</span></td>                      
+                              <td>
+							  <a href="javascript:;"> [ 法律常识 ] </a>
+
+                                  <a href="javascript:;" target="_blank" title="董事违反竞业禁止案">
+                                   董事违反竞业禁止案
+					
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2018-04-02</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>        
+                          <td><span class="fangkuai_top">◇</span></td>                      
+                              <td>
+							  <a href="javascript:;"> [ 道德修养 ] </a>
+
+                                  <a href="javascript:;" target="_blank" title="唐涛：完美女人是怎样炼成的">
+                                   唐涛：完美女人是怎... 
+					
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2017-01-05</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>        
+                          <td><span class="fangkuai_top">◇</span></td>                      
+                              <td>
+							  <a href="javascript:;"> [ 爱国主义 ] </a>
+
+                                  <a href="javascript:;" target="_blank" title="萧功秦：重温百年史:从百年六次政治选择看当代变革（三）">
+                                   萧功秦：重温百年史... 
+					
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2016-11-25</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>        
+                          <td><span class="fangkuai_top">◇</span></td>                      
+                              <td>
+							  <a href="javascript:;"> [ 礼仪规范 ] </a>
+
+                                  <a href="javascript:;" target="_blank" title="亚伯特王子结">
+                                   亚伯特王子结
+					
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2016-10-13</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>        
+                          <td><span class="fangkuai_top">◇</span></td>                      
+                              <td>
+							  <a href="javascript:;"> [ 干部学堂 ] </a>
+
+                                  <a href="javascript:;" target="_blank" title="战争与和平_邓小平新时期军队建设思想（6）">
+                                   战争与和平_邓小平... 
+					
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2016-01-18</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                              </table>
+                          
+                       <div align="right"><a href="javascript:;"> 更多>>>></a>&nbsp;&nbsp;&nbsp;&nbsp;</div> 
+                        
+              </td>
+            </tr>
+      </table>
+</div>
+
+                <table width="340" height="179" border="0" align="center" cellpadding="0" cellspacing="0">
+                </table></td>
+            <td valign="top"><br>
+
+  <table width="340" height="110" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="131"><img src="images/r_b/zyjn.jpg" width="131" height="110"></td>
+                <td width="209" valign="top" class="TDrb"><span class="tdrb_title">职业技能</span><br>
+                    <div id="p1" style="width:100%;">
+	
+                    <a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">职业发展 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">农业技能 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">技能培训 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">就业指导 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">留学知识 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">资格认证 </a>
+</div>
+                    </td>
+              </tr>
+            </table>
+              <div align="center"><img src="images/r_b/h_dot.jpg" width="340" height="11"></div>
+                <table width="340" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="18">&nbsp;</td>
+                    <td width="322" valign="top" class="TDrb4" align="left">
+                    
+                              <table width="100%" align="center">                                                   
+                          
+                          <tr>            
+                          <td><span class="fangkuai_top">◇</span> </td>                  
+                              <td>
+							<a href="javascript:;"> [ 职业发展 ] </a>
+
+
+                                  <a href="javascript:;" target="_blank" title="16—把握人生罗盘-价值观探索">
+                                   16—把握人生罗盘... 
+				
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>            
+                          <td><span class="fangkuai_top">◇</span> </td>                  
+                              <td>
+							<a href="javascript:;"> [ 农业技能 ] </a>
+
+
+                                  <a href="javascript:;" target="_blank" title="21—杜鹃栽培">
+                                   21—杜鹃栽培
+				
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>            
+                          <td><span class="fangkuai_top">◇</span> </td>                  
+                              <td>
+							<a href="javascript:;"> [ 就业指导 ] </a>
+
+
+                                  <a href="javascript:;" target="_blank" title="21—拿到面试中的加分项">
+                                   21—拿到面试中的... 
+				
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>            
+                          <td><span class="fangkuai_top">◇</span> </td>                  
+                              <td>
+							<a href="javascript:;"> [ 技能培训 ] </a>
+
+
+                                  <a href="javascript:;" target="_blank" title="20—维修案例——台式计算机">
+                                   20—维修案例——... 
+				
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>            
+                          <td><span class="fangkuai_top">◇</span> </td>                  
+                              <td>
+							<a href="javascript:;"> [ 留学知识 ] </a>
+
+
+                                  <a href="javascript:;" target="_blank" title="英语——回国">
+                                   英语——回国
+				
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2016-10-13</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>            
+                          <td><span class="fangkuai_top">◇</span> </td>                  
+                              <td>
+							<a href="javascript:;"> [ 资格认证 ] </a>
+
+
+                                  <a href="javascript:;" target="_blank" title="2011年下半年非学历证书考试开考课程及时间安排表">
+                                   2011年下半年非... 
+				
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2011-12-01</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                              </table>
+                          
+                     <div align="right"><a href="javascript:;"> 更多>>>></a>&nbsp;&nbsp;&nbsp;&nbsp;</div> 
+                    
+                </td>
+              </tr>
+                </table>
+
+</td>
+          </tr>
+      </table>
+          <table width="708" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="193" valign="top"><br>
+                                <table width="340" height="110" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="131"><img src="images/r_b/whxx.jpg" width="131" height="110"></td>
+                  <td width="209" valign="top" class="TDrb"> <span class="tdrb_title">文化休闲</span>
+                   <div id="p2" style="width:100%;">
+	
+                    <a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">旅游博览 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">历史文化 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">休闲技艺 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">艺术长廊 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">健身舞蹈 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">军事博览 </a>
+</div>
+                  </td>
+                </tr>
+              </table>
+              <div align="center"><img src="images/r_b/h_dot.jpg" width="340" height="11">
+                <table width="340" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="18">&nbsp;</td>
+                    <td width="322" valign="top" class="TDrb4" align="left">
+                    
+                              <table width="100%" align="center">                                                   
+                          
+                          <tr>        
+                          <td><span class="fangkuai_top">◇</span></td>                      
+                              <td>
+							  <a href="javascript:;"> [ 休闲技艺 ] </a>
+
+                                  <a href="javascript:;" target="_blank" title="中国象棋卒(兵)的运用原则">
+                                   中国象棋卒(兵)的... 
+						
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+							  <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>        
+                          <td><span class="fangkuai_top">◇</span></td>                      
+                              <td>
+							  <a href="javascript:;"> [ 旅游博览 ] </a>
+
+                                  <a href="javascript:;" target="_blank" title="21—安全事项--情景对话">
+                                   21—安全事项--... 
+						
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+							  <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>        
+                          <td><span class="fangkuai_top">◇</span></td>                      
+                              <td>
+							  <a href="javascript:;"> [ 历史文化 ] </a>
+
+                                  <a href="javascript:;" target="_blank" title="历代王朝的五行周期律">
+                                   历代王朝的五行周期... 
+						
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+							  <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>        
+                          <td><span class="fangkuai_top">◇</span></td>                      
+                              <td>
+							  <a href="javascript:;"> [ 健身舞蹈 ] </a>
+
+                                  <a href="javascript:;" target="_blank" title="学跳秧歌舞《秧歌大》">
+                                   学跳秧歌舞《秧歌大... 
+						
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+							  <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>        
+                          <td><span class="fangkuai_top">◇</span></td>                      
+                              <td>
+							  <a href="javascript:;"> [ 艺术长廊 ] </a>
+
+                                  <a href="javascript:;" target="_blank" title="喷火与变脸">
+                                   喷火与变脸
+						
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2018-04-02</font>
+                              </td>
+							  <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>        
+                          <td><span class="fangkuai_top">◇</span></td>                      
+                              <td>
+							  <a href="javascript:;"> [ 军事博览 ] </a>
+
+                                  <a href="javascript:;" target="_blank" title="说不尽的蒋介石（4）">
+                                   说不尽的蒋介石（4... 
+						
+                                </a>
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2016-01-18</font>
+                              </td>
+							  <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                              </table>
+                          
+                <div align="right"><a href="javascript:;"> 更多>>>></a>&nbsp;&nbsp;&nbsp;&nbsp;</div>      
+            </td>
+        </tr>
+                </table>
+</div></td>
+              <td valign="top"><br>
+                 
+				 
+ <table width="340" height="110" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td width="131"><img src="images/r_b/jtsh.jpg" width="131" height="110"></td>
+                      <td width="209" valign="top" class="TDrb"><span class="tdrb_title">家庭学堂</span>
+                       <div id="p4" style="width:100%;">
+	
+                    <a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">家庭生活 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">幼儿教育 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">青少年教育 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">老年教育 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">特殊教育 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">健康养生 </a><a href="javascript:;" target="_blank" style="display:inline-block;font-size:10pt;width:65px;">美食天地 </a>
+</div>
+                      </td>
+                    </tr>
+                  </table>
+                  <div align="center"><img src="images/r_b/h_dot.jpg" width="340" height="11"> 
+                    <table width="340" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="18">&nbsp;</td>
+                        <td width="322" valign="top" class="TDrb4" align="left">
+                        
+                              <table width="100%" align="center">                                                   
+                          
+                          <tr>  
+                          <td><span class="fangkuai_top">◇</span></td>                            
+                              <td>
+							  <a href="javascript:;"> [ 健康养生 ] </a>
+
+								  <a href="javascript:;" target="_blank" title="13如何为创伤幸存者提供心理援助？">
+                                   13如何为创伤幸存... 
+			
+                                </a>
+
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2020-03-30</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>  
+                          <td><span class="fangkuai_top">◇</span></td>                            
+                              <td>
+							  <a href="javascript:;"> [ 幼儿教育 ] </a>
+
+								  <a href="javascript:;" target="_blank" title="添加辅食的时机与原则">
+                                   添加辅食的时机与原... 
+			
+                                </a>
+
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>  
+                          <td><span class="fangkuai_top">◇</span></td>                            
+                              <td>
+							  <a href="javascript:;"> [ 青少年教育 ] </a>
+
+								  <a href="javascript:;" target="_blank" title="儿童青少年心理特点及家庭辅导要点第一期(18)">
+                                   儿童青少年心理特点... 
+			
+                                </a>
+
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>  
+                          <td><span class="fangkuai_top">◇</span></td>                            
+                              <td>
+							  <a href="javascript:;"> [ 美食天地 ] </a>
+
+								  <a href="javascript:;" target="_blank" title="早餐包的制作方法">
+                                   早餐包的制作方法
+			
+                                </a>
+
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>  
+                          <td><span class="fangkuai_top">◇</span></td>                            
+                              <td>
+							  <a href="javascript:;"> [ 老年教育 ] </a>
+
+								  <a href="javascript:;" target="_blank" title="21—舞台妆眼影画法">
+                                   21—舞台妆眼影画... 
+			
+                                </a>
+
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                          <tr>  
+                          <td><span class="fangkuai_top">◇</span></td>                            
+                              <td>
+							  <a href="javascript:;"> [ 家庭生活 ] </a>
+
+								  <a href="javascript:;" target="_blank" title="生活因我而精彩(17)">
+                                   生活因我而精彩(1... 
+			
+                                </a>
+
+                              </td>
+                              <td width="60">                              
+                                   <font color="#0d86d8">2019-05-13</font>
+                              </td>
+                              <td width="25">                              
+                                   
+                              </td>
+                          </tr>
+                          
+                              </table>
+                          
+                       <div align="right"><a href="javascript:;"> 更多>>>></a>&nbsp;&nbsp;&nbsp;&nbsp;</div> 
+                        
+      </td>
+                      </tr>
+                    </table>
+</div></td>
+            </tr>
+          </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="1002" height="8" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><div align="center"></div></td>
+  </tr>
+</table>
+<table width="1002" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"><div align="center"></div></td>
+  </tr>
+</table>
+<table width="1002" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+        
+		  
+		  <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+ 		 		<tr>
+    				<td height="40" bgcolor="#ffffff"><p align="left">
+          &nbsp;&nbsp;&nbsp;
+          
+          <table width="95%" height="62" border="0" align="center">
+       <tr>
+         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank"><font color="#CC0000">绵阳社区教育网</font></a></td>
+         <td>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank"><font color="#CC0000">泸州社区教育网</font></a></td>
+         <td>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank"><font color="#CC0000">广元市继续教育网</font></a></td>
+      
+         <td>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank"><font color="#CC0000">自贡社区教育网</font></a></td>
+         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank"><font color="#CC0000">宜宾全民学习网</font></a></td>
+
+       </tr>
+
+     </table>
+
+
+
+ 
+ 
+ <p align="center">
+ 
+ <table width="100%" border="0" align="center">
+  <tr>
+    <td height="70"><a href="javascript:;" target="_blank"> <img src="images/zgsqjyw.png" width="220" height="55" border="0"></a></td>
+    <td><a href="javascript:;" target="_blank"> <img src="images/scnxxxb2.png" width="220" height="55" border="0"></a></td>
+     <td><a href="index19.html" target="_blank"><img src="images/sqjy_zyzx.jpg" width="220" height="55" border="0"></a></td>
+    <td><a href="index33.html" target="_blank">  <img src="images/sqjy_tsg.jpg" width="220" height="55" border="0"></a></td>
+  
+  </tr>
+  <tr>
+  <td height="70"><a href="javascript:;" target="_blank"> <img src="images/i-lvyou.png" width="220" height="55" border="0"></a></td>
+    <td><a href="javascript:;" target="_blank"><img src="images/jpkctys_s.jpg" width="220" height="55" border="0"></a></td>
+    <td><a href="javascript:;" target="_blank">  <img src="images/bbksc.png" width="220" height="55" border="0"></a></td>
+    <td></td>
+    
+  </tr>
+</table>
+
+ 
+
+
+</td>
+ 				 </tr>
+ 		 </table>
+		  
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="8" bgcolor="#CCCCCC"><div align="center"></div></td>
+  </tr>
+    <tr><td bgcolor="#0099ff" height="69">
+        <div class="copyright" align="center">
+  
+          <p>江苏开放大学（原江苏广播电视大学） 版权所有 <a href="javascript:;" target="_blank"><font color="red">版权声明</font></a> &nbsp;&nbsp; 2011年 6月 <br>
+          联系我们：社区教育办公室 028-87771871 &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;蜀ICP备05000866号-1 </p>
+        </div>
+    </td></tr>
+</table>
+</td>
+  </tr>
+</table>
+    
+	</td>
+  </tr>
+</table>
+
+    </div>
+    
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCALR4fyJBALx6b3tAwL5zrOuCQKLqNbWAQK3gqryCgLCvJq4CQKpquXuDALy6YaOBT+supAfTsJm+i6ksTodo0T/l6/c">
+</div></div></form>
+    <map name="Map" id="Map">
+      <area shape="rect" coords="19,13,239,85" href="Zhwhdjt.aspx">
+	</map>
+	<map name="Map1" id="Map1">
+      <area shape="rect" coords="19,13,239,85" href="MsjtXX.aspx">
+	</map>
+
+	<map name="map_tsg" id="map_tsg">
+      <area shape="rect" coords="3,3,250,50" href="golib.aspx">
+	</map>
+	<map name="map_jpkc" id="map_tsg">
+      <area shape="rect" coords="3,3,250,50" href="jpkctys.aspx">
+	</map>
+	
+		<map name="map_zyzx" id="map_zyzx">
+      <area shape="rect" coords="3,3,250,50" href="http://nerc.tztvu.com.cn/FrontEnd/default.aspx">
+	</map>
+	
+	
+</body>
+</html>

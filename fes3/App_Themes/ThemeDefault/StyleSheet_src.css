@@ -1,0 +1,1127 @@
+html{
+	min-width: 100%;
+	font-size:13px;
+}	
+
+body
+{
+	margin: 0px;
+	padding:0px;
+
+	border-top:1px;
+	border-top-style:solid;
+	border-top-color:#B6C9CD;
+	font-size: 9pt;
+	SCROLLBAR-FACE-COLOR:#A5C4CF;
+	/*
+	overflow-x: hidden; 
+	SCROLLBAR-TRACK-COLOR: #C8DBE1;	
+	SCROLLBAR-ARROW-COLOR: #F2F2F2;
+	SCROLLBAR-SHADOW-COLOR: #E5F0FA;	
+	SCROLLBAR-BASE-COLOR: #F2F2F2;
+	SCROLLBAR-DARKSHADOW-COLOR: #7A8D9F;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF;	
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF;	
+	*/
+}
+
+table
+{
+	font-size:13px;	
+}
+
+a
+{
+	font-size:9pt;
+	vertical-align:middle;
+}
+
+/* 默认表内图片垂直对齐方式为middle*/
+table
+{
+	vertical-align:middle;
+}
+
+/*首页公告
+背景
+*/
+.IndexAnnouncementBackGround
+{
+	background-color: #DFDFDF;
+}
+/*首页公告
+标题
+*/
+.IndexAnnouncementTitle
+{
+	background-color: #F4F4F4;	
+}
+/*首页公告
+内容
+*/
+.IndexAnnouncementContent
+{
+	background-color: #FFFFFF;
+	text-align:left;
+	font-family: Arial, 宋体;
+	font-size: 9pt;
+}
+a.IndexAnnouncement {
+	font-family: Arial, 宋体;
+	font-size: 9pt;
+	color: #003366;
+	text-decoration: none;
+	vertical-align:baseline;
+}
+a.IndexAnnouncement:hover {
+	font-family: Arial, 宋体;
+	font-size: 9pt;
+	color: #00509F;
+	text-decoration: underline;
+}
+
+/*公告文章列表
+标题
+*/
+.AnnouncementListTitle
+{	
+	font-family:黑体;
+	font-size: 15pt;
+	font-weight:400;
+	color:#003366;
+}
+
+/*公告
+标题
+*/
+.AnnouncementTitle
+{	
+	font-family:黑体;
+	font-size: 15pt;
+	font-weight:400;
+}
+/*公告
+作者
+*/
+.AnnouncementAuthor
+{	
+	font-size: 9pt;
+}
+/*公告
+内容
+*/
+.AnnouncementContent
+{
+	text-align:left;
+	font-family: Arial, 宋体;
+	font-size: 10pt;
+}
+
+/*首页
+背景*/
+.IndexBackGround{	
+	background-color: #F4F4F4;
+	font-size: 9pt;
+	margin: auto;
+	text-align: center;
+}
+
+/*首页
+背景*/
+.IndexContent{	
+	background-color: #FFFFFF;
+	font-size: 9pt;
+	margin: auto;
+	text-align: center;
+}
+
+/*详细功能页
+背景*/
+.DefaultBackGround{	
+	background-color: #FFFFFF;
+	font-size: 9pt;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+/*页头Banner
+背景*/
+.BannerBackGround {
+	background-color: #FFFFFF;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+/*页头Banner
+内容*/
+.BannerContent {
+	background-attachment: fixed;
+	background-image: url(Images/Header/banner_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #C8D0D4;	
+}
+/*页头Banner
+水平分隔1*/
+.BannerSplitH1 {
+	background-color: #2D402A;
+}
+/*页头Banner
+水平分隔2*/
+.BannerSplitH2 {
+	background-color: #FFFFFF;
+}
+
+/*页脚Footer
+内容*/
+.FooterContent {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size:9pt;
+	text-align:center;
+}
+
+/*页头Top
+背景*/
+.TopBackGround {
+	background-color: #FFFFFF;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+/*页头Top
+内容*/
+.TopContent {
+	background-image: url(Images/Header/top_bg.jpg);
+	background-color: #20788C;
+	font-size: 9pt;
+	color: #FFFFFF;
+}
+
+/*页头Notice
+背景*/
+.TopNoticeBackGround {
+	/*background-color: #165967;*/
+	font-size: 9pt;
+	color: #FFFFFF;
+}
+
+/*页头Notice
+内容*/
+.TopNotice {
+	background-color: #E8EFF0;
+	font-size: 9pt;
+	color: #496C72;
+}
+/*页头Notice
+链接
+*/
+a.TopNotice {
+	font-family: Arial, 宋体;
+	font-size: 10pt;
+	color: Blue;
+	text-decoration: none;
+}
+/*页头
+站内短信
+*/
+a.TopMessage {
+	font-family: Arial, 宋体;
+	font-size: 10pt;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/*详细功能页
+背景*/
+.FunctionBackGround{	
+	background-color: #FFFFFF;
+	font-size: 9pt;
+	margin-left: 0;
+	text-align: center;
+	padding:0;
+	margin-bottom:50px;
+}
+
+/*登录
+背景*/
+.LoginBackGround
+{
+	background-color: #DFDFDF;
+}
+/*登录*/
+.Login
+{
+	background-color: #FFFFFF;
+	font-family: Arial, 宋体;
+	font-size: 9pt;
+	line-height: 18px;	
+	text-align: center;
+	vertical-align: middle;	
+}
+
+/*用户信息（MPSiteFunction.master）
+边框
+.UserInfoBorder {
+	background-color:#DFDFDF;
+}*/
+
+/*用户信息（MPSiteFunction.master）
+内容
+.UserInfoContent
+{
+	background-color: #FFFFFF;
+	font-family: Arial, 宋体;
+	font-size: 9pt;
+	line-height: 18px;	
+	text-align: center;
+	vertical-align: middle;	
+}*/
+
+/*当前位置信息（MPSiteFunction.master）
+*/
+.CurrentPosition 
+{
+	font-family: Arial, 宋体;
+	font-size: 10pt;
+	height: 25px;
+	background-color:#B6C9CD;
+}
+
+.CurrentPositionLeft a:hover,.CurrentPositionLeft a:link,.CurrentPositionLeft a:active,.CurrentPositionLeft a:visited
+{
+	font-family: Arial, 宋体;
+	font-size: 10pt;
+	text-decoration: none;
+	color:#333333;
+	background-color:Transparent;
+}
+
+/*当前位置信息（MPSiteFunction.master）
+左侧*/
+.CurrentPositionLeft
+{
+	text-align: left;
+	background-image: url(Images/Header/table_title_bg.jpg);
+	background-repeat: repeat-x;	
+	font-size: 10pt;
+	vertical-align:middle;
+	text-decoration: none;
+	padding:2px 4px;
+}
+
+/*当前位置信息（MPSiteFunction.master）
+右侧*/
+.CurrentPositionRight {
+	text-align: right;
+	font-size: 10pt;
+	text-decoration: none;	
+}
+
+/*用户信息（Public/Navg.aspx）
+内容*/
+.UserInfoContent2
+{
+	background-color: #F5F9FA;
+	font-family: Arial, 宋体;
+	font-size: 9pt;
+	line-height: 18px;	
+	vertical-align: middle;	
+	text-align: left;
+}
+
+/*退出*/
+a.Logout
+{
+	font-family: Arial, 宋体;
+	font-size: 10pt;
+	color: #1F7D92;
+	text-decoration: none;
+}
+
+/*左侧导航树
+背景*/
+.NavgTreeBackGround {
+	background-color: #F5F9FA;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    border:1px solid;
+    border-color:#B6C9CD;
+    overflow-x:hidden;
+}
+
+/*数据导航*/
+.PaginationBackGround
+{
+	text-align: right;
+	font-size: 9pt;
+}
+
+.Pagination
+{
+	color: #1F7D92;
+	font-size: 9pt;	
+	text-align: right;	
+	vertical-align:baseline;
+}
+
+a.Pagination
+{
+	font-family: Arial, 宋体;
+	font-size: 9pt;
+	color: #1F7D92;
+	text-decoration: underline;
+}
+a.Pagination:hover {
+	font-family: Arial, 宋体;
+	font-size: 9pt;
+	color: #1F7D92;
+	text-decoration: underline;
+}
+a.Pagination:visited {
+	font-family: Arial, 宋体;
+	font-size: 9pt;
+	color: #1F7D92;
+	text-decoration: underline;
+}
+
+.RowOdd
+{
+	/*border-bottom-style:dotted;
+	border-bottom-color:#DFDFDF;
+	border-bottom-width:1px;*/
+	height:18px;
+}
+.RowEven
+{
+	/*background-color: gray;	*/
+	height:18px;
+}
+
+
+.ItemInsert
+{
+	background-color:#FFFFFF;
+	height:20px;
+}
+.ItemInsertBackGround
+{
+	background-color:#DFDFDF;
+}
+.ItemInsertFooter
+{
+	background-color:#FFFFFF;
+	text-align:center;
+}
+.ItemEdit
+{
+	background-color:#FFFFFF;
+	height:20px;
+}
+.ItemEditBackGround
+{
+	background-color:#DFDFDF;
+}
+.ItemEditFooter
+{
+	background-color:#FFFFFF;
+	text-align:center;
+}
+.ItemView
+{
+	background-color:#FFFFFF;
+	height:20px;
+}
+.ItemViewBackGround
+{
+	background-color:#DFDFDF;
+}
+.ItemViewFooter
+{
+	background-color:#FFFFFF;
+	text-align:center;
+}
+/* 对话框的标题栏 */
+.DialogTitle
+{
+	background-image: url(Images/Header/dialog_title_bg.jpg);
+	background-repeat: repeat-x;
+}
+
+/*欢迎页面的页面背景*/
+.WelcomeBackGround
+{
+	background-image: url(Images/welcome_bg.gif);
+	background-repeat: repeat-x;
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+.WelcomeText
+{
+	font-size:20pt;
+	font-family:隶书;
+	color:#20788C;
+}
+
+/*表格下方附加按钮
+背景*/
+.GridAdditiveButtonBackGround
+{
+	text-align:center;
+}
+/*表格下方附加按钮（适用1个按钮）
+左侧*/
+.GridAdditiveButtonLeft1
+{
+	width:40%;
+}
+/*表格下方附加按钮（适用1个按钮）
+中间*/
+.GridAdditiveButtonMiddle1
+{
+	text-align:center;
+}
+/*表格下方附加按钮（适用1个按钮）
+右侧*/
+.GridAdditiveButtonRight1
+{
+	width:40%;
+}
+/*表格下方附加按钮（适用2个按钮）
+左侧*/
+.GridAdditiveButtonLeft2
+{
+	width:40%;
+}
+/*表格下方附加按钮（适用2个按钮）
+中间*/
+.GridAdditiveButtonMiddle2
+{
+	text-align:center;
+}
+/*表格下方附加按钮（适用2个按钮）
+右侧*/
+.GridAdditiveButtonRight2
+{
+	width:40%;
+}
+/*表格下方附加按钮（适用3个按钮）
+左侧*/
+.GridAdditiveButtonLeft3
+{
+	width:40%;
+}
+/*表格下方附加按钮（适用3个按钮）
+中间*/
+.GridAdditiveButtonMiddle3
+{
+	text-align:center;
+}
+/*表格下方附加按钮（适用3个按钮）
+右侧*/
+.GridAdditiveButtonRight3
+{
+	width:40%;
+}
+/*功能标题
+背景*/
+.FunctionTitle_BackGround
+{
+	border: 0;
+	padding: 0;
+	margin-top: 0;
+}
+/*功能标题
+内容*/
+.FunctionTitle_Body
+{
+	font-family: Arial, 宋体;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	/*background-color: #B6C9CD;F3F8F8*/
+	background-image: url(Images/Header/table_title_bg.jpg);
+	background-repeat: repeat-x;		
+	padding:4px;
+	color:#333333;
+}
+/*功能标题
+右侧*/
+.FunctionTitle_Right
+{
+	
+}
+
+
+/*
+无效状态
+*/
+.State0
+{
+	color: Red;
+}
+
+/*
+有效状态
+*/
+.State1
+{
+	color: Black;
+}
+
+
+/*
+错误信息
+背景
+*/
+.ErrorBackGround
+{
+	background-color:#F5F9FA;
+}
+
+/*
+错误信息
+*/
+.ErrorText
+{
+	text-align:center;
+	font-size:12pt;
+	font-weight:bold
+}
+/*
+错误详细信息（及错误堆栈信息）
+*/
+.ErrorDetail
+{
+	text-align:left;
+}
+
+/*
+提示信息
+背景
+*/
+.MessageBackGround
+{
+	background-color:#F5F9FA;
+}
+
+/*
+提示信息
+*/
+.MessageText
+{
+	text-align:center;
+	font-size:12pt;
+	font-weight:bold
+}
+
+/*=========================================================================*/
+/*试卷主体*/
+.ReviewTestBody
+{
+	background-color: #fafafa;
+	border: #dfdfdf 1px solid;
+}
+
+/*试卷标题*/
+.ReviewTestTitle
+{
+	font-family: 黑体;
+	font-size: 15pt;
+	color: #165967;
+	text-align: center;
+	background-color: #F0F5F5;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 6px;
+}
+
+/*试卷信息*/
+.ReviewTestInfo
+{
+	text-align: center;
+	color: #165967;
+	background-color: #F0F5F5;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 6px;
+}
+
+/*导航条*/
+.ReviewTestSectionTitle
+{
+	text-align: center;
+	color: #165967;
+	background-color: #F0F5F5;
+	border-top: #dfdfdf 1px solid;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 6px;
+}
+
+.ReviewTestSectionTitle a
+{
+	color: #165967;
+	text-decoration: underline;
+}
+
+.ReviewTestSectionTitle a:hover
+{
+	color: #165967;
+	text-decoration: underline;
+}
+
+.ReviewTestSectionTitle a:visited
+{
+	color: #990000;
+	text-decoration: underline;
+}
+
+/*大题标题*/
+.ReviewSectionTitle
+{
+	font-weight: bolder;
+	color: #306b51;
+	background-color: #f3f8f8;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 6px;
+	border-top: #dfdfdf 1px solid;
+	border-bottom: #dfdfdf 1px dashed;
+}
+
+/*大题主体*/
+.ReviewSectionBody
+{
+	padding-left: 3px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	/*background-color: #99ccff;*/
+}
+
+/*测试结果试题主体*/
+.ReviewItemBody
+{
+	text-indent: -45px;
+	margin-left: 45px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	/*background-color: #ccff99;*/
+}
+
+.ReviewItemBody p
+{
+	padding-left:45px;
+}
+
+/*测试结果复合题试题选项*/
+.ReviewMultipelOptionBody
+{
+	text-indent: -44px;
+	margin-left: 89px;
+	margin-bottom: 3px;
+	/*background-color: #ff9966;*/
+}
+
+/*测试结果非复合题试题选项*/
+.ReviewSingleOptionBody
+{
+	text-indent: -44px;
+	margin-left: 68px;
+	margin-bottom: 3px;
+	/*background-color: #ff9966;*/
+}
+
+/*测试结果复合题试题提示*/
+.ReviewMultipelPromptBody
+{
+	margin-left: 45px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	/*background-color: #ff99ff;*/
+}
+
+/*测试结果非复合题试题提示*/
+.ReviewSinglePromptBody
+{
+	text-indent: 0px;
+	margin-left: 24px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	/*background-color: #ff99ff;*/
+}
+
+/*测试结果复合题试题判分结果*/
+.ReviewMultipelResultBody
+{
+	color:#42936f;
+	text-indent: 0px;
+	margin-left: 45px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	/*background-color: #669966;*/
+}
+
+/*测试结果非复合题试题判分结果*/
+.ReviewSingleResultBody
+{
+	color:#42936f;
+	text-indent: 0px;
+	margin-left: 24px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	/*background-color: #669966;*/
+}
+
+/*测试结果填空题、主观题判分结果*/
+.ReviewTextResultBody
+{
+	color:#42936f;
+	text-indent: 0px;
+	margin-left: 0px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	/*background-color: #669966;*/
+}
+
+/*试卷预览试题主体*/
+.TestItemBody
+{
+	text-indent: -24px;
+	margin-left: 24px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	/*background-color: #ccff99;*/
+}
+
+.TestItemBody p
+{
+	padding-left:24px;
+}
+
+/*试卷预览复合题试题选项*/
+.TestMultipelOptionBody
+{
+	text-indent: -44px;
+	margin-left: 89px;
+	margin-bottom: 3px;
+	/*background-color: #ff9966;*/
+}
+
+/*试卷预览非复合题试题选项*/
+.TestSingleOptionBody
+{
+	text-indent: -44px;
+	margin-left: 68px;
+	margin-bottom: 3px;
+	/*background-color: #ff9966;*/
+}
+
+/*试卷预览复合题试题提示*/
+.TestMultipelPromptBody
+{
+	margin-left: 24px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	/*background-color: #ff99ff;*/
+}
+
+/*试卷预览非复合题试题提示*/
+.TestSinglePromptBody
+{
+	text-indent: 0px;
+	margin-left: 24px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	/*background-color: #ff99ff;*/
+}
+
+/*试题预览试题主体*/
+.AssessmentItemBody
+{
+	margin-top: 12px;
+	margin-bottom: 12px;
+	/*background-color: #ccff99;*/
+}
+
+/*试题预览非复合题试题选项*/
+.AssessmentSingleOptionBody
+{
+	margin-left: 24px;
+	margin-bottom: 3px;
+	/*background-color: #ff9966;*/
+}
+
+/*试题预览复合题试题选项*/
+.AssessmentMultipelOptionBody
+{
+	margin-left: 48px;
+	margin-bottom: 3px;
+	/*background-color: #ff9966;*/
+}
+
+/*试题预览试题选项*/
+.AssessmentPormptBody
+{
+	margin-left: 24px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	/*background-color: #ff99ff;*/
+}
+
+/*试卷判分主观题结果*/
+.JudgeTextResultBody
+{
+	color:#42936f;
+	text-indent: 0px;
+	margin-left: 24px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	/*background-color: #669966;*/
+}
+
+
+/*试卷判分试卷总体评价*/
+.JudgeTextResultState
+{
+	color: #42936f;
+	padding-left: 27px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: #f3f8f8;
+	border-top: #dfdfdf 1px solid;
+}
+
+/*评阅对话框*/
+.JudgementTextarea
+{
+	background-color: #FFFFEE;
+	color:Blue;
+}
+
+/*上传附件表格*/
+Table.Attachment
+{
+	background-color: #DFDFDF;
+	width: 620px;
+	border: 0;
+	padding: 4px;
+	font-family: 宋体, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+
+/*上传附件表格表头*/
+Table.Attachment TR.DataHeader
+{
+	color: #165967;
+	background-color: #F3F8F8;
+	text-align: center;
+}
+
+/*上传附件表格数据行*/
+Table.Attachment TR.DataRow
+{
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+/*上传附件表格操作列*/
+Table.Attachment TD.ControlCol
+{
+	color: #0000FF;
+	text-align:center;
+	text-decoration: underline
+}
+
+
+/*=======================================================================================================*/
+
+.fileupload
+{
+	background-image:url(http://xk.scrtvu.net/fes3/App_Themes/ThemeDefault/~/App_Themes/ThemeDefault/Images/Button/btn_select.gif);
+	background-repeat:no-repeat;
+	
+}
+
+
+.selectSchoolListView
+{
+	list-style:none;
+
+}
+
+.selectSchoolListView li
+{
+	display: inline;
+	float:left;
+	margin-right: 6px;
+	margin-bottom: 10px;
+}
+/* tab page  */
+#item_op_tab {
+	margin-top: 20px;
+	padding-left: 40px;
+	padding-bottom: 3px;
+	margin-left:5px;
+	border-bottom: 1px solid #000000;
+	font: bold 11px verdana, arial, sans-serif;
+}
+
+#item_op_tab a.tab_active:link, #item_op_tab a.tab_active:visited
+{
+	color: #000000;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 0px solid #FFFFFF;
+	padding: 4px;
+	
+} 
+
+#item_op_tab a.tab_inactive:link, #item_op_tab a.tab_inactive:visited
+{
+	color: #FFFFFF;
+	background-color: darkslategray;
+	text-decoration: none;
+	border: 1px solid #000000;
+	padding: 4px;
+	
+} 
+
+.fieldset
+{
+	border: 1px solid #61B5CF;
+	margin: 6px;
+	padding: 5px;
+}
+
+.fieldset p
+{
+	text-align: left;
+	clear: left;
+}
+
+.legend
+{
+	width: auto;
+	font: bold 1.2em Arial, Helvetica, sans-serif;
+	color: #20788C;
+	padding: 4px 5px;
+	margin-bottom: 10px;
+	background-color: #F4F4F4;
+}
+
+
+/*消息接收人列表*/
+#div_ReceiverList
+{
+	border-style:inset;
+	border-width:2px;
+	padding: 2px 5px;
+	margin: 5px;
+}
+
+#div_ReceiverList span
+{
+	display:inline-block;
+	margin: 2px 5px;
+	margin-left:10px;
+}
+
+#div_ReceiverList a
+{
+	color:Blue;
+	text-decoration:none;
+}
+
+#div_ReceiverList img
+{
+	vertical-align:middle;
+	border:0px;
+	border-style:none;
+	background-color:Transparent;
+	margin:0px 4px;
+}
+
+/* 无法在一个单元格里显示完全的字符串被截断，显示... */
+.ellipsis
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+table.ellipsis
+{
+	table-layout:fixed;	
+}
+
+td.ellipsis
+{
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.collapseTable
+{
+	background-color: #F3F8F8;
+}
+
+.provinceSubjectColor
+{
+	color:Navy;	
+}
+
+IMG.couplet
+{
+	MARGIN: 0px auto 3px; 
+	BORDER-TOP-STYLE: none; 
+	BORDER-RIGHT-STYLE: none; 
+	BORDER-LEFT-STYLE: none; 
+	BORDER-BOTTOM-STYLE: none
+	
+}
+
+.ModalPopupTitle
+{
+	font-weight: bold;
+	font-size: 10pt;
+	text-align: left;
+	font-family: Arial, 宋体;
+	background-image: url(Images/Header/table_title_bg.jpg);
+	border: 0;
+	padding: 0;
+	margin-top: 0;
+	background-repeat: repeat-x;		
+	padding:4px;
+	color:#333333;
+}
+
+.ModalPopup
+{
+	border:1px solid;
+    border-color:#B6C9CD;	
+    background-color: #F5F9FA;
+}
+
+.modalBackground 
+{
+	margin 0px 0px 0px 0px;
+	background-color:Gray;
+	filter:alpha(opacity="70",StartX="0",StartY="0");
+}
